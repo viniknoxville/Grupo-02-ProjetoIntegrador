@@ -17,6 +17,8 @@ public class Algoritimotrix {
 	
 	static int pontosFinais = 30;
 	
+	//teste marcos
+	
 	// MÉTODOS E FUNÇÕES
 	public static void entradaNome() {
 
