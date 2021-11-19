@@ -43,9 +43,8 @@ public class Algoritimotrix {
 			System.out.println("\t\t\t\t	|\t\t\t	|");
 			System.out.println("\t\t\t\t	|\t1 - Jogar\t\t|");
 			System.out.println("\t\t\t\t	|\t2 - Instruções\t\t|");
-			System.out.println("\t\t\t\t	|\t3 - História do jogo\t|");
-			System.out.println("\t\t\t\t	|\t4 - Créditos\t\t|");
-			System.out.println("\t\t\t\t	|\t5 - Sair\t\t|");
+			System.out.println("\t\t\t\t	|\t3 - Créditos\t\t|");
+			System.out.println("\t\t\t\t	|\t4 - Sair\t\t|");
 			System.out.println("\t\t\t\t	|\t\t\t	|");
 			System.out.println("                                	'= = = = = = = = = = = = = = = ='");
 
@@ -66,17 +65,12 @@ public class Algoritimotrix {
 				break;
 
 			case "3", "TRES", "TRÊS":
-				System.out.println("\nVocê selecionou a opção 3 - História do Jogo\n");
-				historia();
-				break;
-
-			case "4", "QUATRO":
-				System.out.println("\nVocê selecionou a opção 4 - Créditos\n");
+				System.out.println("\nVocê selecionou a opção 3 - Créditos\n");
 				creditos();
 				break;
 
-			case "5", "CINCO":
-				System.out.println("\nVocê selecionou a opção 5 - Sair");
+			case "4", "QUATRO":
+				System.out.println("\nVocê selecionou a opção 4 - Sair");
 				sair();
 				sair = entrada.next();
 				if (sair.equalsIgnoreCase(sim)) {
@@ -89,7 +83,7 @@ public class Algoritimotrix {
 				break;
 
 			default:
-				System.out.println("Opção Inválida, escolha entre 1 e 5 para selecionar uma das opções desejadas.");
+				System.out.println("Opção Inválida, escolha entre 1 e 4 para selecionar uma das opções desejadas.");
 			}
 
 		} while (!saida);
