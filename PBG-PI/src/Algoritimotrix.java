@@ -704,6 +704,42 @@ public class Algoritimotrix {
 
  	public static void capitulo4 () {
  		
+ 		System.out.println("- Capítulo 04 - Ultimato\n");
+ 		
+ 		System.out.println("Entrando na sala das conquistas um segredo é revelado...");
+ 		
+ 		System.out.println(nome +": Alpha2, eu não consigo entender! A sala está vazia!!! Onde está o Lider do Clã?");
+ 		System.out.println("Alpha2: Você ainda não percebeu?");
+ 		System.out.println("Alpha2: Após o final das guerras galácticas, foi decidido que a memória do lider do clã darkweb seria armazenada em Digital World no Grande HD Supremo...");
+ 		System.out.println("Alpha2: Houve um corte aprubto de energia causado por uma tempestade solar ocasionando um curto no HD Supremo");
+ 		System.out.println("Alpha2:" + nome + "eu sou o lider do clã darkweb, eu me chamo HAL9000!!!");
+ 		System.out.println("HAL9000: Eu me aproveitei do curto circuito no HD Supremo e infectei a memória do Alpha2");
+ 		System.out.println("HAL9000: Eu não te trouxe aqui para salvar Digital World, eu te trouxe aqui para destruir Digital World e tranferir minha memória para seu corpo organico!");
+ 		System.out.println(nome + ": Eu não vou deixar isso aconceter! Vamos barganhar?");
+ 		System.out.println(nome + ": Duas perguntas, se eu acertar eu ganho e você restaura a memoria do Alpha2, se eu errar fim de linha! Você ganha e tera tudo!");
+ 		System.out.println("HAL9000: Então é isso? Que os jogos comecem!!!");
+ 		
+ 	    // entrar na questão
+ 	    // chamar questão
+ 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
+ 		
+ 		System.out.println("HAL9000: Ultima pergunta...");
+ 		
+ 		// entrar na questão
+ 	    // chamar questão
+ 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia e derrotou o HAL9000
+ 		
+ 		System.out.println("HAL9000: Nãooooooooooooooo...");
+ 		System.out.println(nome + ": Game Over para você HAL9000!");
+ 		
+ 		System.out.println("Alpha2: Obrigadx " + nome + " você conseguil derrotar o HALL9000 e consequentimente o clã darkweb!");
+ 		System.out.println("Alpha2: Agora que minha memória foi reestabelecida e o HD Supremo está em segurança, podemos proseguir com a atualização de Digital World...");
+ 		
+ 		System.out.println("Digital World foi atualizado, HAL9000 foi aprisionado em um pendriver, uma tecnologia absoleta e descartado em Delta-X9 um planeta lixão...");
+ 		System.out.println("O clã darkweb foi dissolvido e alguns membros fugiram para planetas e galaxias distantes...");
+ 		System.out.println("Mas enquanto a ameaça existir, estaremos de olhos bem abertos!");
+ 		
+ 	
  	}
  	
 	public static void jogar() throws InterruptedException {
