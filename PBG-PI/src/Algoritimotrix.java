@@ -300,21 +300,6 @@ public class Algoritimotrix {
 	}
 
 	public static void bemVindos() throws InterruptedException {
-		System.out.println(
-				"  ____                             __      __ _             _                         \r\n"
-				+ " |  _ \\                            \\ \\    / /(_)           | |                        \r\n"
-				+ " | |_) |  ___  _ __ ___    ______   \\ \\  / /  _  _ __    __| |  ___   ___             \r\n"
-				+ " |  _ <  / _ \\| '_ ` _ \\  |______|   \\ \\/ /  | || '_ \\  / _` | / _ \\ / __|            \r\n"
-				+ " | |_) ||  __/| | | | | |             \\  /   | || | | || (_| || (_) |\\__ \\            \r\n"
-				+ " |____/  \\___||_| |_| |_|              \\/    |_||_| |_| \\__,_| \\___/ |___/            \r\n"
-				+ "                        _                            _         _____   _____    _____ \r\n"
-				+ "     /\\                | |                          | |       |  __ \\ |  __ \\  / ____|\r\n"
-				+ "    /  \\    ___        | |  ___    __ _   ___     __| |  ___  | |__) || |__) || |  __ \r\n"
-				+ "   / /\\ \\  / _ \\   _   | | / _ \\  / _` | / _ \\   / _` | / _ \\ |  _  / |  ___/ | | |_ |\r\n"
-				+ "  / ____ \\| (_) | | |__| || (_) || (_| || (_) | | (_| ||  __/ | | \\ \\ | |     | |__| |\r\n"
-				+ " /_/    \\_\\\\___/   \\____/  \\___/  \\__, | \\___/   \\__,_| \\___| |_|  \\_\\|_|      \\_____|\r\n"
-				+ "                                   __/ |                                              \r\n"
-				+ "                                  |___/                                               ");
 		System.out.print(
 				"           _      _____  ____  _____  _____ _______ __  __  ____ _______ _____  _______   __\r\n"
 				+ "     /\\   | |    / ____|/ __ \\|  __ \\|_   _|__   __|  \\/  |/ __ \\__   __|  __ \\|_   _\\ \\ / /\r\n"
@@ -334,7 +319,7 @@ public class Algoritimotrix {
 				+ "          / /\\ \\/`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'\\ \\/\\ \\\r\n"
 				+ "          \\ \\/\\ \\                                                    /\\ \\/ /\r\n"
 				+ "           \\/ /\\ \\                                                  / /\\/ /\r\n"
-				+ "           / /\\/ /     ESTÁ PRONTO PARA ESTE DESAFIO GALÁTICO       \\ \\/ /\\\r\n"
+				+ "           / /\\/ /     ESTÁ PRONTO PARA ESTE DESAFIO GALÁTICO ?     \\ \\/ /\\\r\n"
 				+ "          / /\\ \\/                                                    \\ \\/\\ \\\r\n"
 				+ "          \\ \\/\\ \\       VAMOS JUNTOS NESTA AVENTURA...               /\\ \\/ /\r\n"
 				+ "           \\/ /\\ \\                                                  / /\\/ /\r\n"
@@ -347,151 +332,6 @@ public class Algoritimotrix {
 				+ "          \\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `' /\r\n"
 				+ "           `--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--");
 		tempo();
-	}
-
-	public static void personagens () throws InterruptedException {
-		Scanner entrada = new Scanner (System.in);
-		boolean sair = false;;
-		
-		tempo();
-		System.out.print("\nPERSONAGEM 1 - RODEBERTHIX DO PLANETA GOLDBERTH\n"
-				+ "      _       _\r\n"
-				+ "     (_\\     /_)\r\n"
-				+ "       ))   ((\r\n"
-				+ "     .-\"\"\"\"\"\"\"-.\r\n"
-				+ " /^\\/  _.   _.  \\/^\\\r\n"
-				+ " \\(   /__\\ /__\\   )/\r\n"
-				+ "  \\,  \\o_/_\\o_/  ,/\r\n"
-				+ "    \\    (_)    /\r\n"
-				+ "     `-.'==='.-'\r\n"
-				+ "      __) - (__\r\n"
-				+ "     /  `~~~`  \\\r\n"
-				+ "    /  /     \\  \\\r\n"
-				+ "    \\ :       ; /\r\n"
-				+ "     \\|==(*)==|/\r\n"
-				+ "      :       :\r\n"
-				+ "       \\  |  /\r\n"
-				+ "     ___)=|=(___\r\n"
-				+ "    {____/ \\____}\r\n"
-				+ "\n");
-		tempo();
-		System.out.print("\nPERSONAGEM 2 - BREACHIX DO PLANETA SILVERSPOCKET\n"
-				+ "                _____\r\n"
-				+ "             ,-\"     \"-.\r\n"
-				+ "            / o       o \\\r\n"
-				+ "           /   \\     /   \\\r\n"
-				+ "          /     )-\"-(     \\\r\n"
-				+ "         /     ( 6 6 )     \\\r\n"
-				+ "        /       \\ \" /       \\\r\n"
-				+ "       /         )=(         \\\r\n"
-				+ "      /   o   .--\"-\"--.   o   \\\r\n"
-				+ "     /    I  /  -   -  \\  I    \\\r\n"
-				+ " .--(    (_}y/\\       /\\y{_)    )--.\r\n"
-				+ "(    \".___l\\/__\\_____/__\\/l___,\"    )\r\n"
-				+ " \\                                 /\r\n"
-				+ "  \"-._      o O o O o O o      _,-\"\r\n"
-				+ "      `--Y--.___________.--Y--'\r\n"
-				+ "         |==.___________.==|    \r\n"
-				+ "         `==.___________.==' `  "
-				+ "\n");
-		tempo();
-		System.out.print("\nPERSONAGEM 3 - ELISABETHIX DO PLANETA COPPER MAX\n"
-				+ "    o   o\r\n"
-				+ "     )-(\r\n"
-				+ "    (O O)\r\n"
-				+ "     \\=/\r\n"
-				+ "    .-\"-.\r\n"
-				+ "   //\\ /\\\\\r\n"
-				+ " _// / \\ \\\\_\r\n"
-				+ "=./ {,-.} \\.=\r\n"
-				+ "    || ||\r\n"
-				+ "    || ||       \r\n"
-				+ "  __|| ||__  `  \r\n"
-				+ " `---\" \"---'\r\n"
-				+ "\n");
-		tempo();
-		
-		do {
-		System.out.print("\nSelecione o seu personagem [1], [2] OU [3]: ");
-		String personagem = entrada.next();
-		switch (personagem) {
-		case "1":
-			tempo();
-			System.out.println();
-			System.out.println("      _       _\r\n"
-				+ "     (_\\     /_)\r\n"
-				+ "       ))   ((\r\n"
-				+ "     .-\"\"\"\"\"\"\"-.\r\n"
-				+ " /^\\/  _.   _.  \\/^\\\r\n"
-				+ " \\(   /__\\ /__\\   )/\r\n"
-				+ "  \\,  \\o_/_\\o_/  ,/\r\n"
-				+ "    \\    (_)    /\r\n"
-				+ "     `-.'==='.-'\r\n"
-				+ "      __) - (__\r\n"
-				+ "     /  `~~~`  \\\r\n"
-				+ "    /  /     \\  \\\r\n"
-				+ "    \\ :       ; /\r\n"
-				+ "     \\|==(*)==|/\r\n"
-				+ "      :       :\r\n"
-				+ "       \\  |  /\r\n"
-				+ "     ___)=|=(___\r\n"
-				+ "    {____/ \\____}\r\n"
-				+ "\n");
-			tempo();
-			System.out.println("\nVocê selecionou o PERSONAGEM 1 - RODEBERTHIX DO PLANETA GOLDBERTH");
-			sair = true;
-			break;
-		case "2":
-			tempo();
-			System.out.println();
-			System.out.print("                _____\r\n"
-					+ "             ,-\"     \"-.\r\n"
-					+ "            / o       o \\\r\n"
-					+ "           /   \\     /   \\\r\n"
-					+ "          /     )-\"-(     \\\r\n"
-					+ "         /     ( 6 6 )     \\\r\n"
-					+ "        /       \\ \" /       \\\r\n"
-					+ "       /         )=(         \\\r\n"
-					+ "      /   o   .--\"-\"--.   o   \\\r\n"
-					+ "     /    I  /  -   -  \\  I    \\\r\n"
-					+ " .--(    (_}y/\\       /\\y{_)    )--.\r\n"
-					+ "(    \".___l\\/__\\_____/__\\/l___,\"    )\r\n"
-					+ " \\                                 /\r\n"
-					+ "  \"-._      o O o O o O o      _,-\"\r\n"
-					+ "      `--Y--.___________.--Y--'\r\n"
-					+ "         |==.___________.==|    \r\n"
-					+ "         `==.___________.==' `  "
-					+ "\n");
-			tempo();
-			System.out.println("\nVocê selecionou o PERSONAGEM 2 - BREACHIX DO PLANETA SILVERSPOCKET");
-			sair = true;
-			break;
-		case "3":
-			tempo();
-			System.out.println();
-			System.out.println("    o   o\r\n"
-					+ "     )-(\r\n"
-					+ "    (O O)\r\n"
-					+ "     \\=/\r\n"
-					+ "    .-\"-.\r\n"
-					+ "   //\\ /\\\\\r\n"
-					+ " _// / \\ \\\\_\r\n"
-					+ "=./ {,-.} \\.=\r\n"
-					+ "    || ||\r\n"
-					+ "    || ||       \r\n"
-					+ "  __|| ||__  `  \r\n"
-					+ " `---\" \"---'\r\n"
-					+ "\n");
-			tempo();
-			System.out.println("\nVocê selecionou o PERSONAGEM 3 - ELISABETHIX DO PLANETA COPPER MAX");
-			sair = true;
-			break;
-			default:
-			System.out.println("\nFavor selecionar opção correta, digite entre 1, 2 e 3.");
-			
-		}
-		} while (!sair);
-		
 	}
 
 	public static void vilao () throws InterruptedException {
@@ -559,7 +399,6 @@ public class Algoritimotrix {
 		
 		System.out.println("\nOlá " + nome + ", já vamos dar início ao desafio, más antes...");
 			System.out.println("selecione o personagem que você mais se identifique rsrs ...\n");
-			personagens();
 			
 			vilao();
 	}
@@ -795,6 +634,166 @@ public class Algoritimotrix {
 		}
 	}
 
+	public static void questao1 () {
+		String opcao;
+		boolean sair = true;
+		int cont = 0;
+		ArrayList<String> alternativa = new ArrayList<String>();
+		alternativa.add(" Cada instrução termina com um ponto e vírgula");
+		alternativa.add(" O método main é o ponto de partida de cada aplicativo java e deve iniciar com public static void main(String[] args)");
+		alternativa.add(" O java diferencia letras maiúsculas de minúsculas"); // CORRETA
+		alternativa.add(" Palavras reservadas pelo java não podem ser usada para nomear variáveis");
+		alternativa.add(" A letra B e C estão incorretas");
+
+		System.out.println("\nConsiderando linguagem em java, assinale a opção INCORRETA:\n");
+
+		do {
+			Collections.shuffle(alternativa);
+
+			for (int i = 0; i < 5; i++) {
+				switch (i) {
+				case 0:
+					System.out.println("(A)" + alternativa.get(i));
+					break;
+				case 1:
+					System.out.println("(B)" + alternativa.get(i));
+					break;
+				case 2:
+					System.out.println("(C)" + alternativa.get(i));
+					break;
+				case 3:
+					System.out.println("(D)" + alternativa.get(i));
+					break;
+				case 4:
+					System.out.println("(E)" + alternativa.get(i));
+					break;
+				}
+			}
+
+			System.out.print("\nDigite sua resposta: ");
+			opcao = entrada.next();
+			Integer index = 0;
+
+			switch (opcao.toLowerCase()) {
+
+			case "a":
+				index = 0;
+				break;
+			case "b":
+				index = 1;
+				break;
+			case "c":
+				index = 2;
+				break;
+			case "d":
+				index = 3;
+				break;
+			case "e":
+				index = 4;
+				break;
+			}
+
+			if (alternativa.get(index).equals(" A letra B e C estão incorretas")) {
+				System.out.println("Resposta Correta");
+				sair = false;
+			} else {
+				System.out.println("Resposta incorreta\n");
+				cont++;
+				if (cont == 3) {
+					System.out.println("você errou " + cont + " vezes.");
+					sair = false;
+				}
+			}
+
+		} while (sair);
+	}
+	
+	public static void questao2 () {
+		String opcao;
+		boolean sair = true;
+		int cont = 0;
+		ArrayList<String> alternativa = new ArrayList<String>();
+		alternativa.add(" 10");
+		alternativa.add(" 5");
+		alternativa.add(" zero"); // CORRETA
+		alternativa.add(" A + D");
+		alternativa.add(" Nenhuma das anteriores");
+
+		System.out.println("\nIndique a opção que contém o valor final da variável após a execução do trecho de programa"
+				+ "\nem Java. Considere os seguintes valores:\n");
+
+		System.out.println("\nint A = 3, B = 2, C = 8, D = 7, X = 0;"
+				+ "\nif (!(A > 3) && !(B < 5)) {"
+				+ "\n	X = 10;"
+				+ "\n} else if ((A >= 2) || (C <= 1)) {"
+				+ "\n	X = (A + D) / 2;"
+				+ "\n} else if (A == 2 || B < 7) {"
+				+ "\n	X = (A + 2) * (B - 2);"
+				+ "\n	} else {\r\n"
+				+ "\n		X = ((A + C) / B * (C + D));"
+				+ "}\n\n");
+
+		do {
+			Collections.shuffle(alternativa);
+
+			for (int i = 0; i < 5; i++) {
+				switch (i) {
+				case 0:
+					System.out.println("(A)" + alternativa.get(i));
+					break;
+				case 1:
+					System.out.println("(B)" + alternativa.get(i));
+					break;
+				case 2:
+					System.out.println("(C)" + alternativa.get(i));
+					break;
+				case 3:
+					System.out.println("(D)" + alternativa.get(i));
+					break;
+				case 4:
+					System.out.println("(E)" + alternativa.get(i));
+					break;
+				}
+			}
+
+			System.out.print("\nDigite sua resposta: ");
+			opcao = entrada.next();
+			Integer index = 0;
+
+			switch (opcao.toLowerCase()) {
+
+			case "a":
+				index = 0;
+				break;
+			case "b":
+				index = 1;
+				break;
+			case "c":
+				index = 2;
+				break;
+			case "d":
+				index = 3;
+				break;
+			case "e":
+				index = 4;
+				break;
+			}
+
+			if (alternativa.get(index).equals(" 5")) {
+				System.out.println("Resposta Correta");
+				sair = false;
+			} else {
+				System.out.println("Resposta incorreta\n");
+				cont++;
+				if (cont == 3) {
+					System.out.println("você errou " + cont + " vezes.");
+					sair = false;
+				}
+			}
+
+		} while (sair);
+	}
+	
 	public static void questao3() { // MARCOS C. *ATUALIZADA*
 		
 		String opcao;
@@ -966,8 +965,6 @@ public class Algoritimotrix {
 	
 	public static void questao5 () { // DAIRA V. *ATUALIZADA*
 
-		
-
 		String opcao;
 		boolean sair = true;
 		int cont = 0;
@@ -976,7 +973,7 @@ public class Algoritimotrix {
 		alternativa.add(" Uma sequência lógica e finita");
 		alternativa.add(" Uma sequência lógica e infinita"); // CORRETA
 		alternativa.add(" Uma sequência variavel");
-		alternativa.add(" Nenhuma das alternativas está correta\n");
+		alternativa.add(" Nenhuma das alternativas está correta");
 
 		System.out.println("\nAssinale a alternativa correta");
 
@@ -1042,6 +1039,7 @@ public class Algoritimotrix {
 			
 		} while (sair);
 	}
+	
 	public static void questao6 () {
 		//Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste, Calcular e escrever o valor do novo salário.
 		
@@ -1381,23 +1379,8 @@ public class Algoritimotrix {
 	}
 
 	public static void parabenizacaoLinkRanked() throws InterruptedException {
-		System.out.println("   ___                    _                           _   _   _                                  \r\n"
-				+ "  / _ \\ __ _  _ __  __ _ | |__    ___  _ __   ___    / \\ / \\ / \\                                 \r\n"
-				+ " / /_)// _` || '__|/ _` || '_ \\  / _ \\| '_ \\ / __|  /  //  //  /                                 \r\n"
-				+ "/ ___/| (_| || |  | (_| || |_) ||  __/| | | |\\__ \\ /\\_//\\_//\\_/                                  \r\n"
-				+ "\\/     \\__,_||_|   \\__,_||_.__/  \\___||_| |_||___/ \\/  \\/  \\/                                    \r\n"
-				+ "                                     _    _                _                                     \r\n"
-				+ " /\\   /\\ ___    ___  ___       __ _ | |_ (_) _ __    __ _ (_) _   _                              \r\n"
-				+ " \\ \\ / // _ \\  / __|/ _ \\     / _` || __|| || '_ \\  / _` || || | | |                             \r\n"
-				+ "  \\ V /| (_) || (__|  __/    | (_| || |_ | || | | || (_| || || |_| |                             \r\n"
-				+ "   \\_/  \\___/  \\___|\\___|     \\__,_| \\__||_||_| |_| \\__, ||_| \\__,_|                             \r\n"
-				+ "                             _                  _   |___/                         _              \r\n"
-				+ "  __ _      _ __ ___    ___ | |_  __ _       __| |  ___      _ __    ___   _ __  | |_  ___   ___ \r\n"
-				+ " / _` |    | '_ ` _ \\  / _ \\| __|/ _` |     / _` | / _ \\    | '_ \\  / _ \\ | '_ \\ | __|/ _ \\ / __|\r\n"
-				+ "| (_| |    | | | | | ||  __/| |_| (_| |    | (_| ||  __/    | |_) || (_) || | | || |_| (_) |\\__ \\\r\n"
-				+ " \\__,_|    |_| |_| |_| \\___| \\__|\\__,_|     \\__,_| \\___|    | .__/  \\___/ |_| |_| \\__|\\___/ |___/\r\n"
-				+ "                                                            |_|                                  "
-				+ "\n");
+		System.out.println("\nParabéns, você concluiu o jogo e atingiu a pontuação necessária!!!");
+		System.out.println("\nFicamos felizes por você...  ;) ");
 		tempo();
 		System.out.println("\nAgora para concluir, acesse o link da nossa Ranked: \n"
 				+ "https://docs.google.com/forms/d/e/1FAIpQLSe7zFesTvPsBO8pwjj3bvx0hlGBDWTxCVwRlhJJR9kKA-xlxw/viewform?usp=sf_link"
