@@ -883,7 +883,129 @@ public class Algoritimotrix {
 		} while (!sair2);
 
 	}
+    
+	public static void questaostring()throws InterruptedException {
+		
+		String alt[] = { "A) ", "B) ", "C) ", "D) ", "E) " };
+			int cont1 = 0, pontos1 =	 0;
+				// DECLARAÇÃO ARRAYLIST DAS ALTERNATIVAS DA QUESTÃO 3 
+				
+				ArrayList<String> questao3 = new ArrayList<String>();
+				
+				questao3.add(" Variáveis não podem ser nomeadas com a palavra “string”.");
+				questao3.add(" O método main não pode ser declarado como “static”.");
+				questao3.add(" Cadeias de caracteres devem ser delimitadas por aspas duplas.");
+				questao3.add(" Não foi especificado um valor de retorno para o método.");
+				questao3.add(" O método main não pode ser declarado como “public”.");
 
+				// DECLARAÇÃO LÓGICA PARA SAÍDA DO PRIMEIRO LAÇO
+				boolean sair3 = false;
+				// SEGUNDA QUESTÃO
+				System.out
+				.println("===========================================================================================");
+		System.out.println(" QUESTÃO 3 -\"Considere o programa Java a seguir:\\r\\n\"");
+		System.out.println("==========================================================================================="						
+						// CÓDIGO PARA ANALISAR E RESPONDER A QUESTÃO
+						+ "  \n public class Classe {\r\n"
+						+ "       public static void main(String[] args) {\r\n"
+						+ "        String string = 'xyzk';\r\n"
+						+ "        System.out.println(string);\r\n"
+						+ "      }\r\n"
+						+ "     }\r\n"
+						+ "\nEsse programa não pode ser compilado, pois :");
+
+				// LAÇO DO / WHILE
+				do {
+					System.out.println("===========================================================================================");
+					// ALTERNATIVAS DA TERCEIRA QUESTÃO
+					Collections.shuffle(questao3);
+					System.out.println();
+					System.out.println(alt[0] + questao3.get(0));
+					System.out.println(alt[1] + questao3.get(1));
+					System.out.println(alt[2] + questao3.get(2));
+					System.out.println(alt[3] + questao3.get(3));
+					System.out.println(alt[4] + questao3.get(4));
+					// ENTRADA DO USUÁRIO PARA RESPOSTA
+					System.out.println("\nDigite sua resposta: ");
+					String resposta = entrada.next();
+					int index = 0, erro = 3;
+					// ESTRUTURA DE DECISÃO SWITCH
+					switch (resposta.toUpperCase()) {
+					// RESPOSTAS
+					case "A":
+						index = 0;
+						if (questao3.get(index)
+								.equals(" Cadeias de caracteres devem ser delimitadas por aspas duplas.")) {
+							System.out.println("\nResposta correta, parabéns.");
+							System.out.println("Você ganhou 2 pontos.\n");
+							// pontos1 = pontos1 + 2;
+							sair3 = true;
+						} else
+							System.out.println("\nResposta incorreta, tente novamente.\n");
+						cont1++;
+						break;
+					case "B":
+						index = 1;
+						if (questao3.get(index)
+								.equals(" Cadeias de caracteres devem ser delimitadas por aspas duplas.")) {
+							System.out.println("\nResposta correta, parabéns.");
+							System.out.println("Você ganhou 2 pontos.\n");
+							// pontos1 = pontos1 + 2;
+							sair3 = true;
+						} else
+							System.out.println("\nResposta incorreta, tente novamente.\n");
+						cont1++;
+						break;
+					case "C":
+						index = 2;
+						if (questao3.get(index).equals(" Cadeias de caracteres devem ser delimitadas por aspas duplas.")) {
+							System.out.println("\nResposta correta, parabéns.");
+							System.out.println("Você ganhou 2 pontos.\n");
+							// pontos1 = pontos1 + 2;
+							sair3 = true;
+						} else
+							System.out.println("\nResposta incorreta, tente novamente.\n");
+						cont1++;
+						break;
+					case "D":
+						index = 3;
+						if (questao3.get(index)
+								.equals(" Cadeias de caracteres devem ser delimitadas por aspas duplas.")) {
+							System.out.println("\nResposta correta, parabéns.");
+							System.out.println("Você ganhou 2 pontos.\n");
+							// pontos1 = pontos1 + 2;
+							sair3 = true;
+						} else
+							System.out.println("\nResposta incorreta, tente novamente.\n");
+						cont1++;
+						break;
+					case "E":
+						index = 4;
+						if (questao3.get(index)
+								.equals(" Cadeias de caracteres devem ser delimitadas por aspas duplas.")) {
+							System.out.println("\nResposta correta, parabéns.");
+							System.out.println("Você ganhou 2 pontos.\n");
+							// pontos1 = pontos1 + 2;
+							sair3 = true;
+						} else
+							System.out.println("\nResposta incorreta, tente novamente.\n");
+						cont1++;
+						break;
+					default:
+						System.out.println("\nOpção inválida, digite entre A, B, C D ou E"); // OPÇÃO INVÁLIDA
+					}
+
+					if (cont1 == erro) {
+						System.out.println("Você execedeu o máximo de tentativas, foram " + cont1 + " tentativas.");
+						System.out.println(
+								"Você perdeu 2 pontos. Vamos te passar para a próxima questão e lá você poderá se recuperar no jogo.\n");
+						// pontos1 = pontos1 - 2;
+						sair3 = true;
+					}
+				} while (!sair3);
+
+			}
+	
 	public static void sair() {
 		System.out.println("\nVocê quer mesmo sair?");
 		System.out.println("[SIM]	digite \"1\".\n" + "\n[NÃO]	digite \"2\"." + "\nResposta: ");
