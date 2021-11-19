@@ -43,9 +43,8 @@ public class Algoritimotrix {
 			System.out.println("\t\t\t\t	|\t\t\t	|");
 			System.out.println("\t\t\t\t	|\t1 - Jogar\t\t|");
 			System.out.println("\t\t\t\t	|\t2 - Instruções\t\t|");
-			System.out.println("\t\t\t\t	|\t3 - História do jogo\t|");
-			System.out.println("\t\t\t\t	|\t4 - Créditos\t\t|");
-			System.out.println("\t\t\t\t	|\t5 - Sair\t\t|");
+			System.out.println("\t\t\t\t	|\t3 - Créditos\t\t|");
+			System.out.println("\t\t\t\t	|\t4 - Sair\t\t|");
 			System.out.println("\t\t\t\t	|\t\t\t	|");
 			System.out.println("                                	'= = = = = = = = = = = = = = = ='");
 
@@ -66,17 +65,12 @@ public class Algoritimotrix {
 				break;
 
 			case "3", "TRES", "TRÊS":
-				System.out.println("\nVocê selecionou a opção 3 - História do Jogo\n");
-				historia();
-				break;
-
-			case "4", "QUATRO":
-				System.out.println("\nVocê selecionou a opção 4 - Créditos\n");
+				System.out.println("\nVocê selecionou a opção 3 - Créditos\n");
 				creditos();
 				break;
 
-			case "5", "CINCO":
-				System.out.println("\nVocê selecionou a opção 5 - Sair");
+			case "4", "QUATRO":
+				System.out.println("\nVocê selecionou a opção 4 - Sair");
 				sair();
 				sair = entrada.next();
 				if (sair.equalsIgnoreCase(sim)) {
@@ -89,7 +83,7 @@ public class Algoritimotrix {
 				break;
 
 			default:
-				System.out.println("Opção Inválida, escolha entre 1 e 5 para selecionar uma das opções desejadas.");
+				System.out.println("Opção Inválida, escolha entre 1 e 4 para selecionar uma das opções desejadas.");
 			}
 
 		} while (!saida);
@@ -230,8 +224,6 @@ public class Algoritimotrix {
 	}
 
 	public static void historia() throws InterruptedException {
-		System.out.println(
-				"\n\t------------------------------- BEM-VINDOS À DIGITAL WORLD -------------------------------\n");
 		Thread.sleep(500);
 		System.out.println(
 				"\n   ____________________________________________________________________________________________________________");
@@ -572,6 +564,148 @@ public class Algoritimotrix {
 			vilao();
 	}
 	
+ 	public static void capitulo1 () {
+ 		
+ 		//[não]
+ 				System.out.println("- Capitulo 01 - Encontre o Oráculo\n");
+ 				
+ 				System.out.println("Alpha2: Não temos muito tempo, a próxima atualização do planeta se aproxima e sem o HD Supremo não temos como fazer o backup");
+ 				System.out.println("Alpha2: Sem a atualização nosso planeta se tornara obsoleto, nossos sistemas de segurança entraram em colapso e a vida em Digital World chegara ao fim!!!");
+ 				System.out.println("Alpha2: Encontre o Oráculo no septo sagrado e veja através do cálice celestial a localização do clã darkweb!");
+ 				System.out.println("Alpha2: Siga pela floresta dos Spams e tente a sorte ou vá pelo desfiladeiro codificado...");
+ 				
+ 				// escolha entre a floresta dos spams ou desfiladeiro codificado - ADICIONAR A PERGUNTA
+ 				
+ 				// >Floresta dos Spams (tente a sorte)
+ 				
+ 				//Caso escolha Floresta dos Spams:
+ 				System.out.println("Alhpa2: Olha só, parece que hoje é seu dia de sorte! Cuidado com os Spams!");
+ 				System.out.println("Alhpa2: Digite um número natural de 1 a 5 e descubra sua sorte!  "); // escolher um número de 01 á 05
+ 				
+ 				//> 1 - "Ganhe 5 pontos de experiencia e siga para o Septo Sagrado" // Essa opção add 5 pontos de experiencia e leva direto ao septo sagrado
+ 				//> 2 - "Vírus Mortal fim do jogo" // Mensagem "Nossa esperança termina aqui!!!" volta pro início do jogo 
+ 				//> 3 - "Siga para o desfiladeiro codificado" //vai ter que passar pelo desfiladeiro codificado antes de ir pro septo sagrado
+ 				//> 4 - "Ganhe 10 pontos de experiencia e siga para Septo Sagrado" // vai direto para o septo 
+ 				
+ 				//Caso escolha Desfiladeiro Codificado
+ 				System.out.println("Alpha2: No jogo da sorte a sobrevivência é uma roleta russa, bem-vindo ao Desfiladeiro Codificado!");
+ 				System.out.println("Alpha2: A reposta certa levara você direito ao septo sagrado, você tem três tentativas para desbloquear a passagem.");
+ 				// Entra uma questão:
+ 				// chama questão
+ 				//Adidionar: Parabéns, você ganhou 10 pontos de experiencia... Siga para o Septo Sagrado! 
+ 				
+ 				
+ 				// tem como anular os 10 pontos se ele não acertar de primeira? tipo 5 pontos e prosseguir?
+ 				
+ 				
+ 				System.out.println("Alpha2: Parabéns, finalmente chegamos ao septo sagrado. Não podia esperar menos de você!");
+ 				System.out.println("Alpha2: Encontre o Oráculo e veja através do Cálice Celestial...");
+ 				
+ 				System.out.println("Oráculo: Ora, ora... Temos um visitante, o que te traz ao septo sagrado?");
+ 				System.out.println("Oráculo: Espere...");
+ 				System.out.println("Oráculo: Eu tenho a resposta para o que você procura, mas antes preciso testar seus conhecimentos!");
+ 				System.out.println("Oráculo: Me responda Qual"); // Continua a questão
+ 				// chama questão
+ 				//Adicionar: Parabéns, você ganhou 05 pontos de experiencia!
+ 				
+ 				System.out.println("Oráculo: Resta algumas dúvidas, diga a resposta certa e encontre seu destino.");
+ 				System.out.println("Oráculo: Me responda Qual"); // Continua a questão
+ 				// chama questão
+ 				// Adicionar Parabéns, você ganhou 10 pontos de experiencia! Siga as instruções do Oráculo e encontre seu caminho
+ 				System.out.println("Oráculo: Siga para masmorra dos Orcs e encontrará o que procura!!!");
+ 	}
+
+ 	public static void capitulo2 () {
+ 		
+ 		System.out.println("- Capitulo 02- Masmorra dos Orcs 02\n");
+ 		
+ 		System.out.println("Alpha2: Pelo visto deu tudo certo com o Oráculo? Enfim a masmorra dos Orcs te espera, siga pelo caminho das pedras...");
+ 		System.out.println("Alpha2: Os Orcs são seres inofensivos apesar da aparência, eles habitam Digital World muito antes dos primeiros homens...");
+ 		System.out.println("Alpha2: Conquiste a confiança de um Orc e terá um grande aliado na batalha contra o clã darkweb ");
+ 		
+ 		System.out.println("Algumas horas de caminhada...");
+ 		
+ 		System.out.println("Alpha2: A jornada foi longa, mas aqui estamos, encontre o Líder dos Orcs o mais rápido possível");
+ 		
+ 		System.out.println("Orc Vigilante: Qual o motivo da sua visita?");
+ 		System.out.println(nome +": Preciso da ajuda do líder dos Orcs, o clâ darkweb roubou o hd supremo e estou em uma missão de resgate");
+ 	    System.out.println("Orc Vigilante: Para entrar na masmorra, preciso testar suas habilidades! "
+ 	    		+ "Responda corretamente para encontrar o grande o líder");
+ 		
+ 	    // entrar na questão
+ 	    // chamar questão
+ 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
+ 	    
+ 	    System.out.println("Orc Vigilante: Parabéns, o grande líder te espera, siga até a sala do trono e aguarde instruções"); 
+ 	    System.out.println("Lider dos Orcs: Qual o motivo da sua visita?");
+ 	    System.out.println(nome +": Preciso de ajuda para enfrenta o clã darkweb");
+ 	    System.out.println("Lider dos Orcs: E por qual motivo eu ajudaria?");
+ 	    System.out.println(nome +": O grande Oráculo me enviou até aqui\"");
+ 	    System.out.println("Lider dos Orcs: O grande Oráculo? Aquele que tudo vê e tudo sabe? Vejamos, antes de enviar um Orc nessa jornada, me responda...");
+ 	  
+ 	   // entrar na questão
+ 	   // chamar questão
+ 	   // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia! Siga as instruções do Orc e encontre seu caminho 
+ 	    
+ 	    System.out.println("Lider dos Orcs: Parabéns você provou ter bastante conhecimento, leve Akin! Um dos Orcs da minha guarda pessoal, ele lhe será bastante útil");
+ 	    System.out.println("Lider dos Orcs: Siga pela trilha de Kharkiv e encontrara o clã darkweb...");
+    		
+ 	}
+ 
+ 	public static void capitulo3 () {
+ 		
+ 		System.out.println("- Capítulo 03 - Caminho de Kharkiv\n");
+ 		
+ 		System.out.println("Alpha2: A grande atualização se aproxima e junto com ela o destino de Digital World! Siga pela trilha de Kharkiv, Akin será bastante útil!");
+ 		System.out.println("Alpha2: Na metade da trilha, encontro a  Bruxa da Floresta e ela irá te guiar até o clã darkweb");
+ 		
+ 		System.out.println("Algumas horas de caminhada...");
+ 		
+ 		System.out.println("Bruxa da Floresta: Ora, ora… O que temos por aqui? estão perdidos?");
+ 		System.out.println(nome +": Estamos procurando o clã darkweb…");
+ 		System.out.println("Bruxa da Floresta: Vejamos, existem dois caminhos possíveis, um levará ao penhasco do grito e outro ao acampamento do clã darkweb.");
+ 		System.out.println("Responda duas perguntas se acertar irei lhe mostrar o caminho que tanto procura…");
+ 		
+ 		// entrar na questão
+ 	    // chamar questão
+ 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
+ 		
+ 		System.out.println("Bruxa da Floresta: Parece que temos um sabe tudo aqui, vamos para a última pergunta…");
+ 		
+ 	    // entrar na questão
+ 	    // chamar questão
+ 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
+ 		
+ 		//*errar a pergunta ele vai para o penhasco do grito e volta pro inicio do jogo
+ 		//** acertar a pergunta ela pega a informação que queria e segue para o acampamento do clã dark web
+ 		
+ 		System.out.println("Bruxa da Floresta: Siga pela esquerda, o acampamento do clã darkweb não está muito longe…");
+ 		
+ 		System.out.println("Alpha2: Ufa, pensei que não iriam conseguir, estamos quase lá…");
+ 		System.out.println("Alpha2: Assim que chegarem ao acampamento se dirijam ao guarda da portaria, digam que querem se juntar ao clã e ele colocará vocês para dentro");
+ 		
+ 		System.out.println("Guarda da Portaria: O que fazem aqui? Perderam alguma coisa?");
+ 		System.out.println(nome +": Viemos nos juntar ao clã darkweb…");
+ 		System.out.println("Guarda da Portaria: Preciso testar suas habilidades, se provarem sua capacidade eu deixo vocês passarem e se juntarem ao clã darkweb…");
+ 	
+ 		// entrar na questão
+ 	    // chamar questão
+ 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
+ 		
+ 		System.out.println("Guarda da Portaria: Sejam bem vindos ao clã darkweb…");
+ 		
+ 		System.out.println("Alpha2: Agora que estamos dentro vocês precisam se separar, Akin deverá seguir para o alojamento e trancar as portas...");
+ 		System.out.println("Alpha2: E o " + nome + " deverá seguir para sala das conquistas e enfrentar o líder do clã darkweb…");
+ 		System.out.println("Alpha2: A única forma de vencer e recuperar o HD Supremo é derrotando o lider do clã darkweb!");
+ 		System.out.println("Alpha2: Boa sorte em sua última missão!!!");
+ 			
+ 		
+ 	}
+
+ 	public static void capitulo4 () {
+ 		
+ 	}
+ 	
 	public static void jogar() throws InterruptedException {
 		nomeEscolhaPersonagem();
 		tempo();
@@ -603,15 +737,20 @@ public class Algoritimotrix {
 				+ "\t\t\t		             \\___/   \\___/");
 		tempo();
 		
-		System.out.println("\nOLÁ " + nome + ", SEJA BEM-VINDO À GALÁXIA A23!!!");
-
-		questaoSaidaLaco();
+		System.out.println("Alpha2: Olá nobre <" + nome + ">, seja bem-vindo ao Digital World eu sou uma inteligência artificial");
+		System.out.println("Alpha2: Nosso mundo está em perigo, o clã darkweb roubou o HD supremo da grande CPU e precisamos da sua ajuda para recupera-lo!!!");
+		System.out.println("Alpha2: Antes de iniciar nossa aventura, gostaria de conhecer a história do nosso mundo?");
 		
-		questao5();
+		// Adicionar função: [1] - Sim (mostra história e parte pro capitulo1) ou [2] - não (Pula pro capitulo)
+		//[sim] 
+		//historia();
 		
-		questaoFor();
 		
-		questaostring();
+		
+		//capitulo1();
+		//capitulo2();
+		//capitulo3();
+		//capitulo4();
 		
 		if (pontos >= 6) {
 		parabenizacaoLinkRanked();
@@ -620,7 +759,7 @@ public class Algoritimotrix {
 		}
 	}
 
-	public static void questaoSaidaLaco() throws InterruptedException {
+	public static void questao10() throws InterruptedException {
 
 		// DECLARAÇÃO VARIÁVEL STRING EM VETOR (ALTERNATIVAS)
 		String alt[] = { "A) ", "B) ", "C) ", "D) ", "E) " };
@@ -863,7 +1002,7 @@ public class Algoritimotrix {
 		}
 	}
 	
-	public static void questaoFor() {
+	public static void questao9() {
 		String alt[] = { "A) ", "B) ", "C) ", "D) ", "E) " };
 		int cont = 0;
 		// DECLARAÇÃO ARRAYLIST DAS ALTERNATIVAS DA QUESTÃO 2
