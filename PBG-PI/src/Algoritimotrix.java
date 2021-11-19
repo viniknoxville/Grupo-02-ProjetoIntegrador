@@ -890,6 +890,8 @@ public class Algoritimotrix {
 
 	public static void questao5 () {
 
+		
+
 				System.out.println("Assinale a alternativa correta");
 				System.out.println("Um algoritmo é: \n");
 
@@ -925,6 +927,22 @@ public class Algoritimotrix {
 				}
 			}
 
+	public static void questao6 () {
+		//Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste, Calcular e escrever o valor do novo salário.
+		
+				System.out.println("digite o ano que deseja ser verificado");
+				int ano = entrada.nextInt();
+
+				if (ano % 400 == 0 && ano % 4 == 0) {
+					System.out.println("ano bissexto!");
+
+				} else if (ano % 100 != 0) {
+					System.out.println();
+					System.out.println("o ano não é bissexto!");
+
+				}
+	}
+	
 	public static void questao7 () { //Marcos Ribeiro
 
 		System.out.println("Assinale a alternativa correta");
