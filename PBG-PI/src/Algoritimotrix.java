@@ -611,6 +611,8 @@ public class Algoritimotrix {
 		
 		questaoFor();
 		
+		questaostring();
+		
 		if (pontos >= 6) {
 		parabenizacaoLinkRanked();
 		} else {
