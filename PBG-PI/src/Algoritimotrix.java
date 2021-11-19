@@ -873,7 +873,7 @@ public class Algoritimotrix {
 		} while (!sair);
 	}
 
-	public static void questao5 () {
+	public static void questao5 () { //DAIARA  * ATUALIZADA*
 
 
 		String opcao;
