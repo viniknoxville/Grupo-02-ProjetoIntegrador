@@ -1299,6 +1299,96 @@ public class Algoritimotrix {
 
 			}
 	
+	public static void questao4(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		String opcao;
+		Boolean resposta = true;
+		
+		System.out.println("==============================================================");
+		System.out.println("                      PERGUNTA 04");
+		System.out.println("==============================================================");
+
+		System.out.println("Java é uma tecnologia de desenvolvimento, sendo simultaneamente, uma\n"
+				+ "linguagem e uma plataforma. Nesse contexto, apresenta-se o código a seguir.\r\n"
+				+ "\npublic class teste {\r\n"
+				+ "\r\n"
+				+ "public static void main(String[] args) {\r\n"
+				+ "\r\n"
+				+ "for (int i = 0; i <= 4; i++) {\r\n"
+				+ "if (i == 2);\r\n"
+				+ "System.out.println(i);\r\n"
+				+ "   }\r\n"
+				+ "  }\r\n"
+				+ "}\r\n"
+
+				+ "\nApós a execução, a saída gerada será:\r\n"
+				+ "");
+		System.out.println("==============================================================");
+		ArrayList<String> alternativa = new ArrayList<String>();
+		alternativa.add("(A) 0 1 3");
+		alternativa.add("(B) 0 1 3 4");
+		alternativa.add("(C) 0 1 2 3 ");
+		alternativa.add("(D) 0 1 2 3 4");
+		alternativa.add("(E) Nenhuma das alternativas");
+
+		do {
+
+
+			for (int i = 0; i < 3; i++) {
+				switch (i) {
+				case 0:
+					System.out.println(alternativa.get(i));
+					break;
+				case 1:
+					System.out.println(alternativa.get(i));
+					break;
+				case 2:
+					System.out.println(alternativa.get(i));
+					break;
+				case 3:
+					System.out.println(alternativa.get(i));
+					break;
+				case 4:
+					System.out.println(alternativa.get(i));
+					break;
+				}
+
+			}
+
+			opcao = input.next();
+			Integer index = 0;
+
+			switch (opcao.toLowerCase()) {
+
+			case "a":
+				index = 0;
+				break;
+			case "b":
+				index = 1;
+				break;
+			case "c":
+				index = 2;
+				break;
+			case "d":
+				index = 3;
+				break;
+			case "e":
+				index = 4;
+				break;
+			}
+
+			if (alternativa.get(index).equals("(D) 0 1 2 3 4")) {
+				System.out.println("Resposta Correta");
+				resposta = false;
+			} else {
+				System.out.println("Resposta incorreta");
+			}
+
+		} while (resposta);
+	}
+
+	
 	public static void sair() {
 		System.out.println("\nVocê quer mesmo sair?");
 		System.out.println("[SIM]	digite \"1\".\n" + "\n[NÃO]	digite \"2\"." + "\nResposta: ");
