@@ -1297,8 +1297,7 @@ public class Algoritimotrix {
 			} while (sair);
 }
 	
-	public static void questao4 () { // MARCOS C. *ATUALIZADA*
-
+	public static void questao4 () throws InterruptedException { // MARCOS C. *ATUALIZADA*
 		String opcao;
 		int cont = 0;
 		Boolean sair = true;
@@ -1327,6 +1326,7 @@ public class Algoritimotrix {
 				+ "");
 
 		do {
+			
 			for (int i = 0; i < 5; i++) {
 				switch (i) {
 				case 0:
@@ -1346,6 +1346,7 @@ public class Algoritimotrix {
 					break;
 				}
 			}
+			
 			System.out.print("\nDigite sua resposta: ");
 			opcao = entrada.next();
 			Integer index = 0;
