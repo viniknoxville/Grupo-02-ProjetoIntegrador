@@ -726,18 +726,19 @@ public class Algoritimotrix {
 
 		} while (!sair1);
 	}
-	
+
 	public static void questao5 () {
 
 				System.out.println("Assinale a alternativa correta");
-				System.out.println("Um algoritmo é: ");
-				String algoritmo = entrada.next();
+				System.out.println("Um algoritmo é: \n");
 
 				System.out.println(" (a)Uma sequência não lógica e infinita");
 				System.out.println(" (b)Uma sequência lógica e finita ");
 				System.out.println(" (c)Uma sequência lógica e infinita");
 				System.out.println(" (d)Uma sequência variavel");
-				System.out.println(" (e)Nenhuma das alternativas está correta");
+				System.out.println(" (e)Nenhuma das alternativas está correta\n");
+				System.out.print("Digite sua resposta: \n");
+				String algoritmo = entrada.next();
 
 				switch (algoritmo) {
 				case "a":
