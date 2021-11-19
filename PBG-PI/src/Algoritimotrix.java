@@ -1299,9 +1299,9 @@ public class Algoritimotrix {
 
 			}
 	
-	public static void questao4(String[] args) {
+	public static void questao4() throws InterruptedException {
 
-		Scanner input = new Scanner(System.in);
+		Scanner entrada = new Scanner(System.in);
 		String opcao;
 		Boolean resposta = true;
 		
@@ -1356,7 +1356,7 @@ public class Algoritimotrix {
 
 			}
 
-			opcao = input.next();
+			opcao = entrada.next();
 			Integer index = 0;
 
 			switch (opcao.toLowerCase()) {
