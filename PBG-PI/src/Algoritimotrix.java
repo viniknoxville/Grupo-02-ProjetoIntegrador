@@ -926,43 +926,81 @@ public class Algoritimotrix {
 
 	public static void questao5 () {
 
-		
 
-				System.out.println("Assinale a alternativa correta");
-				System.out.println("Um algoritmo é: \n");
+		String opcao;
+		boolean sair = true;
+		int cont = 0;
+		ArrayList<String> alternativa = new ArrayList<String>();
+		alternativa.add(" Uma sequência não lógica e infinita");
+		alternativa.add(" Uma sequência lógica e finita");
+		alternativa.add(" Uma sequência lógica e infinita"); // CORRETA
+		alternativa.add(" Uma sequência variavel");
+		alternativa.add(" Nenhuma das alternativas está correta\n");
 
-				System.out.println(" (a)Uma sequência não lógica e infinita");
-				System.out.println(" (b)Uma sequência lógica e finita ");
-				System.out.println(" (c)Uma sequência lógica e infinita");
-				System.out.println(" (d)Uma sequência variavel");
-				System.out.println(" (e)Nenhuma das alternativas está correta\n");
-				System.out.print("Digite sua resposta: \n");
-				String algoritmo = entrada.next();
+		System.out.println("\nAssinale a alternativa correta");
+	
+		System.out.println("\nUm algoritmo é:\n");
 
-				switch (algoritmo) {
-				case "a":
-					System.out.println(" (a) alternativa incorreta.");
+		do {
+			Collections.shuffle(alternativa);
+			
+			for (int i = 0; i < 5; i++) {
+				switch (i) {
+				case 0:
+					System.out.println("(A)" + alternativa.get(i));
 					break;
-				case "b":
-					System.out.println(" (b) alternativa incorreta.");
+				case 1:
+					System.out.println("(B)" + alternativa.get(i));
 					break;
-				case "c":
-					System.out.println(" (c) Parabéns alternativa correta!! ");
+				case 2:
+					System.out.println("(C)" + alternativa.get(i));
 					break;
-				case "d":
-					System.out.println(" (d) alternativa incorreta.");
+				case 3:
+					System.out.println("(D)" + alternativa.get(i));
 					break;
-				case "e":
-					System.out.println(" (e) alternativa incorreta.");
+				case 4:
+					System.out.println("(E)" + alternativa.get(i));
 					break;
-					
-				default:
-					System.out.println("Alternativa incorreta!!!");
-					
-
 				}
 			}
+			
+			System.out.println("\nDigite sua resposta: ");
+			opcao = entrada.next();
+			Integer index = 0;
+		
+			switch (opcao.toLowerCase()) {
 
+			case "a":
+				index = 0;
+				break;
+			case "b":
+				index = 1;
+				break;
+			case "c":
+				index = 2;
+				break;
+			case "d":
+				index = 3;
+				break;
+			case "e":
+				index = 4;
+				break;
+			}
+			
+			if (alternativa.get(index).equals(" Uma sequência lógica e infinita")) {
+				System.out.println("Resposta Correta");
+				sair = false;
+			} else {
+				System.out.println("Resposta incorreta\n");
+				cont++;
+				if (cont == 3) {
+					System.out.println("você errou " + cont + " vezes.");	
+					sair = false;
+				}
+			}
+			
+		} while (sair);
+	}
 	public static void questao6 () {
 		//Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste, Calcular e escrever o valor do novo salário.
 		
