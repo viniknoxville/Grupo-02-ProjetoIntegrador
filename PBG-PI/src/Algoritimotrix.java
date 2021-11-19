@@ -795,133 +795,82 @@ public class Algoritimotrix {
 		}
 	}
 
-	public static void questao10() throws InterruptedException {
+	public static void questao10() throws InterruptedException { // ELVIS W. *ATUALIZADA*
 
-		// DECLARAÇÃO VARIÁVEL STRING EM VETOR (ALTERNATIVAS)
-		String alt[] = { "A) ", "B) ", "C) ", "D) ", "E) " };
+		String opcao;
+		boolean sair = false;
 		int cont = 0;
-		// DECLARAÇÃO ARRAYLIST DAS ALTERNATIVAS DA QUESTÃO 1
-		ArrayList<String> questao1 = new ArrayList<String>();
-		questao1.add("Enquanto N for menor que 10, a condição booleana será TRUE e vai sair do laço repetitivo.");
-		questao1.add("Quando N for maior que 10, a condição booleana será !TRUE e ele saíra do laço repetitivo.");
-		questao1.add("Esse código não irá funcionar, pois tem um erro.");
-		questao1.add("N.D.A.");
-		questao1.add("Se N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo."); // CORRETA
-		// DECLARAÇÃO LÓGICA PARA SAÍDA DO PRIMEIRO LAÇO
-		boolean sair1 = false;
-		Thread.sleep(2000);
-		System.out.println("\nPROJETO INTEGRADOR - JOGO RPG ELETRÔNICO");
-		System.out.println("\n\t\t\t\tQUESTIONÁRIO ALGORITMOTRIX");
-		// PRIMEIRA QUESTÃO
-		System.out
-				.println("===========================================================================================");
-		System.out.println("QUESTÃO 1 - Dado o código abaixo, pedimos com atenção que você observe, faça uma análise"
-				+ " do\ncódigo, e com base nos seus conhecimentos, responda qual alternativa está correta:");
-		System.out
-				.println("===========================================================================================");
-		// CÓDIGO PARA ANALISAR E RESPONDER A QUESTÃO
-		System.out.println("\npublic static void main(String[] args) {\r\n" + "\n	boolean sair = false;\r\n"
-				+ "	int n, i = 1;\r\n" + "		 \r\n" + "	do {\r\n"
-				+ "	     System.out.println(\"Digite n\" + i + \": \");\r\n" + "	     n = entrada.nextInt();\r\n"
-				+ "	     i++;\r\n" + "\r\n" + "	     if (n >= 10) {\r\n"
-				+ "	         System.out.println(\"\\nO número digitado é igual ou maior que 10.\");\r\n"
-				+ "	         sair = true;	\r\n" + "	         break;\r\n" + "	     }	 \r\n"
-				+ "	 } while (true);\n");
-		// LAÇO DO / WHILE
-		do {
-			System.out.println(
-					"===========================================================================================");
-			// ALTERNATIVAS DA PRIMEIRA QUESTÃO
-			Collections.shuffle(questao1);
-			System.out.println("");
-			System.out.println(alt[0] + questao1.get(0));
-			System.out.println(alt[1] + questao1.get(1));
-			System.out.println(alt[2] + questao1.get(2));
-			System.out.println(alt[3] + questao1.get(3));
-			System.out.println(alt[4] + questao1.get(4));
-			// ENTRADA DO USUÁRIO PARA RESPOSTA
-			System.out.println("\nDigite sua resposta: ");
-			String resposta = entrada.next();
-			int index = 0;
-			// ESTRUTURA DE DECISÃO SWITCH
-			switch (resposta.toUpperCase()) {
-			// RESPOSTAS
-			case "A":
-				index = 0;
-				if (questao1.get(index).equals(
-						"Se N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.")) {
-					System.out.println("\nResposta correta.\n");
-					pontos = pontos + 3;
-					System.out.println("Nessa questão você fez, " + pontos + " pontos.\n");
-					sair1 = true;
-				} else
-					System.out.println("\nResposta incorreta, tente novamente.\n");
-				pontos = pontos - 1;
-				cont++;
-				break;
-			case "B":
-				index = 1;
-				if (questao1.get(index).equals(
-						"Se N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.")) {
-					System.out.println("\nResposta correta.\n");
-					pontos = pontos + 3;
-					System.out.println("Nessa questão você fez, " + pontos + " pontos.\n");
-					sair1 = true;
-				} else
-					System.out.println("\nResposta incorreta, tente novamente.\n");
-				pontos = pontos - 1;
-				cont++;
-				break;
-			case "C":
-				index = 2;
-				if (questao1.get(index).equals(
-						"Se N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.")) {
-					System.out.println("\nResposta correta.\n");
-					pontos = pontos + 3;
-					System.out.println("Nessa questão você fez, " + pontos + " pontos.\n");
-					sair1 = true;
-				} else
-					System.out.println("\nResposta incorreta, tente novamente.\n");
-				pontos = pontos - 1;
-				cont++;
-				break;
-			case "D":
-				index = 3;
-				if (questao1.get(index).equals(
-						"Se N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.")) {
-					System.out.println("\nResposta correta.\n");
-					pontos = pontos + 3;
-					System.out.println("Nessa questão você fez, " + pontos + " pontos.\n");
-					sair1 = true;
-				} else
-					System.out.println("\nResposta incorreta, tente novamente.\n");
-				pontos = pontos - 1;
-				cont++;
-				break;
-			case "E":
-				index = 4;
-				if (questao1.get(index).equals(
-						"Se N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.")) {
-					System.out.println("\nResposta correta.\n");
-					pontos = pontos + 3;
-					System.out.println("Nessa questão você fez, " + pontos + " pontos.\n");
-					sair1 = true;
-				} else
-					System.out.println("\nResposta incorreta, tente novamente.\n");
-				pontos = pontos - 1;
-				cont++;
-				break;
-			default:
-				System.out.println("\nOpção inválida, digite entre A, B, C D ou E"); // OPÇÃO INVÁLIDA
-			}	
-			if (cont == erroQuestoes) {
-					System.out.println("Você execedeu o máximo de tentativas, foram " + cont + " tentativas.\n");
-					System.out.println(
-							"Você perdeu " + erroQuestoes + " pontos. Vamos te passar para a próxima questão e lá você poderá se recuperar no jogo.\n");
-					sair1 = true;
-				}
+		ArrayList<String> alternativa = new ArrayList<String>();
+		alternativa.add(" Enquanto N for menor que 10, a condição booleana será TRUE e vai sair do laço repetitivo.");// CORRETA
+		alternativa.add(" Quando N for maior que 10, a condição booleana será !TRUE e ele saíra do laço repetitivo.");
+		alternativa.add(" Esse código não irá funcionar, pois tem um erro.");
+		alternativa.add(" N.D.A.");
+		alternativa.add(" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.");
 
-		} while (!sair1);
+		System.out.println("\nAssinale a alternativa correta");
+	
+		System.out.println("\nDado o código abaixo, pedimos com atenção que você observe, faça uma análise"
+				+ "\ndo código, e com base nos seus conhecimentos, responda qual alternativa está correta:\n");
+
+		do {
+			Collections.shuffle(alternativa);
+			
+			for (int i = 0; i < 5; i++) {
+				switch (i) {
+				case 0:
+					System.out.println("(A)" + alternativa.get(i));
+					break;
+				case 1:
+					System.out.println("(B)" + alternativa.get(i));
+					break;
+				case 2:
+					System.out.println("(C)" + alternativa.get(i));
+					break;
+				case 3:
+					System.out.println("(D)" + alternativa.get(i));
+					break;
+				case 4:
+					System.out.println("(E)" + alternativa.get(i));
+					break;
+				}
+			}
+			
+			System.out.println("\nDigite sua resposta: ");
+			opcao = entrada.next();
+			Integer index = 0;
+		
+			switch (opcao.toLowerCase()) {
+
+			case "a":
+				index = 0;
+				break;
+			case "b":
+				index = 1;
+				break;
+			case "c":
+				index = 2;
+				break;
+			case "d":
+				index = 3;
+				break;
+			case "e":
+				index = 4;
+				break;
+			}
+			
+			if (alternativa.get(index).equals(" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.")) {
+				System.out.println("Resposta Correta");
+				sair = true;
+			} else {
+				System.out.println("Resposta incorreta\n");
+				cont++;
+				if (cont == 3) {
+					System.out.println("você errou " + cont + " vezes.");	
+					sair = true;
+				}
+			}
+			
+		} while (!sair);
 	}
 
 	public static void questao5 () {
