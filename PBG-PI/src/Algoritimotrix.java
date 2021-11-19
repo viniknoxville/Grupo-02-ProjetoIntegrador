@@ -762,6 +762,83 @@ public class Algoritimotrix {
 
 				}
 			}
+
+	public static void questao7 () { //Marcos Ribeiro
+
+		System.out.println("Assinale a alternativa correta");
+		System.out.println("Relacionado à programação de computadores, um algoritmo, seja qual for a sua\r\n"
+				+ "complexidade e a linguagem de programação na qual será codificado, pode ser descrito por\r\n"
+				+ "meio da");
+		
+
+		System.out.println(" (a) reografia");
+		System.out.println(" (b) criptografia");
+		System.out.println(" (c) linguagem de marcação");
+		System.out.println(" (d) engenharia estrudurada");
+		System.out.println(" (e) pseudolinguagem\n");
+		String algoritmo = entrada.next();
+		
+		switch (algoritmo) {
+		case "a":
+			System.out.println(" (a) alternativa incorreta.");
+			break;
+		case "b":
+			System.out.println(" (b) alternativa incorreta.");
+			break;
+		case "c":
+			System.out.println(" (c) alternativa incorreta.");
+			break;
+		case "d":
+			System.out.println(" (d) alternativa incorreta.");
+			break;
+		case "e":
+			System.out.println(" (e) Parabéns alternativa correta!!!");
+			break;
+			
+		default:
+			System.out.println("Alternativa incorreta!!!");
+			
+
+		}
+	}
+
+	public static void questao8 () { //Marcos Ribeiro
+
+		System.out.println("Assinale a alternativa correta");
+		System.out.println("São instruções tipicamente encontradas em linguagens de programação para codificar\r\n"
+				+ "estruturas de repetição:: ");
+
+		System.out.println(" (a) for, while, repeat");
+		System.out.println(" (b) repeat, case, for");
+		System.out.println(" (c) while, if, until");
+		System.out.println(" (d) for, until, case");
+		System.out.println(" (e)Nenhuma das alternativas está correta\n");
+		System.out.println("Digite sua resposta: \n");
+		String algoritmo = entrada.next();
+
+		switch (algoritmo) {
+		case "a":
+			System.out.println(" (a) Parabéns alternativa correta!!!");
+			break;
+		case "b":
+			System.out.println(" (b) alternativa incorreta.");
+			break;
+		case "c":
+			System.out.println(" (c) alternativa incorreta.");
+			break;
+		case "d":
+			System.out.println(" (d) alternativa incorreta.");
+			break;
+		case "e":
+			System.out.println(" (e) alternativa incorreta.");
+			break;
+			
+		default:
+			System.out.println("Alternativa incorreta!!!");
+			
+
+		}
+	}
 	
 	public static void questaoFor() {
 		String alt[] = { "A) ", "B) ", "C) ", "D) ", "E) " };
