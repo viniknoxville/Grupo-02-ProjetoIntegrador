@@ -230,8 +230,6 @@ public class Algoritimotrix {
 	}
 
 	public static void historia() throws InterruptedException {
-		System.out.println(
-				"\n\t------------------------------- BEM-VINDOS À DIGITAL WORLD -------------------------------\n");
 		Thread.sleep(500);
 		System.out.println(
 				"\n   ____________________________________________________________________________________________________________");
@@ -572,6 +570,68 @@ public class Algoritimotrix {
 			vilao();
 	}
 	
+ 	public static void capitulo1 () {
+ 		
+ 		//[não]
+ 				System.out.println("- Capitulo 01 - Encontre o Oráculo");
+ 				System.out.println("Alpha2: Não temos muito tempo, a próxima atualização do planeta se aproxima e sem o HD Supremo não temos como fazer o backup");
+ 				System.out.println("Alpha2: Sem a atualização nosso planeta se tornara obsoleto, nossos sistemas de segurança entraram em colapso e a vida em Digital World chegara ao fim!!!");
+ 				System.out.println("Alpha2: Encontre o Oráculo no septo sagrado e veja através do cálice celestial a localização do clã darkweb!");
+ 				System.out.println("Alpha2: Siga pela floresta dos Spams e tente a sorte ou vá pelo desfiladeiro codificado...");
+ 				
+ 				// escolha entre a floresta dos spams ou desfiladeiro codificado - ADICIONAR A PERGUNTA
+ 				
+ 				// >Floresta dos Spams (tente a sorte)
+ 				
+ 				//Caso escolha Floresta dos Spams:
+ 				System.out.println("Alhpa2: Olha só, parece que hoje é seu dia de sorte! Cuidado com os Spams!");
+ 				System.out.println("Alhpa2: Digite um número natural de 1 a 5 e descubra sua sorte!  "); // escolher um número de 01 á 05
+ 				
+ 				//> 1 - "Ganhe 5 pontos de experiencia e siga para o Septo Sagrado" // Essa opção add 5 pontos de experiencia e leva direto ao septo sagrado
+ 				//> 2 - "Vírus Mortal fim do jogo" // Mensagem "Nossa esperança termina aqui!!!" volta pro início do jogo 
+ 				//> 3 - "Siga para o desfiladeiro codificado" //vai ter que passar pelo desfiladeiro codificado antes de ir pro septo sagrado
+ 				//> 4 - "Ganhe 10 pontos de experiencia e siga para Septo Sagrado" // vai direto para o septo 
+ 				
+ 				//Caso escolha Desfiladeiro Codificado
+ 				System.out.println("Alpha2: No jogo da sorte a sobrevivência é uma roleta russa, bem-vindo ao Desfiladeiro Codificado!");
+ 				System.out.println("Alpha2: A reposta certa levara você direito ao septo sagrado, você tem três tentativas para desbloquear a passagem.");
+ 				// Entra uma questão:
+ 				// chama questão
+ 				//Adidionar: Parabéns, você ganhou 10 pontos de experiencia... Siga para o Septo Sagrado! 
+ 				
+ 				
+ 				// tem como anular os 10 pontos se ele não acertar de primeira? tipo 5 pontos e prosseguir?
+ 				
+ 				
+ 				System.out.println("Alpha2: Parabéns, finalmente chegamos ao septo sagrado. Não podia esperar menos de você!");
+ 				System.out.println("Alpha2: Encontre o Oráculo e veja através do Cálice Celestial...");
+ 				
+ 				System.out.println("Oráculo: Ora, ora... Temos um visitante, o que te traz ao septo sagrado?");
+ 				System.out.println("Oráculo: Espere...");
+ 				System.out.println("Oráculo: Eu tenho a resposta para o que você procura, mas antes preciso testar seus conhecimentos!");
+ 				System.out.println("Oráculo: Me responda Qual"); // Continua a questão
+ 				// chama questão
+ 				//Adicionar: Parabéns, você ganhou 05 pontos de experiencia!
+ 				
+ 				System.out.println("Oráculo: Resta algumas dúvidas, diga a resposta certa e encontre seu destino.");
+ 				System.out.println("Oráculo: Me responda Qual"); // Continua a questão
+ 				// chama questão
+ 				// Adicionar Parabéns, você ganhou 10 pontos de experiencia! Siga as instruções do Oráculo e encontre seu caminho
+ 				System.out.println("Oráculo: Siga para masmorra dos Orcs e encontrará o que procura!!!");
+ 	}
+
+ 	public static void capitulo2 () {
+ 		
+ 	}
+ 
+ 	public static void capitulo3 () {
+ 		
+ 	}
+
+ 	public static void capitulo4 () {
+ 		
+ 	}
+ 	
 	public static void jogar() throws InterruptedException {
 		nomeEscolhaPersonagem();
 		tempo();
@@ -603,15 +663,20 @@ public class Algoritimotrix {
 				+ "\t\t\t		             \\___/   \\___/");
 		tempo();
 		
-		System.out.println("\nOLÁ " + nome + ", SEJA BEM-VINDO À GALÁXIA A23!!!");
-
-		questaoSaidaLaco();
+		System.out.println("Alpha2: Olá nobre <" + nome + ">, seja bem-vindo ao Digital World eu sou uma inteligência artificial");
+		System.out.println("Alpha2: Nosso mundo está em perigo, o clã darkweb roubou o HD supremo da grande CPU e precisamos da sua ajuda para recupera-lo!!!");
+		System.out.println("Alpha2: Antes de iniciar nossa aventura, gostaria de conhecer a história do nosso mundo?");
 		
-		questao5();
+		// Adicionar função: [1] - Sim (mostra história e parte pro capitulo1) ou [2] - não (Pula pro capitulo)
+		//[sim] 
+		//historia();
 		
-		questaoFor();
 		
-		questaostring();
+		
+		//capitulo1();
+		//capitulo2();
+		//capitulo3();
+		//capitulo4();
 		
 		if (pontos >= 6) {
 		parabenizacaoLinkRanked();
@@ -620,7 +685,7 @@ public class Algoritimotrix {
 		}
 	}
 
-	public static void questaoSaidaLaco() throws InterruptedException {
+	public static void questao10() throws InterruptedException {
 
 		// DECLARAÇÃO VARIÁVEL STRING EM VETOR (ALTERNATIVAS)
 		String alt[] = { "A) ", "B) ", "C) ", "D) ", "E) " };
@@ -863,7 +928,7 @@ public class Algoritimotrix {
 		}
 	}
 	
-	public static void questaoFor() {
+	public static void questao9() {
 		String alt[] = { "A) ", "B) ", "C) ", "D) ", "E) " };
 		int cont = 0;
 		// DECLARAÇÃO ARRAYLIST DAS ALTERNATIVAS DA QUESTÃO 2
