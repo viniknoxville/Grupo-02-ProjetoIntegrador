@@ -617,7 +617,7 @@ public class Algoritimotrix {
 
  	public static void capitulo2 () {
  		
- 		System.out.println("= Capitulo 02- Masmorra dos Orcs 02\n");
+ 		System.out.println("- Capitulo 02- Masmorra dos Orcs 02\n");
  		
  		System.out.println("Alpha2: Pelo visto deu tudo certo com o Oráculo? Enfim a masmorra dos Orcs te espera, siga pelo caminho das pedras...");
  		System.out.println("Alpha2: Os Orcs são seres inofensivos apesar da aparência, eles habitam Digital World muito antes dos primeiros homens...");
@@ -653,6 +653,52 @@ public class Algoritimotrix {
  	}
  
  	public static void capitulo3 () {
+ 		
+ 		System.out.println("- Capítulo 03 - Caminho de Kharkiv\n");
+ 		
+ 		System.out.println("Alpha2: A grande atualização se aproxima e junto com ela o destino de Digital World! Siga pela trilha de Kharkiv, Akin será bastante útil!");
+ 		System.out.println("Alpha2: Na metade da trilha, encontro a  Bruxa da Floresta e ela irá te guiar até o clã darkweb");
+ 		
+ 		System.out.println("Algumas horas de caminhada...");
+ 		
+ 		System.out.println("Bruxa da Floresta: Ora, ora… O que temos por aqui? estão perdidos?");
+ 		System.out.println(nome +": Estamos procurando o clã darkweb…");
+ 		System.out.println("Bruxa da Floresta: Vejamos, existem dois caminhos possíveis, um levará ao penhasco do grito e outro ao acampamento do clã darkweb.");
+ 		System.out.println("Responda duas perguntas se acertar irei lhe mostrar o caminho que tanto procura…");
+ 		
+ 		// entrar na questão
+ 	    // chamar questão
+ 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
+ 		
+ 		System.out.println("Bruxa da Floresta: Parece que temos um sabe tudo aqui, vamos para a última pergunta…");
+ 		
+ 	    // entrar na questão
+ 	    // chamar questão
+ 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
+ 		
+ 		//*errar a pergunta ele vai para o penhasco do grito e volta pro inicio do jogo
+ 		//** acertar a pergunta ela pega a informação que queria e segue para o acampamento do clã dark web
+ 		
+ 		System.out.println("Bruxa da Floresta: Siga pela esquerda, o acampamento do clã darkweb não está muito longe…");
+ 		
+ 		System.out.println("Alpha2: Ufa, pensei que não iriam conseguir, estamos quase lá…");
+ 		System.out.println("Alpha2: Assim que chegarem ao acampamento se dirijam ao guarda da portaria, digam que querem se juntar ao clã e ele colocará vocês para dentro");
+ 		
+ 		System.out.println("Guarda da Portaria: O que fazem aqui? Perderam alguma coisa?");
+ 		System.out.println(nome +": Viemos nos juntar ao clã darkweb…");
+ 		System.out.println("Guarda da Portaria: Preciso testar suas habilidades, se provarem sua capacidade eu deixo vocês passarem e se juntarem ao clã darkweb…");
+ 	
+ 		// entrar na questão
+ 	    // chamar questão
+ 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
+ 		
+ 		System.out.println("Guarda da Portaria: Sejam bem vindos ao clã darkweb…");
+ 		
+ 		System.out.println("Alpha2: Agora que estamos dentro vocês precisam se separar, Akin deverá seguir para o alojamento e trancar as portas...");
+ 		System.out.println("Alpha2: E o " + nome + " deverá seguir para sala das conquistas e enfrentar o líder do clã darkweb…");
+ 		System.out.println("Alpha2: A única forma de vencer e recuperar o HD Supremo é derrotando o lider do clã darkweb!");
+ 		System.out.println("Alpha2: Boa sorte em sua última missão!!!");
+ 			
  		
  	}
 
