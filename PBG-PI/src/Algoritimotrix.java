@@ -567,7 +567,8 @@ public class Algoritimotrix {
  	public static void capitulo1 () {
  		
  		//[não]
- 				System.out.println("- Capitulo 01 - Encontre o Oráculo");
+ 				System.out.println("- Capitulo 01 - Encontre o Oráculo\n");
+ 				
  				System.out.println("Alpha2: Não temos muito tempo, a próxima atualização do planeta se aproxima e sem o HD Supremo não temos como fazer o backup");
  				System.out.println("Alpha2: Sem a atualização nosso planeta se tornara obsoleto, nossos sistemas de segurança entraram em colapso e a vida em Digital World chegara ao fim!!!");
  				System.out.println("Alpha2: Encontre o Oráculo no septo sagrado e veja através do cálice celestial a localização do clã darkweb!");
@@ -616,6 +617,39 @@ public class Algoritimotrix {
 
  	public static void capitulo2 () {
  		
+ 		System.out.println("= Capitulo 02- Masmorra dos Orcs 02\n");
+ 		
+ 		System.out.println("Alpha2: Pelo visto deu tudo certo com o Oráculo? Enfim a masmorra dos Orcs te espera, siga pelo caminho das pedras...");
+ 		System.out.println("Alpha2: Os Orcs são seres inofensivos apesar da aparência, eles habitam Digital World muito antes dos primeiros homens...");
+ 		System.out.println("Alpha2: Conquiste a confiança de um Orc e terá um grande aliado na batalha contra o clã darkweb ");
+ 		
+ 		System.out.println("Algumas horas de caminhada...");
+ 		
+ 		System.out.println("Alpha2: A jornada foi longa, mas aqui estamos, encontre o Líder dos Orcs o mais rápido possível");
+ 		
+ 		System.out.println("Orc Vigilante: Qual o motivo da sua visita?");
+ 		System.out.println(nome +": Preciso da ajuda do líder dos Orcs, o clâ darkweb roubou o hd supremo e estou em uma missão de resgate");
+ 	    System.out.println("Orc Vigilante: Para entrar na masmorra, preciso testar suas habilidades! "
+ 	    		+ "Responda corretamente para encontrar o grande o líder");
+ 		
+ 	    // entrar na questão
+ 	    // chamar questão
+ 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
+ 	    
+ 	    System.out.println("Orc Vigilante: Parabéns, o grande líder te espera, siga até a sala do trono e aguarde instruções"); 
+ 	    System.out.println("Lider dos Orcs: Qual o motivo da sua visita?");
+ 	    System.out.println(nome +": Preciso de ajuda para enfrenta o clã darkweb");
+ 	    System.out.println("Lider dos Orcs: E por qual motivo eu ajudaria?");
+ 	    System.out.println(nome +": O grande Oráculo me enviou até aqui\"");
+ 	    System.out.println("Lider dos Orcs: O grande Oráculo? Aquele que tudo vê e tudo sabe? Vejamos, antes de enviar um Orc nessa jornada, me responda...");
+ 	  
+ 	   // entrar na questão
+ 	   // chamar questão
+ 	   // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia! Siga as instruções do Orc e encontre seu caminho 
+ 	    
+ 	    System.out.println("Lider dos Orcs: Parabéns você provou ter bastante conhecimento, leve Akin! Um dos Orcs da minha guarda pessoal, ele lhe será bastante útil");
+ 	    System.out.println("Lider dos Orcs: Siga pela trilha de Kharkiv e encontrara o clã darkweb...");
+    		
  	}
  
  	public static void capitulo3 () {
