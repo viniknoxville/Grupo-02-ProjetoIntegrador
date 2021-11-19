@@ -586,7 +586,9 @@ public class Algoritimotrix {
 		System.out.println("\nOLÁ " + nome + ", SEJA BEM-VINDO À GALÁXIA A23!!!");
 
 		questaoSaidaLaco();
-
+		
+		questao5();
+		
 		questaoFor();
 		
 		if (pontos >= 6) {
