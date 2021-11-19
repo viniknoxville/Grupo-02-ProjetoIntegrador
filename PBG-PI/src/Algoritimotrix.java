@@ -795,50 +795,141 @@ public class Algoritimotrix {
 		}
 	}
 
-	public static void questao10() throws InterruptedException { // ELVIS W. *ATUALIZADA*
-
+	public static void questao3() { // MARCOS C. *ATUALIZADA*
+		
 		String opcao;
-		boolean sair = false;
 		int cont = 0;
+		Boolean sair = true;
 		ArrayList<String> alternativa = new ArrayList<String>();
-		alternativa.add(" Enquanto N for menor que 10, a condição booleana será TRUE e vai sair do laço repetitivo.");// CORRETA
-		alternativa.add(" Quando N for maior que 10, a condição booleana será !TRUE e ele saíra do laço repetitivo.");
-		alternativa.add(" Esse código não irá funcionar, pois tem um erro.");
-		alternativa.add(" N.D.A.");
-		alternativa.add(" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.");
 
-		System.out.println("\nAssinale a alternativa correta");
+			alternativa.add(" Variáveis não podem ser nomeadas com a palavra “string”.");
+			alternativa.add(" O método main não pode ser declarado como “static”.");
+			alternativa.add(" Cadeias de caracteres devem ser delimitadas por aspas duplas.");
+			alternativa.add(" Não foi especificado um valor de retorno para o método.");
+			alternativa.add(" O método main não pode ser declarado como “public”.");
+			
+	System.out.println("Considere o programa Java a seguir:\r\n"
+					+ "  \n public class Classe {\r\n"
+					+ "       public static void main(String[] args) {\r\n"
+					+ "        String string = 'xyzk';\r\n"
+					+ "        System.out.println(string);\r\n"
+					+ "      }\r\n"
+					+ "     }\r\n");
 	
-		System.out.println("\nDado o código abaixo, pedimos com atenção que você observe, faça uma análise"
-				+ "\ndo código, e com base nos seus conhecimentos, responda qual alternativa está correta:\n");
+	System.out.println("\nEsse programa não pode ser compilado, pois :");
+
+			do {
+				Collections.shuffle(alternativa);
+				for (int i = 0; i < 5; i++) {
+					switch (i) {
+					case 0:
+						System.out.println("(A)" + alternativa.get(i));
+						break;
+					case 1:
+						System.out.println("(B)" + alternativa.get(i));
+						break;
+					case 2:
+						System.out.println("(C)" + alternativa.get(i));
+						break;
+					case 3:
+						System.out.println("(D)" + alternativa.get(i));
+						break;
+					case 4:
+						System.out.println("(E)" + alternativa.get(i));
+						break;
+					}
+				}
+				System.out.print("\nDigite sua resposta: ");
+				opcao = entrada.next();
+				Integer index = 0;
+				
+				switch (opcao.toLowerCase()) {
+
+				case "a":
+					index = 0;
+					break;
+				case "b":
+					index = 1;
+					break;
+				case "c":
+					index = 2;
+					break;
+				case "d":
+					index = 3;
+					break;
+				case "e":
+					index = 4;
+					break;
+				}
+
+				if (alternativa.get(index).equals(" Cadeias de caracteres devem ser delimitadas por aspas duplas.")) {
+					System.out.println("Resposta Correta");
+					sair = false;
+				} else {
+					System.out.println("Resposta incorreta\n");
+					cont++;
+					if (cont == 3) {
+						System.out.println("você errou " + cont + " vezes.");	
+						sair = false;
+					}
+				}
+			} while (sair);
+}
+
+	public static void questao4 () { // MARCOS C. *ATUALIZADA*
+		String opcao;
+		int cont = 0;
+		Boolean sair = true;
+		ArrayList<String> alternativa = new ArrayList<String>();
+		
+		alternativa.add("(A) 0 1 3");
+		alternativa.add("(B) 0 1 3 4");
+		alternativa.add("(C) 0 1 2 3 ");
+		alternativa.add("(D) 0 1 2 3 4");
+		alternativa.add("(E) Nenhuma das alternativas");
+		
+		System.out.println("Java é uma tecnologia de desenvolvimento, sendo simultaneamente, uma\n"
+				+ "linguagem e uma plataforma. Nesse contexto, apresenta-se o código a seguir.\r\n"
+				+ "\npublic class teste {\r\n"
+				+ "\r\n"
+				+ "public static void main(String[] args) {\r\n"
+				+ "\r\n"
+				+ "for (int i = 0; i <= 4; i++) {\r\n"
+				+ "if (i == 2);\r\n"
+				+ "System.out.println(i);\r\n"
+				+ "   }\r\n"
+				+ "  }\r\n"
+				+ "}\r\n"
+
+				+ "\nApós a execução, a saída gerada será:\r\n"
+				+ "");
 
 		do {
-			Collections.shuffle(alternativa);
 			
 			for (int i = 0; i < 5; i++) {
 				switch (i) {
 				case 0:
-					System.out.println("(A)" + alternativa.get(i));
+					System.out.println(alternativa.get(i));
 					break;
 				case 1:
-					System.out.println("(B)" + alternativa.get(i));
+					System.out.println(alternativa.get(i));
 					break;
 				case 2:
-					System.out.println("(C)" + alternativa.get(i));
+					System.out.println(alternativa.get(i));
 					break;
 				case 3:
-					System.out.println("(D)" + alternativa.get(i));
+					System.out.println(alternativa.get(i));
 					break;
 				case 4:
-					System.out.println("(E)" + alternativa.get(i));
+					System.out.println(alternativa.get(i));
 					break;
 				}
 			}
 			
-			System.out.println("\nDigite sua resposta: ");
+			System.out.print("\nDigite sua resposta: ");
 			opcao = entrada.next();
 			Integer index = 0;
-		
+
 			switch (opcao.toLowerCase()) {
 
 			case "a":
@@ -857,86 +948,8 @@ public class Algoritimotrix {
 				index = 4;
 				break;
 			}
-			
-			if (alternativa.get(index).equals(" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.")) {
-				System.out.println("Resposta Correta");
-				sair = true;
-			} else {
-				System.out.println("Resposta incorreta\n");
-				cont++;
-				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");	
-					sair = true;
-				}
-			}
-			
-		} while (!sair);
-	}
 
-	public static void questao5 () { //DAIARA  * ATUALIZADA*
-
-
-		String opcao;
-		boolean sair = true;
-		int cont = 0;
-		ArrayList<String> alternativa = new ArrayList<String>();
-		alternativa.add(" Uma sequência não lógica e infinita");
-		alternativa.add(" Uma sequência lógica e finita");
-		alternativa.add(" Uma sequência lógica e infinita"); // CORRETA
-		alternativa.add(" Uma sequência variavel");
-		alternativa.add(" Nenhuma das alternativas está correta\n");
-
-		System.out.println("\nAssinale a alternativa correta");
-	
-		System.out.println("\nUm algoritmo é:\n");
-
-		do {
-			Collections.shuffle(alternativa);
-			
-			for (int i = 0; i < 5; i++) {
-				switch (i) {
-				case 0:
-					System.out.println("(A)" + alternativa.get(i));
-					break;
-				case 1:
-					System.out.println("(B)" + alternativa.get(i));
-					break;
-				case 2:
-					System.out.println("(C)" + alternativa.get(i));
-					break;
-				case 3:
-					System.out.println("(D)" + alternativa.get(i));
-					break;
-				case 4:
-					System.out.println("(E)" + alternativa.get(i));
-					break;
-				}
-			}
-			
-			System.out.println("\nDigite sua resposta: ");
-			opcao = entrada.next();
-			Integer index = 0;
-		
-			switch (opcao.toLowerCase()) {
-
-			case "a":
-				index = 0;
-				break;
-			case "b":
-				index = 1;
-				break;
-			case "c":
-				index = 2;
-				break;
-			case "d":
-				index = 3;
-				break;
-			case "e":
-				index = 4;
-				break;
-			}
-			
-			if (alternativa.get(index).equals(" Uma sequência lógica e infinita")) {
+			if (alternativa.get(index).equals("(D) 0 1 2 3 4")) {
 				System.out.println("Resposta Correta");
 				sair = false;
 			} else {
@@ -947,9 +960,49 @@ public class Algoritimotrix {
 					sair = false;
 				}
 			}
-			
+
 		} while (sair);
 	}
+	
+	public static void questao5 () {
+
+		
+
+				System.out.println("Assinale a alternativa correta");
+				System.out.println("Um algoritmo é: \n");
+
+				System.out.println(" (a)Uma sequência não lógica e infinita");
+				System.out.println(" (b)Uma sequência lógica e finita ");
+				System.out.println(" (c)Uma sequência lógica e infinita");
+				System.out.println(" (d)Uma sequência variavel");
+				System.out.println(" (e)Nenhuma das alternativas está correta\n");
+				System.out.print("Digite sua resposta: \n");
+				String algoritmo = entrada.next();
+
+				switch (algoritmo) {
+				case "a":
+					System.out.println(" (a) alternativa incorreta.");
+					break;
+				case "b":
+					System.out.println(" (b) alternativa incorreta.");
+					break;
+				case "c":
+					System.out.println(" (c) Parabéns alternativa correta!! ");
+					break;
+				case "d":
+					System.out.println(" (d) alternativa incorreta.");
+					break;
+				case "e":
+					System.out.println(" (e) alternativa incorreta.");
+					break;
+					
+				default:
+					System.out.println("Alternativa incorreta!!!");
+					
+
+				}
+			}
+
 	public static void questao6 () {
 		//Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste, Calcular e escrever o valor do novo salário.
 		
@@ -1124,6 +1177,7 @@ public class Algoritimotrix {
 	}
 	
 	public static void questao9() { // ELVIS W. *ATUALIZADA*
+
 		String opcao;
 		boolean sair = true;
 		int cont = 0;
@@ -1202,142 +1256,51 @@ public class Algoritimotrix {
 		} while (sair);
 
 	}
-    
-	public static void questao3()throws InterruptedException { // MARCOS C. *ATUALIZADA*
-		
+
+	public static void questao10() { // ELVIS W. *ATUALIZADA*
+
 		String opcao;
+		boolean sair = false;
 		int cont = 0;
-		Boolean sair = true;
 		ArrayList<String> alternativa = new ArrayList<String>();
+		alternativa.add(" Enquanto N for menor que 10, a condição booleana será TRUE e vai sair do laço repetitivo.");// CORRETA
+		alternativa.add(" Quando N for maior que 10, a condição booleana será !TRUE e ele saíra do laço repetitivo.");
+		alternativa.add(" Esse código não irá funcionar, pois tem um erro.");
+		alternativa.add(" N.D.A.");
+		alternativa.add(" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.");
 
-			alternativa.add(" Variáveis não podem ser nomeadas com a palavra “string”.");
-			alternativa.add(" O método main não pode ser declarado como “static”.");
-			alternativa.add(" Cadeias de caracteres devem ser delimitadas por aspas duplas.");
-			alternativa.add(" Não foi especificado um valor de retorno para o método.");
-			alternativa.add(" O método main não pode ser declarado como “public”.");
-			
-	System.out.println("Considere o programa Java a seguir:\r\n"
-					+ "  \n public class Classe {\r\n"
-					+ "       public static void main(String[] args) {\r\n"
-					+ "        String string = 'xyzk';\r\n"
-					+ "        System.out.println(string);\r\n"
-					+ "      }\r\n"
-					+ "     }\r\n");
+		System.out.println("\nAssinale a alternativa correta");
 	
-	System.out.println("\nEsse programa não pode ser compilado, pois :");
-
-			do {
-				Collections.shuffle(alternativa);
-				for (int i = 0; i < 5; i++) {
-					switch (i) {
-					case 0:
-						System.out.println("(A)" + alternativa.get(i));
-						break;
-					case 1:
-						System.out.println("(B)" + alternativa.get(i));
-						break;
-					case 2:
-						System.out.println("(C)" + alternativa.get(i));
-						break;
-					case 3:
-						System.out.println("(D)" + alternativa.get(i));
-						break;
-					case 4:
-						System.out.println("(E)" + alternativa.get(i));
-						break;
-					}
-				}
-				System.out.print("\nDigite sua resposta: ");
-				opcao = entrada.next();
-				Integer index = 0;
-				
-				switch (opcao.toLowerCase()) {
-
-				case "a":
-					index = 0;
-					break;
-				case "b":
-					index = 1;
-					break;
-				case "c":
-					index = 2;
-					break;
-				case "d":
-					index = 3;
-					break;
-				case "e":
-					index = 4;
-					break;
-				}
-
-				if (alternativa.get(index).equals(" Cadeias de caracteres devem ser delimitadas por aspas duplas.")) {
-					System.out.println("Resposta Correta");
-					sair = false;
-				} else {
-					System.out.println("Resposta incorreta\n");
-					cont++;
-					if (cont == 3) {
-						System.out.println("você errou " + cont + " vezes.");	
-						sair = false;
-					}
-				}
-			} while (sair);
-}
-	
-	public static void questao4 () throws InterruptedException { // MARCOS C. *ATUALIZADA*
-		String opcao;
-		int cont = 0;
-		Boolean sair = true;
-		ArrayList<String> alternativa = new ArrayList<String>();
-		
-		alternativa.add("(A) 0 1 3");
-		alternativa.add("(B) 0 1 3 4");
-		alternativa.add("(C) 0 1 2 3 ");
-		alternativa.add("(D) 0 1 2 3 4");
-		alternativa.add("(E) Nenhuma das alternativas");
-		
-		System.out.println("Java é uma tecnologia de desenvolvimento, sendo simultaneamente, uma\n"
-				+ "linguagem e uma plataforma. Nesse contexto, apresenta-se o código a seguir.\r\n"
-				+ "\npublic class teste {\r\n"
-				+ "\r\n"
-				+ "public static void main(String[] args) {\r\n"
-				+ "\r\n"
-				+ "for (int i = 0; i <= 4; i++) {\r\n"
-				+ "if (i == 2);\r\n"
-				+ "System.out.println(i);\r\n"
-				+ "   }\r\n"
-				+ "  }\r\n"
-				+ "}\r\n"
-
-				+ "\nApós a execução, a saída gerada será:\r\n"
-				+ "");
+		System.out.println("\nDado o código abaixo, pedimos com atenção que você observe, faça uma análise"
+				+ "\ndo código, e com base nos seus conhecimentos, responda qual alternativa está correta:\n");
 
 		do {
+			Collections.shuffle(alternativa);
 			
 			for (int i = 0; i < 5; i++) {
 				switch (i) {
 				case 0:
-					System.out.println(alternativa.get(i));
+					System.out.println("(A)" + alternativa.get(i));
 					break;
 				case 1:
-					System.out.println(alternativa.get(i));
+					System.out.println("(B)" + alternativa.get(i));
 					break;
 				case 2:
-					System.out.println(alternativa.get(i));
+					System.out.println("(C)" + alternativa.get(i));
 					break;
 				case 3:
-					System.out.println(alternativa.get(i));
+					System.out.println("(D)" + alternativa.get(i));
 					break;
 				case 4:
-					System.out.println(alternativa.get(i));
+					System.out.println("(E)" + alternativa.get(i));
 					break;
 				}
 			}
 			
-			System.out.print("\nDigite sua resposta: ");
+			System.out.println("\nDigite sua resposta: ");
 			opcao = entrada.next();
 			Integer index = 0;
-
+		
 			switch (opcao.toLowerCase()) {
 
 			case "a":
@@ -1356,20 +1319,20 @@ public class Algoritimotrix {
 				index = 4;
 				break;
 			}
-
-			if (alternativa.get(index).equals("(D) 0 1 2 3 4")) {
+			
+			if (alternativa.get(index).equals(" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.")) {
 				System.out.println("Resposta Correta");
-				sair = false;
+				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
 				cont++;
 				if (cont == 3) {
 					System.out.println("você errou " + cont + " vezes.");	
-					sair = false;
+					sair = true;
 				}
 			}
-
-		} while (sair);
+			
+		} while (!sair);
 	}
 
 	public static void sair() {
