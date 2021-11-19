@@ -1301,7 +1301,7 @@ public class Algoritimotrix {
 	
 	public static void questao4() throws InterruptedException {
 
-		Scanner entrada = new Scanner(System.in);
+		
 		String opcao;
 		Boolean resposta = true;
 		
@@ -1335,7 +1335,7 @@ public class Algoritimotrix {
 		do {
 
 
-			for (int i = 0; i < 3; i++) {
+			for (int i = 0; i < 5; i++) {
 				switch (i) {
 				case 0:
 					System.out.println(alternativa.get(i));
