@@ -32,7 +32,7 @@ public class Algoritimotrix {
 		return nome;
 	}
 	
-	public static void menu() throws InterruptedException {
+	public static void menu() throws InterruptedException { // MENU
 
 		Scanner entrada = new Scanner(System.in);
 		String sair, sim = "1", nao = "2";
@@ -96,7 +96,7 @@ public class Algoritimotrix {
 
 	}
 
-	public static void creditos() throws InterruptedException {
+	public static void creditos() throws InterruptedException { // CRÉDITOS
 		tempo();
 		System.out.println("\n						CRÉDITOS");
 		tempo();
