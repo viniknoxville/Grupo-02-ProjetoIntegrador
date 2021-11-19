@@ -1177,7 +1177,7 @@ public class Algoritimotrix {
 
 	}
     
-	public static void questaostring()throws InterruptedException {
+	public static void questaostring()throws InterruptedException { // Marcos Caetano
 		
 		String alt[] = { "A) ", "B) ", "C) ", "D) ", "E) " };
 			int cont1 = 0, pontos1 =	 0;
