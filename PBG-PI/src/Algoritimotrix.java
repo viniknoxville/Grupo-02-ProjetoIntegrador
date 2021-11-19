@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-// teste
-// teste 2
 
 public class Algoritimotrix {
 	// VARIÁVEIS GLOBAIS
@@ -18,8 +16,6 @@ public class Algoritimotrix {
 	static String nome = ""; // NOME DO USUÁRIO
 	
 	static int pontosFinais = 30;
-	
-	//teste marcos
 	
 	// MÉTODOS E FUNÇÕES
 	public static void entradaNome() {
@@ -728,7 +724,43 @@ public class Algoritimotrix {
 
 		} while (!sair1);
 	}
+	
+	public static void questao5 () {
 
+				System.out.println("Assinale a alternativa correta");
+				System.out.println("Um algoritmo é: ");
+				String algoritmo = entrada.next();
+
+				System.out.println(" (a)Uma sequência não lógica e infinita");
+				System.out.println(" (b)Uma sequência lógica e finita ");
+				System.out.println(" (c)Uma sequência lógica e infinita");
+				System.out.println(" (d)Uma sequência variavel");
+				System.out.println(" (e)Nenhuma das alternativas está correta");
+
+				switch (algoritmo) {
+				case "a":
+					System.out.println(" (a) alternativa incorreta.");
+					break;
+				case "b":
+					System.out.println(" (b) alternativa incorreta.");
+					break;
+				case "c":
+					System.out.println(" (c) Parabéns alternativa correta!! ");
+					break;
+				case "d":
+					System.out.println(" (d) alternativa incorreta.");
+					break;
+				case "e":
+					System.out.println(" (e) alternativa incorreta.");
+					break;
+					
+				default:
+					System.out.println("Alternativa incorreta!!!");
+					
+
+				}
+			}
+	
 	public static void questaoFor() {
 		String alt[] = { "A) ", "B) ", "C) ", "D) ", "E) " };
 		int cont = 0;
