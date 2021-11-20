@@ -15,13 +15,6 @@ public class Algoritimotrix {
 	static int pontosFinais = 55; // MÍNIMO DEPONTUAÇÃO
 
 	// MÉTODOS E FUNÇÕES
-	public static void entradaNome() {
-
-		System.out.println();
-		System.out.print("\nInsira seu primeiro nome para sabermos quem você é, e dar início à esta aventura: ");
-		nomeUsuario();
-	}
-
 	public static String nomeUsuario() {
 
 		nome = entrada.nextLine();
@@ -43,7 +36,7 @@ public class Algoritimotrix {
 		boolean saida = false;
 		String[] opcaoMenu = { "1 - Jogar		", "2 - Instruções		", "3 - Crédito		", "4 - Sair		" };
 		do {
-			System.out.println("\t\t________________________________________________");
+			System.out.println("\n\t\t________________________________________________");
 			System.out.println("\t\t|						|");
 			System.out.println("\t\t|		     M E N U  			|");
 			System.out.println("\t\t|						|");
@@ -609,6 +602,9 @@ public class Algoritimotrix {
 
 	public static void jogar() throws InterruptedException {
 		tempo();
+		System.out.println();
+		System.out.print("\nInsira seu primeiro nome para sabermos quem você é, e dar início à esta aventura: ");
+		nomeUsuario();
 		tempo();
 		System.out.println("\nL O A D I N G  . . .\n");
 		System.out.println("\nATENÇÃO, ESTAMOS ENTRANDO EM DIGITAL WORLD . . .");
@@ -651,6 +647,8 @@ public class Algoritimotrix {
 			switch (resposta) {
 			case "1":
 				historia();
+				System.out.print("\n\n");
+				capitulo1();
 				sair = true;
 				break;
 			case "2":
