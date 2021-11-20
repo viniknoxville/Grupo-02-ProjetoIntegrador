@@ -97,6 +97,19 @@ public class Algoritimotrix {
 
 	}
 
+	public static void historia() throws InterruptedException {
+		
+		sysout("\nDIGITAL WORLD é um planeta totalmente digital e conectado que fica localizado na galáxia A23.", TimeUnit.MILLISECONDS, timer);
+		sysout("\nSomos um povo multicultural, falamos diversas linguagens de programação e estamos em constante ", TimeUnit.MILLISECONDS, timer);
+		sysout("\ndesenvolvimento. Nosso planeta participou das guerras galácticas e conseguimos frear o avanço do", TimeUnit.MILLISECONDS, timer);
+		sysout("\nimpério dark, que tinham como missão acabar com o avanço tecnológico e impor dominação sobre", TimeUnit.MILLISECONDS, timer);
+		sysout("\nmundos, galáxias e povos!", TimeUnit.MILLISECONDS, timer);
+		sysout("\nA grande CPU é responsável por guardar o HD supremo que é responsável por armazenar todos ", TimeUnit.MILLISECONDS, timer);
+		sysout("\nos dados e informações do nosso planeta desde muito antes dos antigos povos de Gaia a fim", TimeUnit.MILLISECONDS, timer);
+		sysout("\nde garantir o backup para que possamos passar por atualizações e manutenções com segurança. ", TimeUnit.MILLISECONDS, timer);
+		sysout("\nSem o HD Supremo fica inviável manter o planeta atualizado e a vida em digital world acaba.", TimeUnit.MILLISECONDS, timer);
+	
+	}
 
 	public static void creditos() throws InterruptedException { // CRÉDITOS
 		tempo();
@@ -637,7 +650,8 @@ public class Algoritimotrix {
 			String resposta = entrada.next();
 			switch (resposta) {
 			case "1":
-				
+				historia();
+				sair = true;
 				break;
 			case "2":
 				capitulo1();
