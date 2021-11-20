@@ -8,7 +8,8 @@ public class Algoritimotrix {
 	// VARIÁVEIS GLOBAIS
 	static Scanner entrada = new Scanner(System.in);
 	static boolean sair = false; // SAÍDA LAÇOS
-	static int pontos = 10; // SOMAR PONTUAÇÃO DOS JOGADORES
+	static int somaPontosJogo = 0; // SOMAR PONTUAÇÃO DOS JOGADORES
+	static int pontosPorQuestao = 10; // CADA QUESTÃO COMEÇA COM 10 PONTUAÇÃO
 	static int timer = 0; // TIMER DELAY NOS TEXTOS
 	static int erroQuestoes = 3; // QUANTIDADE MÁXIMA DE ERRO DAS QUESTÕES
 	static String nome = ""; // NOME DO USUÁRIO
@@ -348,7 +349,7 @@ public class Algoritimotrix {
 				System.out.println("\nVocê selecionou a opção 1");
 				System.out.println("Acaba de ganhar 5 pontos de experiência, siga para o Septo Sagrado!\n");
 				sair = true;
-				// pontos = pontos + 5;
+				somaPontosJogo = somaPontosJogo + 5;
 				break;
 			case "2":
 				System.out.println("\nVocê selecionou a opção 2");
@@ -359,13 +360,13 @@ public class Algoritimotrix {
 			case "3":
 				System.out.println("\nVocê selecionou a opção 3");
 				System.out.println("Acaba de perder 3 pontos de experiência. siga para o Septo Sagrado!\n");
-				// pontos = pontos - 3;
+				somaPontosJogo = somaPontosJogo - 3;
 				sair = true;
 				break;
 			case "4":
 				System.out.println("\nVocê selecionou a opção 4");
 				System.out.println("Acaba de ganhar 10 pontos de experiência, siga para o Septo Sagrado!\n");
-				// pontos = pontos + 10;
+				somaPontosJogo = somaPontosJogo + 10;
 				sair = true;
 				break;
 			case "5":
@@ -382,7 +383,7 @@ public class Algoritimotrix {
 		} while (!sair);
 	}
 
-	public static void capitulo1 () { // CAPITULO 1
+	public static void capitulo1 () throws InterruptedException { // CAPITULO 1
  		
  				System.out.println("- Capitulo 01 - Encontre o Oráculo\n");
  				
@@ -451,7 +452,7 @@ public class Algoritimotrix {
  				System.out.println("Oráculo: Siga para masmorra dos Orcs e encontrará o que procura!!!\n\n");
  	}
 
-	public static void capitulo2() { // CAPITULO 2
+	public static void capitulo2() throws InterruptedException { // CAPITULO 2
 
 		System.out.println("- Capitulo 02- Masmorra dos Orcs 02\n");
 		
@@ -527,7 +528,7 @@ public class Algoritimotrix {
 
 	}
 
-	public static void capitulo3() { // CAPITULO 3
+	public static void capitulo3() throws InterruptedException { // CAPITULO 3
 
 		System.out.println("- Capítulo 03 - Caminho de Kharkiv\n");
 		System.out.println("\n*Alpha aparece*\n");
@@ -584,7 +585,7 @@ public class Algoritimotrix {
 
 	}
 
-	public static void capitulo4() { // CAPITULO 4
+	public static void capitulo4() throws InterruptedException { // CAPITULO 4
 
 		System.out.println("- Capítulo 04 - Ultimato\n");
 
@@ -629,7 +630,7 @@ public class Algoritimotrix {
 				.println("O clã darkweb foi dissolvido e alguns membros fugiram para planetas e galaxias distantes...");
 		System.out.println("Mas enquanto a ameaça existir, estaremos de olhos bem abertos!");
 		System.out.println(". . .");
-		
+		tempo();
 		System.out.println("\n .           ..         .           .       .           .           .\r\n"
 				+ "      .         .            .          .       .\r\n"
 				+ "            .         ..xxxxxxxxxx....               .       .             .\r\n"
@@ -658,6 +659,7 @@ public class Algoritimotrix {
 				+ ".                                         .          .         .\r\n"
 				+ "\r\n"
 				+ "\n ");
+		tempo();
 		System.out.println(". . .");
 		System.out.println("Musica final >>> Moby - Porcelain: https://youtu.be/13EifDb4GYs");
 		
@@ -718,18 +720,22 @@ public class Algoritimotrix {
 		capitulo2();
 		capitulo3();
 		capitulo4();
-
-		if (pontos >= 55) {
+		
+		//SOMAR PONTOS
+		somaPontosJogo = somaPontosJogo;
+		if (somaPontosJogo >= pontosFinais) {
 			finalizaWinner();
-		} else {
+		} else if(somaPontosJogo <= pontosFinais) {
 			finalizaLoser();
 		}
+		System.out.println(somaPontosJogo);
 	}
 
 	public static void questao1() { // MATEUS CARNEIRO *ATUALIZADA*
 		String opcao;
 		sair = false;
 		int cont = 0;
+		int pontosq1 = 10;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" Cada instrução termina com um ponto e vírgula");
 		alternativa.add(
@@ -788,9 +794,11 @@ public class Algoritimotrix {
 
 			if (alternativa.get(index).equals(" A letra B e C estão incorretas")) {
 				System.out.println("Resposta Correta");
+				pontosq1 += 10;
 				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
+				pontosq1 -= 3;
 				cont++;
 				if (cont == 3) {
 					System.out.println("você errou " + cont + " vezes.");
@@ -799,12 +807,14 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
+		somaPontosJogo = somaPontosJogo + pontosq1;
 	}
 
 	public static void questao2() { // MATEUS CARNEIRO *ATUALIZADA*
 		String opcao;
 		sair = false;
 		int cont = 0;
+		int pontosq2 = 10;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" 10");
 		alternativa.add(" 5");
@@ -869,9 +879,11 @@ public class Algoritimotrix {
 
 			if (alternativa.get(index).equals(" 5")) {
 				System.out.println("Resposta Correta");
+				pontosq2 += 10;
 				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
+				pontosq2 -= 3;
 				cont++;
 				if (cont == 3) {
 					System.out.println("você errou " + cont + " vezes.");
@@ -880,6 +892,7 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
+		somaPontosJogo = somaPontosJogo + pontosq2;
 	}
 
 	public static void questao3() { // MARCOS C. *ATUALIZADA*
@@ -887,6 +900,7 @@ public class Algoritimotrix {
 		String opcao;
 		int cont = 0;
 		sair = false;
+		int pontosq3 = 10;
 		ArrayList<String> alternativa = new ArrayList<String>();
 
 		alternativa.add(" Variáveis não podem ser nomeadas com a palavra “string”.");
@@ -947,9 +961,11 @@ public class Algoritimotrix {
 
 			if (alternativa.get(index).equals(" Cadeias de caracteres devem ser delimitadas por aspas duplas.")) {
 				System.out.println("Resposta Correta");
+				pontosq3 += 10;
 				sair = false;
 			} else {
 				System.out.println("Resposta incorreta\n");
+				pontosq3 -= 3;
 				cont++;
 				if (cont == 3) {
 					System.out.println("você errou " + cont + " vezes.");
@@ -957,12 +973,14 @@ public class Algoritimotrix {
 				}
 			}
 		} while (sair);
+		somaPontosJogo = somaPontosJogo + pontosq3;
 	}
 
 	public static void questao4() { // MARCOS C. *ATUALIZADA*
 		String opcao;
 		int cont = 0;
 		sair = false;
+		int pontosq4 = 10;
 		ArrayList<String> alternativa = new ArrayList<String>();
 
 		alternativa.add("(A) 0 1 3");
@@ -1026,9 +1044,11 @@ public class Algoritimotrix {
 
 			if (alternativa.get(index).equals("(D) 0 1 2 3 4")) {
 				System.out.println("Resposta Correta");
+				pontosq4 += 10;
 				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
+				pontosq4 -= 3;
 				cont++;
 				if (cont == 3) {
 					System.out.println("você errou " + cont + " vezes.");
@@ -1037,6 +1057,7 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
+		somaPontosJogo = somaPontosJogo + pontosq4;
 	}
 
 	public static void questao5() { // DAIRA V. *ATUALIZADA*
@@ -1044,6 +1065,7 @@ public class Algoritimotrix {
 		String opcao;
 		sair = false;
 		int cont = 0;
+		int pontosq5 = 10;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" Uma sequência não lógica e infinita");
 		alternativa.add(" Uma sequência lógica e finita");
@@ -1103,9 +1125,11 @@ public class Algoritimotrix {
 
 			if (alternativa.get(index).equals(" Uma sequência lógica e infinita")) {
 				System.out.println("Resposta Correta");
+				pontosq5 += 10;
 				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
+				pontosq5 -= 3;
 				cont++;
 				if (cont == 3) {
 					System.out.println("você errou " + cont + " vezes.");
@@ -1114,23 +1138,88 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
+		somaPontosJogo = somaPontosJogo + pontosq5;
 	}
 
 	public static void questao6() { // DAIARA V. PRECISA REFAZER!!!
-		// Escreva um algoritmo para ler o salário mensal atual de um funcionário e o
-		// percentual de reajuste, Calcular e escrever o valor do novo salário.
+		
+		String opcao;
+		sair = false;
+		int cont = 0;
+		int pontosq6 = 10;
+		ArrayList<String> alternativa = new ArrayList<String>();
+		alternativa.add(" Uma sequência não lógica e infinita");
+		alternativa.add(" Uma sequência lógica e finita");
+		alternativa.add(" Uma sequência lógica e infinita"); // CORRETA
+		alternativa.add(" Uma sequência variavel");
+		alternativa.add(" Nenhuma das alternativas está correta");
 
-		System.out.println("digite o ano que deseja ser verificado");
-		int ano = entrada.nextInt();
+		System.out.println("\nAssinale a alternativa correta");
 
-		if (ano % 400 == 0 && ano % 4 == 0) {
-			System.out.println("ano bissexto!");
+		System.out.println("\nUm algoritmo é:\n");
 
-		} else if (ano % 100 != 0) {
-			System.out.println();
-			System.out.println("o ano não é bissexto!");
+		do {
+			Collections.shuffle(alternativa);
 
-		}
+			for (int i = 0; i < 5; i++) {
+				switch (i) {
+				case 0:
+					System.out.println("(A)" + alternativa.get(i));
+					break;
+				case 1:
+					System.out.println("(B)" + alternativa.get(i));
+					break;
+				case 2:
+					System.out.println("(C)" + alternativa.get(i));
+					break;
+				case 3:
+					System.out.println("(D)" + alternativa.get(i));
+					break;
+				case 4:
+					System.out.println("(E)" + alternativa.get(i));
+					break;
+				}
+			}
+
+			System.out.println("\nDigite sua resposta: ");
+			opcao = entrada.next();
+			Integer index = 0;
+
+			switch (opcao.toLowerCase()) {
+
+			case "a":
+				index = 0;
+				break;
+			case "b":
+				index = 1;
+				break;
+			case "c":
+				index = 2;
+				break;
+			case "d":
+				index = 3;
+				break;
+			case "e":
+				index = 4;
+				break;
+			}
+
+			if (alternativa.get(index).equals(" Uma sequência lógica e infinita")) {
+				System.out.println("Resposta Correta");
+				pontosq6 += 10;
+				sair = true;
+			} else {
+				System.out.println("Resposta incorreta\n");
+				pontosq6 -= 3;
+				cont++;
+				if (cont == 3) {
+					System.out.println("você errou " + cont + " vezes.");
+					sair = true;
+				}
+			}
+
+		} while (!sair);
+		somaPontosJogo = somaPontosJogo + pontosq6;
 	}
 
 	public static void questao7() { // MARCOS RIBEIRO *ATUALIZADA*
@@ -1138,6 +1227,7 @@ public class Algoritimotrix {
 		String opcao;
 		sair = false;
 		int cont = 0;
+		int pontosq7 = 10;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" reografia");
 		alternativa.add(" criptografia");
@@ -1198,9 +1288,11 @@ public class Algoritimotrix {
 
 			if (alternativa.get(index).equals(" pseudolinguagem")) {
 				System.out.println("Resposta Correta");
+				pontosq7 += 10;
 				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
+				pontosq7 -= 3;
 				cont++;
 				if (cont == 3) {
 					System.out.println("você errou " + cont + " vezes.");
@@ -1209,12 +1301,14 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
+		somaPontosJogo = somaPontosJogo + pontosq7;
 	}
 
 	public static void questao8() { // MARCOS RIBEIRO *ATUALIZADA*
 		String opcao;
 		sair = false;
 		int cont = 0;
+		int pontosq8 = 10;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" for, while, repeat");// CORRETA
 		alternativa.add(" repeat, case, for");
@@ -1275,9 +1369,11 @@ public class Algoritimotrix {
 
 			if (alternativa.get(index).equals(" for, while, repeat")) {
 				System.out.println("Resposta Correta");
+				pontosq8 += 10;
 				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
+				pontosq8 -= 3;
 				cont++;
 				if (cont == 3) {
 					System.out.println("você errou " + cont + " vezes.");
@@ -1286,6 +1382,7 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
+		somaPontosJogo = somaPontosJogo + pontosq8;
 
 	}
 
@@ -1294,6 +1391,7 @@ public class Algoritimotrix {
 		String opcao;
 		sair = false;
 		int cont = 0;
+		int pontosq9 = 10;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" Enquanto n for igual à 100, o laço só vai parar quando x for igual à 100.");
 		alternativa.add(" O laço vai se repitir, porém quando x for igual à 88, ele vai parar."); // CORRETA
@@ -1357,9 +1455,11 @@ public class Algoritimotrix {
 			if (alternativa.get(index)
 					.equals(" O laço vai se repitir, porém quando x for igual à 88, ele vai parar.")) {
 				System.out.println("Resposta Correta");
+				pontosq9 += 10;
 				sair = false;
 			} else {
 				System.out.println("Resposta incorreta\n");
+				pontosq9 -= 3;
 				cont++;
 				if (cont == 3) {
 					System.out.println("você errou " + cont + " vezes.");
@@ -1368,7 +1468,7 @@ public class Algoritimotrix {
 			}
 
 		} while (sair);
-
+		somaPontosJogo = somaPontosJogo + pontosq9;
 	}
 
 	public static void questao10() { // ELVIS W. *ATUALIZADA*
@@ -1376,6 +1476,7 @@ public class Algoritimotrix {
 		String opcao;
 		sair = false;
 		int cont = 0;
+		int pontosq10 = 10;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" Enquanto N for menor que 10, a condição booleana será TRUE e vai sair do laço repetitivo.");// CORRETA
 		alternativa.add(" Quando N for maior que 10, a condição booleana será !TRUE e ele saíra do laço repetitivo.");
@@ -1438,9 +1539,12 @@ public class Algoritimotrix {
 			if (alternativa.get(index).equals(
 					" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.")) {
 				System.out.println("Resposta Correta");
+				pontosq10 += 10;
+				
 				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
+				pontosq10 -= 3;
 				cont++;
 				if (cont == 3) {
 					System.out.println("você errou " + cont + " vezes.");
@@ -1449,6 +1553,7 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
+		somaPontosJogo = somaPontosJogo + pontosq10;
 	}
 
 	public static void finalizaWinner() throws InterruptedException { // GANHOU
