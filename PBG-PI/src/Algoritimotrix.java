@@ -92,15 +92,16 @@ public class Algoritimotrix {
 
 	public static void historia() throws InterruptedException {
 		
-		sysout("\nDIGITAL WORLD é um planeta totalmente digital e conectado que fica localizado na galáxia A23.", TimeUnit.MILLISECONDS, timer);
-		sysout("\nSomos um povo multicultural, falamos diversas linguagens de programação e estamos em constante ", TimeUnit.MILLISECONDS, timer);
+		sysout("\n Digital World é um planeta totalmente digital e conectado que fica localizado na galáxia A23,", TimeUnit.MILLISECONDS, timer);
+		sysout("\nsomos um povo multicultural, falamos diversas linguagens de programação e estamos em constante ", TimeUnit.MILLISECONDS, timer);
 		sysout("\ndesenvolvimento. Nosso planeta participou das guerras galácticas e conseguimos frear o avanço do", TimeUnit.MILLISECONDS, timer);
-		sysout("\nimpério dark, que tinham como missão acabar com o avanço tecnológico e impor dominação sobre", TimeUnit.MILLISECONDS, timer);
+		sysout("\nimpério dark, que tinha como missão acabar com o avanço tecnológico e impor dominação sobre", TimeUnit.MILLISECONDS, timer);
 		sysout("\nmundos, galáxias e povos!", TimeUnit.MILLISECONDS, timer);
-		sysout("\nA grande CPU é responsável por guardar o HD supremo que é responsável por armazenar todos ", TimeUnit.MILLISECONDS, timer);
+		sysout("\n A grande CPU é responsável por guardar o HD supremo que é encarregado de armazenar todos ", TimeUnit.MILLISECONDS, timer);
 		sysout("\nos dados e informações do nosso planeta desde muito antes dos antigos povos de Gaia a fim", TimeUnit.MILLISECONDS, timer);
-		sysout("\nde garantir o backup para que possamos passar por atualizações e manutenções com segurança. ", TimeUnit.MILLISECONDS, timer);
-		sysout("\nSem o HD Supremo fica inviável manter o planeta atualizado e a vida em digital world acaba.", TimeUnit.MILLISECONDS, timer);
+		sysout("\nde garantir o backup para que possamos passar por atualizações e manutenções com segurança.", TimeUnit.MILLISECONDS, timer);
+		sysout("\n Sem o HD Supremo fica inviável manter o planeta atualizado e a vida em Digital World acaba!", TimeUnit.MILLISECONDS, timer);
+		
 	
 	}
 
@@ -159,6 +160,22 @@ public class Algoritimotrix {
 		System.out.print("\n|					   MÚSICAS							|");
 		tempo();
 		System.out.print("\n|													|");
+		tempo();
+		System.out.print("\n|			Ki:Theory - Enjoy The Silence: https://youtu.be/l3cEWRdCI8w		               |");
+		tempo();
+		System.out.print("\n|			twenty one pilots - Stressed Out: https://youtu.be/pXRviuL6vMY            |");
+		tempo();
+		System.out.print("\n|			Radiohead - Nude: https://youtu.be/BbWBRnDK_AE		                         |");
+		tempo();
+		System.out.print("\n|			Moby - Porcelain: https://youtu.be/13EifDb4GYs							   |");
+		tempo();
+		System.out.print("\n|			LSD - Genius ft. Sia, Diplo, Labrinth: https://youtu.be/HhoATZ1Imtw		   |");
+		tempo();
+		System.out.print("\n|			Julian Casablancas - 11th Dimension: https://youtu.be/pl15PlIXHIk		   |");
+		tempo();
+		System.out.print("\n|			Daft Punk - One More Time: https://youtu.be/FGBhQbmPwH8					   |");
+		tempo();
+		System.out.print("\n|			The Weeknd & Ariana Grande - Save Your Tears (Remix): https://youtu.be/LIIDh-qI9oI						   |");
 		tempo();
 		System.out.print("\n|													|");
 		tempo();
@@ -260,29 +277,7 @@ public class Algoritimotrix {
 						+ " /_/    \\_\\______\\_____|\\____/|_|  \\_\\_____|  |_|  |_|  |_|\\____/  |_|  |_|  \\_\\_____/_/ \\_\\\r\n"
 						+ "                                                                                            \r\n"
 						+ "                                                                                            ");
-		tempo();
-		System.out.println("-\r\n\n\n"
-				+ "            .--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--.\r\n"
-				+ "           / .. \\.. \\.. \\.. \\.. \\.. \\.. \\.. \\.. \\.. \\.. \\.. \\.. \\.. \\.. \\.. \\\r\n"
-				+ "           \\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/ /\r\n"
-				+ "           \\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\r\n"
-				+ "           / /\\/ /`' /`' /`' /`' /`' /`' /`' /`' /`' /`' /`' /`' /`' /\\/ /\\\r\n"
-				+ "          / /\\ \\/`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'\\ \\/\\ \\\r\n"
-				+ "          \\ \\/\\ \\                                                    /\\ \\/ /\r\n"
-				+ "           \\/ /\\ \\                                                  / /\\/ /\r\n"
-				+ "           / /\\/ /     ESTÁ PRONTO PARA ESTE DESAFIO GALÁTICO ?     \\ \\/ /\\\r\n"
-				+ "          / /\\ \\/                                                    \\ \\/\\ \\\r\n"
-				+ "          \\ \\/\\ \\       VAMOS JUNTOS NESTA AVENTURA...               /\\ \\/ /\r\n"
-				+ "           \\/ /\\ \\                                                  / /\\/ /\r\n"
-				+ "           / /\\/ /                                                  \\ \\/ /\\\r\n"
-				+ "          / /\\ \\/                                                    \\ \\/\\ \\\r\n"
-				+ "          \\ \\/\\ \\.--..--..--..--..--..--..--..--..--..--..--..--..--./\\ \\/ /\r\n"
-				+ "           \\/ /\\/ ../ ../ ../ ../ ../ ../ ../ ../ ../ ../ ../ ../ ../ /\\/ /\r\n"
-				+ "           / /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\/ /\\\r\n"
-				+ "          / /\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\\r\n"
-				+ "          \\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `'\\ `' /\r\n"
-				+ "           `--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--");
-		tempo();
+		
 	}
 
 	public static void vilao() throws InterruptedException { // VILÃO
@@ -341,12 +336,12 @@ public class Algoritimotrix {
 				+ "\ntodos os planetas de toda a Galáxia, é ele quem devemos deter e isso não será uma tarefa fácil!\n");
 	}
 
-	public static void escolhaCapitulo1() { // ESCOLHA DO CAPITULO 1
+	public static void escolhaCapitulo1() { // ESCOLHA DO CAPITULO
 
 		String escolha;
 		sair = false;
 		do {
-			System.out.print("Digite o seu número: ");
+			System.out.print("\nEscolha seu número da sorte: ");
 			escolha = entrada.next();
 			switch (escolha) {
 			case "1":
@@ -357,12 +352,13 @@ public class Algoritimotrix {
 				break;
 			case "2":
 				System.out.println("\nVocê selecionou a opção 2");
-				System.out.println("Siga para o desfiladeiro codificado!\n");
+				System.out.println("Aqui está o link de uma música caso queira ouvir: < twenty one pilots: Stressed Out - https://youtu.be/pXRviuL6vMY >");
+				System.out.println("Siga para o Septo Sagrado!\n");
 				sair = true;
 				break;
 			case "3":
 				System.out.println("\nVocê selecionou a opção 3");
-				System.out.println("Acaba de perder 3 pontos.\n");
+				System.out.println("Acaba de perder 3 pontos de experiência. siga para o Septo Sagrado!\n");
 				// pontos = pontos - 3;
 				sair = true;
 				break;
@@ -374,8 +370,8 @@ public class Algoritimotrix {
 				break;
 			case "5":
 				System.out.println("\nVocê selecionou a opção 5");
-				System.out.println("Aqui está o link de uma música caso queira ouvir: link");
-				System.out.println("vamos seguindo...\n");
+				System.out.println("Aqui está o link de uma música caso queira ouvir: < Ki:Theory - Enjoy The Silence - https://youtu.be/l3cEWRdCI8w >");
+				System.out.println("Siga para o Septo Sagrado!\n");
 				sair = true;
 				break;
 			default:
@@ -390,27 +386,37 @@ public class Algoritimotrix {
  		
  				System.out.println("- Capitulo 01 - Encontre o Oráculo\n");
  				
- 				System.out.println("\n*Alpha aparece*\n");
+ 				System.out.println("      _    .  ,   .           .\r\n"
+ 						+ "    *  / \\_ *  / \\_      _  *        *   /\\'__        *\r\n"
+ 						+ "      /    \\  /    \\,   ((        .    _/  /  \\  *'.\r\n"
+ 						+ " .   /\\/\\  /\\/ :' __ \\_  `          _^/  ^/    `--.\r\n"
+ 						+ "    /    \\/  \\  _/  \\-'\\      *    /.' ^_   \\_   .'\\  *\r\n"
+ 						+ "  /\\  .-   `. \\/     \\ /==~=-=~=-=-;.  _/ \\ -. `_/   \\\r\n"
+ 						+ " /  `-.__ ^   / .-'.--\\ =-=~_=-=~=^/  _ `--./ .-'  `-\r\n"
+ 						+ "/___     `.  / /       `.~-^=-=~=^=.-'      '-._ `._\n");
+ 				
+ 				System.out.println("\n*Alpha aparece*\n"); 
+ 				
  				System.out.println("Alpha2: Não temos muito tempo, a próxima atualização do planeta se aproxima e sem o HD Supremo não temos como fazer o backup");
- 				System.out.println("Alpha2: Sem a atualização nosso planeta se tornara obsoleto, nossos sistemas de segurança entraram em colapso e a vida em Digital World chegara ao fim!!!");
+ 				System.out.println("Alpha2: Sem a atualização nosso planeta se tornara obsoleto, nossos sistemas de segurança entraram em colapso e a vida em Digital World chegará ao fim!!!");
  				System.out.println("Alpha2: Encontre o Oráculo no septo sagrado e veja através do cálice celestial a localização do clã darkweb!");
- 				System.out.println("Alpha2: Siga pela floresta dos Spams e tente a sorte ou vá pelo desfiladeiro codificado...");
+ 				System.out.println("Alpha2: Siga pela Floresta dos Spams e tente a sorte ou vá pelo Desfiladeiro Codificado...\n");
  				
  				// ESCOLHA ENTRE FLORESTA DOS SPAMS OU DESFILADEIRO CODIFICADO
  				boolean sair = false;
  				do {
- 				System.out.println("[1] Floresta dos spams | [2] Desfiladeiro codificado");
+ 				System.out.println("[1] Floresta dos spams | [2] Desfiladeiro codificado: ");
  				String escolha = entrada.next();
  				switch(escolha) {
  				case "1": // FLORESTA DOS SPAMS
  					System.out.println("Alhpa2: Olha só, parece que hoje é seu dia de sorte! Cuidado com os Spams!");
- 					System.out.println("Alhpa2: Digite um número natural de 1 a 5 e descubra sua sorte!  ");
+ 					System.out.println("Alhpa2: Digite um número de 1 a 5 e descubra sua sorte! ");
  					escolhaCapitulo1();
  					sair = true;
  				break;
  				case "2": // DESFILADEIRO CODIFICADO
  					System.out.println("Alpha2: No jogo da sorte a sobrevivência é uma roleta russa, bem-vindo ao Desfiladeiro Codificado!");
- 					System.out.println("Alpha2: A reposta certa levará você direto ao septo sagrado, você tem três tentativas para desbloquear a passagem.");
+ 					System.out.println("Alpha2: A resposta correta levará você direto ao Septo Sagrado, você tem três tentativas para desbloquear a passagem.");
  					// CHAMA QUESTÃO
  					questao5();
  					sair = true;
@@ -421,36 +427,65 @@ public class Algoritimotrix {
  				
  				} while (!sair);
  				
- 				System.out.println("\n" + nome + ", passamos pelo primeiro desafio...");
- 				System.out.println("\n*Agora começar a ficar um pouco mais difícil.*\n\n");
- 				System.out.println("\nReconectando ...\n\n");
+ 				System.out.println("\n" + nome + ", você passou pelo primeiro desafio...");
+ 			    System.out.println("\nReconectando...\n\n");
  				
- 				System.out.println("Alpha2: Chegamos ao septo sagrado. Não podia esperar menos de você!");
+ 				System.out.println("Alpha2: Chegamos ao Septo Sagrado, não poderia esperar menos de você!");
  				System.out.println("Alpha2: Encontre o Oráculo e veja através do Cálice Celestial...");
  				
- 				System.out.println("\n*Procurando o Oráculo*\n");
- 				
- 				System.out.println("\n*Oráculo aparece*\n\n");
- 				
- 				System.out.println("Oráculo: Ora, ora... Temos um visitante, o que te traz ao septo sagrado?");
+ 				System.out.println("\n*Procurando o Oráculo...*\n");
+ 						
+ 				System.out.println("Oráculo: Ora, ora... Temos um visitante, o que te tráz ao Septo Sagrado?");
  				System.out.println("Oráculo: Espere...");
  				System.out.println("Oráculo: Eu tenho a resposta para o que você procura, mas antes preciso testar seus conhecimentos!");
- 				System.out.println("Oráculo: Me responda:");
+ 				
  				// CHAMA QUESTÃO
  				questao2();
  				
- 				System.out.println("Oráculo: Resta uma pergunta, diga a resposta certa e encontre o seu destino.");
- 				System.out.println("Oráculo: Me responda: ");
+ 				System.out.println("\nOráculo: Resta uma pergunta, responda para encontrar o seu caminho...\n");
+ 				
  				// CHAMA QUESTÃO
  				questao9();
  				
- 				System.out.println("Oráculo: Ok, vamos seguir...");
- 				System.out.println("Oráculo: Siga para masmorra dos Orcs e encontrará o que procura!!!");
+ 				System.out.println("Oráculo: Ok, vamos proseguir...");
+ 				System.out.println("Oráculo: Siga para masmorra dos Orcs e encontrará o que procura!!!\n\n");
  	}
 
 	public static void capitulo2() { // CAPITULO 2
 
 		System.out.println("- Capitulo 02- Masmorra dos Orcs 02\n");
+		
+		System.out.println("\n .       ..       .\r\n"
+				+ "    |\\      ||      /|\r\n"
+				+ "    | \\     ||     / |\r\n"
+				+ "    |  \\    ||    /  |\r\n"
+				+ "    |  :\\___JL___/   |\r\n"
+				+ "    |  :|##XLJ: :|   |\r\n"
+				+ "    '\\ :|###||: X|  /'\r\n"
+				+ "      \\:|###||:X#| /\r\n"
+				+ "       |==========|\r\n"
+				+ "        |###XXX;;|\r\n"
+				+ "        |##XX:: :|\r\n"
+				+ "        |##Xn:: :|\r\n"
+				+ "        |##XU:: :|\r\n"
+				+ "        |##XX:: :|\r\n"
+				+ "        |##XX:: :|\r\n"
+				+ "        |##XX:: :|\r\n"
+				+ "        |##XX:: n|\r\n"
+				+ "        |##XX:: U|\r\n"
+				+ "        |##XX:: :|\r\n"
+				+ "        |##XX:: n|\r\n"
+				+ "        |##XX:: U|\r\n"
+				+ "        |##XX:: :|\r\n"
+				+ "        |##XX:: :|\r\n"
+				+ "        |##XX:: :|\r\n"
+				+ "        |##,_,: :|\r\n"
+				+ "        |./ T \\.:|\r\n"
+				+ "        || o|o |:|\r\n"
+				+ "        ||  |  |:|\r\n"
+				+ "      .============.\r\n"
+				+ "     .==============.\r\n"
+				+ "    .================.\n");
 
 		System.out.println(
 				"Alpha2: Pelo visto deu tudo certo com o Oráculo né? Enfim, a masmorra dos Orcs te espera, siga pelo caminho das pedras...");
@@ -462,23 +497,23 @@ public class Algoritimotrix {
 		System.out.println("\n*Algumas horas de caminhada...*\n");
 
 		System.out.println(
-				"Alpha2: A jornada foi longa, mas aqui estamos, encontre o Líder dos Orcs o mais rápido possível");
+				"Alpha2: A jornada foi longa, mas aqui estamos, encontre o Líder dos Orcs o mais rápido possível!");
 		System.out.println("\n*Orc avistado*\n");
 		System.out.println("Orc Vigilante: Qual o motivo da sua visita?");
 		System.out.println(nome
 				+ ": Preciso da ajuda do líder dos Orcs, o clâ darkweb roubou o hd supremo e estou em uma missão de resgate");
-		System.out.println("Orc Vigilante: Para entrar na masmorra, preciso testar suas habilidades! ");
-		System.out.println("Responda corretamente para encontrar o grande o líder");
+		System.out.println("Orc Vigilante: Para entrar na masmorra, preciso testar suas habilidades! \n");
 
 		// CHAMA QUESTÃO
 		questao3();
 
 		System.out.println(
-				"Orc Vigilante: Opa, o grande líder te espera, siga até a sala do trono e aguarde instruções");
+				"Orc Vigilante: Opa, o grande líder te espera, siga até a sala do trono e aguarde instruções\n");
+		
 		System.out.println("Lider dos Orcs: Qual o motivo da sua visita?");
 		System.out.println(nome + ": Preciso de ajuda para enfrentar o clã darkweb");
 		System.out.println("Lider dos Orcs: E por qual motivo eu ajudaria?");
-		System.out.println(nome + ": O grande Oráculo me enviou até aqui\"");
+		System.out.println(nome + ": O grande Oráculo me enviou até aqui...");
 		System.out.println(
 				"Lider dos Orcs: O grande Oráculo? Aquele que tudo vê e tudo sabe? Vejamos, antes de enviar um Orc nessa jornada, me responda...");
 
@@ -487,8 +522,8 @@ public class Algoritimotrix {
 		// Siga as instruções do Orc e encontre seu caminho
 
 		System.out.println(
-				"Lider dos Orcs: Hey! " + nome + ", leve Akin! Um dos Orcs da minha guarda pessoal, ele lhe será bastante útil");
-		System.out.println("Lider dos Orcs: Siga pela trilha de Kharkiv e lá encontrará o clã darkweb...");
+				"Lider dos Orcs: Hey! " + nome + ", leve Akin! Um dos Orcs da minha guarda pessoal, ele lhe será bastante útil!");
+		System.out.println("Lider dos Orcs: Siga pela trilha de Kharkiv e lá encontrará o clã darkweb...\n\n");
 
 	}
 
@@ -594,55 +629,75 @@ public class Algoritimotrix {
 				.println("O clã darkweb foi dissolvido e alguns membros fugiram para planetas e galaxias distantes...");
 		System.out.println("Mas enquanto a ameaça existir, estaremos de olhos bem abertos!");
 		System.out.println(". . .");
-		// ADICIONAR IMAGEMD E CARACTER DE OLHO
-		System.out.println();
+		
+		System.out.println("\n .           ..         .           .       .           .           .\r\n"
+				+ "      .         .            .          .       .\r\n"
+				+ "            .         ..xxxxxxxxxx....               .       .             .\r\n"
+				+ "    .             MWMWMWWMWMWMWMWMWMWMWMWMW                       .\r\n"
+				+ "              IIIIMWMWMWMWMWMWMWMWMWMWMWMWMWMttii:        .           .\r\n"
+				+ " .      IIYVVXMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWxx...         .           .\r\n"
+				+ "     IWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMx..\r\n"
+				+ "   IIWMWMWMWMWMWMWMWMWBY%ZACH%AND%OWENMWMWMWMWMWMWMWMWMWMWMWMWMx..        .\r\n"
+				+ "    \"\"MWMWMWMWMWM\"\"\"\"\"\"\"\".  .:..   .\"\"\"\"\"MWMWMWMWMWMWMWMWMWMWMWMWMWti.\r\n"
+				+ " .     \"\"   . `  .: . :. : .  . :.  .  . . .  \"\"\"\"MWMWMWMWMWMWMWMWMWMWMWMWMti=\r\n"
+				+ "        . .   :` . :   .  .'.' '....xxxxx...,'. '   ' .\"\"\"YWMWMWMWMWMWMWMWMWMW+\r\n"
+				+ "     ; . ` .  . : . .' :  . ..XXXXXXXXXXXXXXXXXXXXx.    `     . \"YWMWMWMWMWMWMW\r\n"
+				+ ".    .  .  .    . .   .  ..XXXXXXXXWWWWWWWWWWWWWWWWXXXX.  .     .     \"\"\"\"\"\"\"\r\n"
+				+ "        ' :  : . : .  ...XXXXXWWW\"   W88N88@888888WWWWWXX.   .   .       . .\r\n"
+				+ "   . ' .    . :   ...XXXXXXWWW\"    M88N88GGGGGG888^8M \"WMBX.          .   ..  :\r\n"
+				+ "         :     ..XXXXXXXXWWW\"     M88888WWRWWWMW8oo88M   WWMX.     .    :    .\r\n"
+				+ "           \"XXXXXXXXXXXXWW\"       WN8888WWWWW  W8@@@8M    BMBRX.         .  : :\r\n"
+				+ "  .       XXXXXXXX=MMWW\":  .      W8N888WWWWWWWW88888W      XRBRXX.  .       .\r\n"
+				+ "     ....  \"\"XXXXXMM::::. .        W8@889WWWWWM8@8N8W      . . :RRXx.    .\r\n"
+				+ "         ``...'''  MMM::.:.  .      W888N89999888@8W      . . ::::\"RXV    .  :\r\n"
+				+ " .       ..'''''      MMMm::.  .      WW888N88888WW     .  . mmMMMMMRXx\r\n"
+				+ "      ..' .            \"\"MMmm .  .       WWWWWWW   . :. :,miMM\"\"\"  : \"\"`    .\r\n"
+				+ "   .                .       \"\"MMMMmm . .  .  .   ._,mMMMM\"\"\"  :  ' .  :\r\n"
+				+ "               .                  \"\"MMMMMMMMMMMMM\"\"\" .  : . '   .        .\r\n"
+				+ "          .              .     .    .                      .         .\r\n"
+				+ ".                                         .          .         .\r\n"
+				+ "\r\n"
+				+ "\n ");
 		System.out.println(". . .");
+		System.out.println("Musica final >>> Moby - Porcelain: https://youtu.be/13EifDb4GYs");
+		
 
 	}
 
 	public static void jogar() throws InterruptedException {
 		tempo();
 		System.out.println();
-		System.out.print("\nInsira seu primeiro nome para sabermos quem você é, e dar início à esta aventura: ");
+		System.out.print("\nInsira seu nome para se conectar ao mundo de Digital World:  ");
 		nomeUsuario();
 		tempo();
 		System.out.println("\nL O A D I N G  . . .\n");
-		System.out.println("\nATENÇÃO, ESTAMOS ENTRANDO EM DIGITAL WORLD . . .");
 		tempo();
-		System.out.println("\nPERMISSÃO PARA ENTRAR NA GALÁXIA A23!\n");
-		tempo();
-		System.out.println("\nA G U A R D A N D O   P E R M I S S Ã O . . .\n");
-		tempo();
-		tempo();
-		System.out.println("\n\t\t\t			PERMISSÃO CONCEDIDA\n" + "\n\t\t\t		                 _..._\r\n"
-				+ "\t\t\t		               .'     '.\r\n" + "\t\t\t		              /`\\     /`\\    |\\\r\n"
-				+ "\t\t\t		             (__|     |__)|\\  \\\\  /|\r\n"
-				+ "\t\t\t		             (     \"     ) \\\\ || //\r\n"
-				+ "\t\t\t		              \\         /   \\\\||//\r\n"
-				+ "\t\t\t		               \\   _   /  |\\|`  /\r\n"
-				+ "\t\t\t		                '.___.'   \\____/\r\n"
-				+ "\t\t\t		                 (___)    (___)\r\n" + "\t\t\t		               /`     `\\  / /\r\n"
-				+ "\t\t\t		              |         \\/ /\r\n" + "\t\t\t		              | |     |\\  /\r\n"
-				+ "\t\t\t		              | |     | \"`\r\n" + "\t\t\t		              | |     |\r\n"
-				+ "\t\t\t		              | |     |\r\n" + "\t\t\t		              |_|_____|\r\n"
-				+ "\t\t\t		             (___)_____)\r\n" + "\t\t\t		             /    \\   |\r\n"
-				+ "\t\t\t		            /   |\\|   |\r\n" + "\t\t\t		           //||\\\\  Y  |\r\n"
-				+ "\t\t\t		          || || \\\\ |  |\r\n" + "\t\t\t		          |/ \\\\ |\\||  |\r\n"
-				+ "\t\t\t		              \\||__|__|\r\n" + "\t\t\t		               (___|___)\r\n"
-				+ "\t\t\t		          jgs  /   A   \\\r\n" + "\t\t\t		              /   / \\   \\\r\n"
-				+ "\t\t\t		             \\___/   \\___/");
+		System.out.println("~+\r\n"
+				+ "\r\n"
+				+ "                 *       +\r\n"
+				+ "           '                  |\r\n"
+				+ "       ()    .-.,=\"``\"=.    - o -\r\n"
+				+ "             '=/_       \\     |\r\n"
+				+ "          *   |  '=._    |\r\n"
+				+ "               \\     `=./`,        '\r\n"
+				+ "            .   '=.__.=' `='      *\r\n"
+				+ "   +                         +\r\n"
+				+ "        O      *        '       .\n\n");
 		tempo();
 
 		System.out.println(
-				"Alpha2: Olá nobre <" + nome + ">, seja bem-vindo ao Digital World eu sou uma inteligência artificial");
+				"Alpha2: Olá " + nome + ", seja bem-vindo a Digital World!");
 		System.out.println(
-				"Alpha2: Nosso mundo está em perigo, o clã darkweb roubou o HD supremo da grande CPU e precisamos da sua ajuda para recupera-lo!!!");
-		System.out.println("Alpha2: Antes de iniciar nossa aventura, gostaria de conhecer a história do nosso mundo?");
+				"Alpha2: Eu sou uma inteligência artificial e responsável por manter a ordem e o planeta atualizado e conectado!");
+		System.out.println(
+				"Alpha2: Nosso planeta está em perigo, o clã darkweb roubou o HD supremo da grande CPU e precisamos da sua ajuda para recupera-lo!!!");
+		System.out.println(
+				"Alpha2: Antes de iniciar nossa aventura, gostaria de conhecer a história do nosso planeta?");
 		
-		System.out.println("\n[1] - Sim, quero conhecer a história. | [2] - Não, quero aventura logo.");
+		System.out.println("\n[1] - SIM, quero conhecer a história. | [2] - Não, iniciar aventura.\n");
 		boolean sair = false;
 		do {
-			System.out.println("Digite sua resposta: ");
+			System.out.println("Qual sua escolha?: ");
 			String resposta = entrada.next();
 			switch (resposta) {
 			case "1":
@@ -1090,7 +1145,6 @@ public class Algoritimotrix {
 		alternativa.add(" engenharia estrudurada");
 		alternativa.add(" pseudolinguagem"); // CORRETA
 
-		System.out.println("\nAssinale a alternativa correta");
 
 		System.out.println("\nRelacionado à programação de computadores, um algoritmo, seja qual for a sua"
 				+ "\ncomplexidade e a linguagem de programação na qual será codificado, pode ser descrito por"
