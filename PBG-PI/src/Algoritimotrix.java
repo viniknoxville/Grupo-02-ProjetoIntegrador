@@ -1143,84 +1143,37 @@ public class Algoritimotrix {
 
 	public static void questao6() { // DAIARA V. PRECISA REFAZER!!!
 		
-		String opcao;
-		sair = false;
-		int cont = 0;
-		int pontosq6 = 10;
-		ArrayList<String> alternativa = new ArrayList<String>();
-		alternativa.add(" Uma sequência não lógica e infinita");
-		alternativa.add(" Uma sequência lógica e finita");
-		alternativa.add(" Uma sequência lógica e infinita"); // CORRETA
-		alternativa.add(" Uma sequência variavel");
-		alternativa.add(" Nenhuma das alternativas está correta");
+		System.out.println("Assinale a alternativa correta");
+		System.out.println("quais são os tipos de contantes existentes ? ");
+		String constantes = entrada.next();
+		
+		System.out.println(" (a)Objetiva, lógicas e reais ");
+		System.out.println(" (b)Numéricas, literais e lógicas "); //correta
+		System.out.println(" (c)Numericas, falsas e lógicas");
+		System.out.println(" (d)Literais, objetivas e lógica");
+		System.out.println(" (e)Nenhuma das alternativas está correta");
 
-		System.out.println("\nAssinale a alternativa correta");
-
-		System.out.println("\nUm algoritmo é:\n");
-
-		do {
-			Collections.shuffle(alternativa);
-
-			for (int i = 0; i < 5; i++) {
-				switch (i) {
-				case 0:
-					System.out.println("(A)" + alternativa.get(i));
-					break;
-				case 1:
-					System.out.println("(B)" + alternativa.get(i));
-					break;
-				case 2:
-					System.out.println("(C)" + alternativa.get(i));
-					break;
-				case 3:
-					System.out.println("(D)" + alternativa.get(i));
-					break;
-				case 4:
-					System.out.println("(E)" + alternativa.get(i));
-					break;
-				}
-			}
-
-			System.out.println("\nDigite sua resposta: ");
-			opcao = entrada.next();
-			Integer index = 0;
-
-			switch (opcao.toLowerCase()) {
-
-			case "a":
-				index = 0;
-				break;
-			case "b":
-				index = 1;
-				break;
-			case "c":
-				index = 2;
-				break;
-			case "d":
-				index = 3;
-				break;
-			case "e":
-				index = 4;
-				break;
-			}
-
-			if (alternativa.get(index).equals(" Uma sequência lógica e infinita")) {
-				System.out.println("Resposta Correta");
-				pontosq6 += 10;
-				sair = true;
-			} else {
-				System.out.println("Resposta incorreta\n");
-				pontosq6 -= 3;
-				cont++;
-				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");
-					sair = true;
-				}
-			}
-
-		} while (!sair);
-		somaPontosJogo = somaPontosJogo + pontosq6;
-	}
+		switch (constantes) {
+		case "a":
+			System.out.println(" (a) alternativa incorreta.");
+			break;
+		case "b":
+			System.out.println(" (b) Parabéns alternativa correta!! ");
+			break;
+		case "c":
+			System.out.println(" (c) alternativa incorreta.  ");
+			break;
+		case "d":
+			System.out.println(" (d) alternativa incorreta.");
+			break;
+		case "e":
+			System.out.println(" (e) alternativa incorreta.");
+			break;
+			
+		default:
+			System.out.println("Alternativa incorreta!!!");
+		}
+			
 
 	public static void questao7() { // MARCOS RIBEIRO *ATUALIZADA*
 
