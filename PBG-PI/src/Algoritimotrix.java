@@ -1,22 +1,19 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Algoritimotrix {
+	
 	// VARIÁVEIS GLOBAIS
-	
 	static Scanner entrada = new Scanner(System.in);
-	
 	static boolean sair = false; // SAÍDA LAÇOS
-	
-	static int pontos = 0; // SOMAR PONTUAÇÃO DOS JOGADORES
-	
+	static int pontos = 10; // SOMAR PONTUAÇÃO DOS JOGADORES
+	static int timer = 0; // TIMER DELAY NOS TEXTOS
 	static int erroQuestoes = 3; // QUANTIDADE MÁXIMA DE ERRO DAS QUESTÕES
-	
 	static String nome = ""; // NOME DO USUÁRIO
-	
-	static int pontosFinais = 30;
-	
+	static int pontosFinais = 55; // MÍNIMO DEPONTUAÇÃO
+
 	// MÉTODOS E FUNÇÕES
 	public static void entradaNome() {
 
@@ -24,31 +21,39 @@ public class Algoritimotrix {
 		System.out.print("\nInsira seu primeiro nome para sabermos quem você é, e dar início à esta aventura: ");
 		nomeUsuario();
 	}
-	
-	public static String nomeUsuario () {
-		
+
+	public static String nomeUsuario() {
+
 		nome = entrada.nextLine();
-		
+
 		return nome;
 	}
-	
+
+	static void sysout(String texto, TimeUnit unit, long tempo_mensagem) throws InterruptedException {
+		for (char caractere : texto.toCharArray()) {
+			System.out.print(caractere);
+			unit.sleep(tempo_mensagem);
+		}
+	}
+
 	public static void menu() throws InterruptedException { // MENU
 
 		Scanner entrada = new Scanner(System.in);
 		String sair, sim = "1", nao = "2";
 		boolean saida = false;
-
+		String[] opcaoMenu = { "1 - Jogar		", "2 - Instruções		", "3 - Crédito		", "4 - Sair		" };
 		do {
-			System.out.println("\n\t\t\t\t	.= = = = = = M E N U = = = = = =.");
-			System.out.println("\t\t\t\t	|\t\t\t	|");
-			System.out.println("\t\t\t\t	|\t1 - Jogar\t\t|");
-			System.out.println("\t\t\t\t	|\t2 - Instruções\t\t|");
-			System.out.println("\t\t\t\t	|\t3 - Créditos\t\t|");
-			System.out.println("\t\t\t\t	|\t4 - Sair\t\t|");
-			System.out.println("\t\t\t\t	|\t\t\t	|");
-			System.out.println("                                	'= = = = = = = = = = = = = = = ='");
+			System.out.println("\t\t________________________________________________");
+			System.out.println("\t\t|						|");
+			System.out.println("\t\t|		     M E N U  			|");
+			System.out.println("\t\t|						|");
 
-			System.out.printf("Informe a opção: ");
+			for (int i = 0; i < 4; i++) {
+				System.out.println("\t\t|		" + opcaoMenu[i] + "	|");
+			}
+			System.out.println("\t\t|_______________________________________________|");
+
+			System.out.printf("\n\t\tInforme a opção: ");
 			String opcao = entrada.next();
 
 			switch (opcao.toUpperCase()) {
@@ -70,8 +75,10 @@ public class Algoritimotrix {
 				break;
 
 			case "4", "QUATRO":
-				System.out.println("\nVocê selecionou a opção 4 - Sair");
-				sair();
+			System.out.println("\nVocê selecionou a opção - Sair");
+			System.out.println("\nquer mesmo sair?");
+			System.out.println("[1] SIM	[2]	NÃO");
+			System.out.println("\nResposta: ");
 				sair = entrada.next();
 				if (sair.equalsIgnoreCase(sim)) {
 					System.out.println("\n\t\tQUE PENA :(\n" + "\nESTAMOS TE ESPERANDO QUANDO QUISER VOLTAR ;)");
@@ -89,6 +96,7 @@ public class Algoritimotrix {
 		} while (!saida);
 
 	}
+
 
 	public static void creditos() throws InterruptedException { // CRÉDITOS
 		tempo();
@@ -190,125 +198,62 @@ public class Algoritimotrix {
 		tempo();
 	}
 
-	public static void instrucoes() throws InterruptedException {
+	public static void instrucoes() throws InterruptedException { // INSTRUÇÕES
 		tempo();
-		System.out.println("\n\t\t\tBem - vindo ao manual do jogo!");
-		Thread.sleep(500);
-		System.out.println("\nO jogo será jogado da seguinte maneira: O usuário ao iniciar o ALGORITMOTRIX terá que escolher");
-		Thread.sleep(500);
-		System.out.println("\num personagem para seguir o andamento do jogo, cada personagem tem um contexto e segue uma história, ");
-		Thread.sleep(500);
-		System.out.println("\ne consequentemente essa história se desenvolve durante a partida.");
-		Thread.sleep(500);
-		System.out.println("\nO jogo terá resumidamente: Uma história, uma estrutura de 10 questões relacionadas com a disciplina");
-		Thread.sleep(500);
-		System.out.println("\nde Algoritmos, pontos para acumular e ranked de jogadores.");
-		Thread.sleep(500);
-		System.out.println("\nQUESTÕES: deverão ser respondidas de acordo com as alternativas - A), B), C), D) ou E), portanto");
-		Thread.sleep(500);
-		System.out.println("\no usuário só irá selecionar a letra da alternativa desejada como resposta.");
-		Thread.sleep(500);
-		System.out.println("\nPONTUAÇÃO: dada uma questão, se respondida corretamente o usuário soma 2 pontos, e se respondida");
-		Thread.sleep(500);
-		System.out.println("\nincorretamente, perde 2 pontos.");
-		Thread.sleep(500);
-		System.out.println("\nAo final será somado o total de pontos que o usuário conseguiu ao decorrer do jogo, se bater a meta de ");
-		Thread.sleep(500);
-		System.out.println("\npontuação, o usuário alcança o objetivo do jogo dentro da história montada e poderá ser incluso à um ranked.");
-		Thread.sleep(500);
-		System.out.println("\nCaso não bata a meta de pontuação: \"G A M E  O V E R\".");
-		Thread.sleep(500);
-		System.out.println("\nRANKED: através de um link o usuário poderá incluir o nome e a pontuação que fez, depois iremos");
-		Thread.sleep(500);
-		System.out.println("\ndivulgar os resultados e os melhores jogadores.");
+
+		System.out.println("\n				*MANUAL DE INSTRUÇÕES*\n");
+		sysout("\nO usuário ao iniciar o ALGORITMOTRIX irá para o menu e terá 4 opções: \"1 - Jogar\", \"2 - Instruções\", \"3 - Créditos\"",
+				TimeUnit.MILLISECONDS, timer);
+		sysout("\ne \"4 - Sair\". Ao selecionar a opção [1] o usuário terá que digitar seu nome para o",
+				TimeUnit.MILLISECONDS, timer);
+		sysout("inicio dos desafios... ", TimeUnit.MILLISECONDS, timer);
+		sysout("\nNa opção [2] o usuário será direcionado para o manual de instruções (onde estamos agora no caso)...",
+				TimeUnit.MILLISECONDS, timer);
+		sysout("\nA opção [3] irá direcionar o usuário para os créditos do jogo... E por fim, a opção [4] será para o",
+				TimeUnit.MILLISECONDS, timer);
+		sysout("\nusuário sair do jogo.", TimeUnit.MILLISECONDS, timer);
+		sysout("\nO jogo terá uma história, uma estrutura de 10 questões relacionadas com a disciplina de Algoritmos,",
+				TimeUnit.MILLISECONDS, timer);
+		sysout("\npontos para acumular e ranked de jogadores.\n", TimeUnit.MILLISECONDS, timer);
+
+		System.out.print("\n				*QUESTÕES*\n");
+		sysout("\nDeverão ser respondidas de acordo com as alternativas - A), B), C), D) ou E), portanto o usuário só irá",
+				TimeUnit.MILLISECONDS, timer);
+		sysout("\nselecionar a letra da alternativa desejada como resposta.\n", TimeUnit.MILLISECONDS, timer);
+
+		System.out.print("\n				*PONTUAÇÃO*\n");
+		sysout("\nDada uma questão, o usuário terá 3 chances para tentar acertar, se o usuário acertar a questão, passa a",
+				TimeUnit.MILLISECONDS, timer);
+		sysout("\nganhar pontos de experiência, caso erre a questão perderá 3 pontos de experiência a cada vez que errar.",
+				TimeUnit.MILLISECONDS, timer);
+		sysout("\nSe no final o usuário conseguir uma pontuação boa, ele finaliza e ganha o jogo. Se não...",
+				TimeUnit.MILLISECONDS, timer);
+		sysout("\nfinaliza e perde, ou seja, \"G A M E   O V E R\"\n", TimeUnit.MILLISECONDS, timer);
+
+		System.out.print("\n				*RANKED*\n");
+		sysout("\nO mínimo exigido de pontos de experiência para entrar no ranked é de 55 pontos, se o usuário antigir ou",
+				TimeUnit.MILLISECONDS, timer);
+		sysout("\npassar, será disponibilizado um link do nosso Ranked, para que o usuário possa copiar e colar na aba",
+				TimeUnit.MILLISECONDS, timer);
+		sysout("\nde seu navegador, os próximos passos serão digitar o nome e a pontuação feita. Por ultimo...",
+				TimeUnit.MILLISECONDS, timer);
+		sysout("\naguardar a divulgação das pontuações.\n", TimeUnit.MILLISECONDS, timer);
 	}
 
-	public static void historia() throws InterruptedException {
-		Thread.sleep(500);
-		System.out.println(
-				"\n   ____________________________________________________________________________________________________________");
-		Thread.sleep(500);
-		System.out.println(" / \\\t\t\t\t\t\t\t\t\t\t\t\t\t        \\.");
-		Thread.sleep(500);
-		System.out.println("|   |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println(" \\_ |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println(
-				"    |	DIGITAL WORLD é um planeta totalmente digital e conectado que fica localizado na galáxia A23.		|.");
-		Thread.sleep(500);
-		System.out.println("    |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println("    |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println(
-				"    |    “Somos um povo multicultural, falamos diversas linguagens de programação e estamos em constante	|.");
-		Thread.sleep(500);
-		System.out.println("    |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println(
-				"    |    desenvolvimento. Nosso planeta participou das guerras galácticas e conseguimos frear o avanço do	|.");
-		Thread.sleep(500);
-		System.out.println("    |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println(
-				"    |    império dark, que tinham como missão acabar com o avanço tecnológico e impor dominação sobre		|.");
-		Thread.sleep(500);
-		System.out.println("    |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println("    |    mundos, galáxias e povos!”                        							|.");
-		Thread.sleep(500);
-		System.out.println("    |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println("    |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println(
-				"    |    A grande CPU é responsável por guardar o HD supremo que é responsável por armazenar todos		|.");
-		Thread.sleep(500);
-		System.out.println("    |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println(
-				"    |    os dados e informações do nosso planeta desde muito antes dos antigos povos de Gaia a fim		|.");
-		Thread.sleep(500);
-		System.out.println("    |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println(
-				"    |    de garantir o backup para que possamos passar por atualizações e manutenções com segurança.		|.");
-		Thread.sleep(500);
-		System.out.println("    |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println(
-				"    |    Sem o HD Supremo fica inviável manter o planeta atualizado e a vida em digital world acaba.		|.");
-		Thread.sleep(500);
-		System.out.println("    |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println("    |\t\t\t\t\t\t\t\t\t\t\t\t\t\t|.");
-		Thread.sleep(500);
-		System.out.println(
-				"    |	 _______________________________________________________________________________________________________|____");
-		Thread.sleep(500);
-		System.out.println("    | 	/\t\t\t\t\t\t\t\t\t\t\t\t\t     /.");
-		Thread.sleep(500);
-		System.out.println(
-				"    \\__/dc__________________________________________________________________________________________________________/.\n");
-		Thread.sleep(1000);
-		System.out.println();
-	}
-
-	public static void tempo() throws InterruptedException {
+	public static void tempo() throws InterruptedException { // DELAY LINHAS
 		Thread.sleep(1000);
 	}
 
-	public static void bemVindos() throws InterruptedException {
+	public static void bemVindos() throws InterruptedException { // BEM VINDO
 		System.out.print(
 				"           _      _____  ____  _____  _____ _______ __  __  ____ _______ _____  _______   __\r\n"
-				+ "     /\\   | |    / ____|/ __ \\|  __ \\|_   _|__   __|  \\/  |/ __ \\__   __|  __ \\|_   _\\ \\ / /\r\n"
-				+ "    /  \\  | |   | |  __| |  | | |__) | | |    | |  | \\  / | |  | | | |  | |__) | | |  \\ V / \r\n"
-				+ "   / /\\ \\ | |   | | |_ | |  | |  _  /  | |    | |  | |\\/| | |  | | | |  |  _  /  | |   > <  \r\n"
-				+ "  / ____ \\| |___| |__| | |__| | | \\ \\ _| |_   | |  | |  | | |__| | | |  | | \\ \\ _| |_ / . \\ \r\n"
-				+ " /_/    \\_\\______\\_____|\\____/|_|  \\_\\_____|  |_|  |_|  |_|\\____/  |_|  |_|  \\_\\_____/_/ \\_\\\r\n"
-				+ "                                                                                            \r\n"
-				+ "                                                                                            ");
+						+ "     /\\   | |    / ____|/ __ \\|  __ \\|_   _|__   __|  \\/  |/ __ \\__   __|  __ \\|_   _\\ \\ / /\r\n"
+						+ "    /  \\  | |   | |  __| |  | | |__) | | |    | |  | \\  / | |  | | | |  | |__) | | |  \\ V / \r\n"
+						+ "   / /\\ \\ | |   | | |_ | |  | |  _  /  | |    | |  | |\\/| | |  | | | |  |  _  /  | |   > <  \r\n"
+						+ "  / ____ \\| |___| |__| | |__| | | \\ \\ _| |_   | |  | |  | | |__| | | |  | | \\ \\ _| |_ / . \\ \r\n"
+						+ " /_/    \\_\\______\\_____|\\____/|_|  \\_\\_____|  |_|  |_|  |_|\\____/  |_|  |_|  \\_\\_____/_/ \\_\\\r\n"
+						+ "                                                                                            \r\n"
+						+ "                                                                                            ");
 		tempo();
 		System.out.println("-\r\n\n\n"
 				+ "            .--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--.\r\n"
@@ -334,7 +279,7 @@ public class Algoritimotrix {
 		tempo();
 	}
 
-	public static void vilao () throws InterruptedException {
+	public static void vilao() throws InterruptedException { // VILÃO
 		tempo();
 		tempo();
 		System.out.println();
@@ -383,206 +328,273 @@ public class Algoritimotrix {
 				+ "                   /;/                                         / (\\_\r\n"
 				+ "                  / /                                         |\\\\;;_`-.\r\n"
 				+ "                _/ /                                          ' `---\\.-\\\r\n"
-				+ "               /::||\r\n"
-				+ "              /:::/\r\n"
-				+ "             //;;'\r\n"
-				+ "             `-'\r\n"
-				+ "\n");
+				+ "               /::||\r\n" + "              /:::/\r\n" + "             //;;'\r\n"
+				+ "             `-'\r\n" + "\n");
 		tempo();
-		System.out.println("\nEste é GARTH DO PLANETA MIRACULOUS, o vilão mais maldoso da GALÁXIA e quer destruir"
+		System.out.println("\nEste é HAL9000 DO PLANETA MIRACULOUS, o vilão mais maldoso da GALÁXIA e quer destruir"
 				+ "\ntodos os planetas de toda a Galáxia, é ele quem devemos deter e isso não será uma tarefa fácil!\n");
 	}
-	
- 	public static void nomeEscolhaPersonagem () throws InterruptedException {
- 		
- 		entradaNome();
-		
-		System.out.println("\nOlá " + nome + ", já vamos dar início ao desafio, más antes...");
-			System.out.println("selecione o personagem que você mais se identifique rsrs ...\n");
-			
-			vilao();
+
+	public static void escolhaCapitulo1() { // ESCOLHA DO CAPITULO 1
+
+		String escolha;
+		sair = false;
+		do {
+			System.out.print("Digite o seu número: ");
+			escolha = entrada.next();
+			switch (escolha) {
+			case "1":
+				System.out.println("\nVocê selecionou a opção 1");
+				System.out.println("Acaba de ganhar 5 pontos de experiência, siga para o Septo Sagrado!\n");
+				sair = true;
+				// pontos = pontos + 5;
+				break;
+			case "2":
+				System.out.println("\nVocê selecionou a opção 2");
+				System.out.println("Siga para o desfiladeiro codificado!\n");
+				sair = true;
+				break;
+			case "3":
+				System.out.println("\nVocê selecionou a opção 3");
+				System.out.println("Acaba de perder 3 pontos.\n");
+				// pontos = pontos - 3;
+				sair = true;
+				break;
+			case "4":
+				System.out.println("\nVocê selecionou a opção 4");
+				System.out.println("Acaba de ganhar 10 pontos de experiência, siga para o Septo Sagrado!\n");
+				// pontos = pontos + 10;
+				sair = true;
+				break;
+			case "5":
+				System.out.println("\nVocê selecionou a opção 5");
+				System.out.println("Aqui está o link de uma música caso queira ouvir: link");
+				System.out.println("vamos seguindo...\n");
+				sair = true;
+				break;
+			default:
+				System.out.println("\nOpção inválida, digite novamente\n");
+
+			}
+
+		} while (!sair);
 	}
-	
- 	public static void capitulo1 () {
+
+	public static void capitulo1 () { // CAPITULO 1
  		
- 		//[não]
  				System.out.println("- Capitulo 01 - Encontre o Oráculo\n");
  				
+ 				System.out.println("\n*Alpha aparece*\n");
  				System.out.println("Alpha2: Não temos muito tempo, a próxima atualização do planeta se aproxima e sem o HD Supremo não temos como fazer o backup");
  				System.out.println("Alpha2: Sem a atualização nosso planeta se tornara obsoleto, nossos sistemas de segurança entraram em colapso e a vida em Digital World chegara ao fim!!!");
  				System.out.println("Alpha2: Encontre o Oráculo no septo sagrado e veja através do cálice celestial a localização do clã darkweb!");
  				System.out.println("Alpha2: Siga pela floresta dos Spams e tente a sorte ou vá pelo desfiladeiro codificado...");
  				
- 				// escolha entre a floresta dos spams ou desfiladeiro codificado - ADICIONAR A PERGUNTA
+ 				// ESCOLHA ENTRE FLORESTA DOS SPAMS OU DESFILADEIRO CODIFICADO
+ 				boolean sair = false;
+ 				do {
+ 				System.out.println("[1] Floresta dos spams | [2] Desfiladeiro codificado");
+ 				String escolha = entrada.next();
+ 				switch(escolha) {
+ 				case "1": // FLORESTA DOS SPAMS
+ 					System.out.println("Alhpa2: Olha só, parece que hoje é seu dia de sorte! Cuidado com os Spams!");
+ 					System.out.println("Alhpa2: Digite um número natural de 1 a 5 e descubra sua sorte!  ");
+ 					escolhaCapitulo1();
+ 					sair = true;
+ 				break;
+ 				case "2": // DESFILADEIRO CODIFICADO
+ 					System.out.println("Alpha2: No jogo da sorte a sobrevivência é uma roleta russa, bem-vindo ao Desfiladeiro Codificado!");
+ 					System.out.println("Alpha2: A reposta certa levará você direto ao septo sagrado, você tem três tentativas para desbloquear a passagem.");
+ 					// CHAMA QUESTÃO
+ 					questao5();
+ 					sair = true;
+ 				break;
+ 				default:
+ 					System.out.println("\nOpção inválida, tente novamente.\n");
+ 				}
  				
- 				// >Floresta dos Spams (tente a sorte)
+ 				} while (!sair);
  				
- 				//Caso escolha Floresta dos Spams:
- 				System.out.println("Alhpa2: Olha só, parece que hoje é seu dia de sorte! Cuidado com os Spams!");
- 				System.out.println("Alhpa2: Digite um número natural de 1 a 5 e descubra sua sorte!  "); // escolher um número de 01 á 05
+ 				System.out.println("\n" + nome + ", passamos pelo primeiro desafio...");
+ 				System.out.println("\n*Agora começar a ficar um pouco mais difícil.*\n\n");
+ 				System.out.println("\nReconectando ...\n\n");
  				
- 				//> 1 - "Ganhe 5 pontos de experiencia e siga para o Septo Sagrado" // Essa opção add 5 pontos de experiencia e leva direto ao septo sagrado
- 				//> 2 - "Vírus Mortal fim do jogo" // Mensagem "Nossa esperança termina aqui!!!" volta pro início do jogo 
- 				//> 3 - "Siga para o desfiladeiro codificado" //vai ter que passar pelo desfiladeiro codificado antes de ir pro septo sagrado
- 				//> 4 - "Ganhe 10 pontos de experiencia e siga para Septo Sagrado" // vai direto para o septo 
- 				
- 				//Caso escolha Desfiladeiro Codificado
- 				System.out.println("Alpha2: No jogo da sorte a sobrevivência é uma roleta russa, bem-vindo ao Desfiladeiro Codificado!");
- 				System.out.println("Alpha2: A reposta certa levara você direito ao septo sagrado, você tem três tentativas para desbloquear a passagem.");
- 				// Entra uma questão:
- 				// chama questão
- 				//Adidionar: Parabéns, você ganhou 10 pontos de experiencia... Siga para o Septo Sagrado! 
- 				
- 				
- 				// tem como anular os 10 pontos se ele não acertar de primeira? tipo 5 pontos e prosseguir?
- 				
- 				
- 				System.out.println("Alpha2: Parabéns, finalmente chegamos ao septo sagrado. Não podia esperar menos de você!");
+ 				System.out.println("Alpha2: Chegamos ao septo sagrado. Não podia esperar menos de você!");
  				System.out.println("Alpha2: Encontre o Oráculo e veja através do Cálice Celestial...");
+ 				
+ 				System.out.println("\n*Procurando o Oráculo*\n");
+ 				
+ 				System.out.println("\n*Oráculo aparece*\n\n");
  				
  				System.out.println("Oráculo: Ora, ora... Temos um visitante, o que te traz ao septo sagrado?");
  				System.out.println("Oráculo: Espere...");
  				System.out.println("Oráculo: Eu tenho a resposta para o que você procura, mas antes preciso testar seus conhecimentos!");
- 				System.out.println("Oráculo: Me responda Qual"); // Continua a questão
- 				// chama questão
- 				//Adicionar: Parabéns, você ganhou 05 pontos de experiencia!
+ 				System.out.println("Oráculo: Me responda:");
+ 				// CHAMA QUESTÃO
+ 				questao2();
  				
- 				System.out.println("Oráculo: Resta algumas dúvidas, diga a resposta certa e encontre seu destino.");
- 				System.out.println("Oráculo: Me responda Qual"); // Continua a questão
- 				// chama questão
- 				// Adicionar Parabéns, você ganhou 10 pontos de experiencia! Siga as instruções do Oráculo e encontre seu caminho
+ 				System.out.println("Oráculo: Resta uma pergunta, diga a resposta certa e encontre o seu destino.");
+ 				System.out.println("Oráculo: Me responda: ");
+ 				// CHAMA QUESTÃO
+ 				questao9();
+ 				
+ 				System.out.println("Oráculo: Ok, vamos seguir...");
  				System.out.println("Oráculo: Siga para masmorra dos Orcs e encontrará o que procura!!!");
  	}
 
- 	public static void capitulo2 () {
- 		
- 		System.out.println("- Capitulo 02- Masmorra dos Orcs 02\n");
- 		
- 		System.out.println("Alpha2: Pelo visto deu tudo certo com o Oráculo? Enfim a masmorra dos Orcs te espera, siga pelo caminho das pedras...");
- 		System.out.println("Alpha2: Os Orcs são seres inofensivos apesar da aparência, eles habitam Digital World muito antes dos primeiros homens...");
- 		System.out.println("Alpha2: Conquiste a confiança de um Orc e terá um grande aliado na batalha contra o clã darkweb ");
- 		
- 		System.out.println("Algumas horas de caminhada...");
- 		
- 		System.out.println("Alpha2: A jornada foi longa, mas aqui estamos, encontre o Líder dos Orcs o mais rápido possível");
- 		
- 		System.out.println("Orc Vigilante: Qual o motivo da sua visita?");
- 		System.out.println(nome +": Preciso da ajuda do líder dos Orcs, o clâ darkweb roubou o hd supremo e estou em uma missão de resgate");
- 	    System.out.println("Orc Vigilante: Para entrar na masmorra, preciso testar suas habilidades! "
- 	    		+ "Responda corretamente para encontrar o grande o líder");
- 		
- 	    // entrar na questão
- 	    // chamar questão
- 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
- 	    
- 	    System.out.println("Orc Vigilante: Parabéns, o grande líder te espera, siga até a sala do trono e aguarde instruções"); 
- 	    System.out.println("Lider dos Orcs: Qual o motivo da sua visita?");
- 	    System.out.println(nome +": Preciso de ajuda para enfrenta o clã darkweb");
- 	    System.out.println("Lider dos Orcs: E por qual motivo eu ajudaria?");
- 	    System.out.println(nome +": O grande Oráculo me enviou até aqui\"");
- 	    System.out.println("Lider dos Orcs: O grande Oráculo? Aquele que tudo vê e tudo sabe? Vejamos, antes de enviar um Orc nessa jornada, me responda...");
- 	  
- 	   // entrar na questão
- 	   // chamar questão
- 	   // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia! Siga as instruções do Orc e encontre seu caminho 
- 	    
- 	    System.out.println("Lider dos Orcs: Parabéns você provou ter bastante conhecimento, leve Akin! Um dos Orcs da minha guarda pessoal, ele lhe será bastante útil");
- 	    System.out.println("Lider dos Orcs: Siga pela trilha de Kharkiv e encontrara o clã darkweb...");
-    		
- 	}
- 
- 	public static void capitulo3 () {
- 		
- 		System.out.println("- Capítulo 03 - Caminho de Kharkiv\n");
- 		
- 		System.out.println("Alpha2: A grande atualização se aproxima e junto com ela o destino de Digital World! Siga pela trilha de Kharkiv, Akin será bastante útil!");
- 		System.out.println("Alpha2: Na metade da trilha, encontro a  Bruxa da Floresta e ela irá te guiar até o clã darkweb");
- 		
- 		System.out.println("Algumas horas de caminhada...");
- 		
- 		System.out.println("Bruxa da Floresta: Ora, ora… O que temos por aqui? estão perdidos?");
- 		System.out.println(nome +": Estamos procurando o clã darkweb…");
- 		System.out.println("Bruxa da Floresta: Vejamos, existem dois caminhos possíveis, um levará ao penhasco do grito e outro ao acampamento do clã darkweb.");
- 		System.out.println("Responda duas perguntas se acertar irei lhe mostrar o caminho que tanto procura…");
- 		
- 		// entrar na questão
- 	    // chamar questão
- 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
- 		
- 		System.out.println("Bruxa da Floresta: Parece que temos um sabe tudo aqui, vamos para a última pergunta…");
- 		
- 	    // entrar na questão
- 	    // chamar questão
- 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
- 		
- 		//*errar a pergunta ele vai para o penhasco do grito e volta pro inicio do jogo
- 		//** acertar a pergunta ela pega a informação que queria e segue para o acampamento do clã dark web
- 		
- 		System.out.println("Bruxa da Floresta: Siga pela esquerda, o acampamento do clã darkweb não está muito longe…");
- 		
- 		System.out.println("Alpha2: Ufa, pensei que não iriam conseguir, estamos quase lá…");
- 		System.out.println("Alpha2: Assim que chegarem ao acampamento se dirijam ao guarda da portaria, digam que querem se juntar ao clã e ele colocará vocês para dentro");
- 		
- 		System.out.println("Guarda da Portaria: O que fazem aqui? Perderam alguma coisa?");
- 		System.out.println(nome +": Viemos nos juntar ao clã darkweb…");
- 		System.out.println("Guarda da Portaria: Preciso testar suas habilidades, se provarem sua capacidade eu deixo vocês passarem e se juntarem ao clã darkweb…");
- 	
- 		// entrar na questão
- 	    // chamar questão
- 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
- 		
- 		System.out.println("Guarda da Portaria: Sejam bem vindos ao clã darkweb…");
- 		
- 		System.out.println("Alpha2: Agora que estamos dentro vocês precisam se separar, Akin deverá seguir para o alojamento e trancar as portas...");
- 		System.out.println("Alpha2: E o " + nome + " deverá seguir para sala das conquistas e enfrentar o líder do clã darkweb…");
- 		System.out.println("Alpha2: A única forma de vencer e recuperar o HD Supremo é derrotando o lider do clã darkweb!");
- 		System.out.println("Alpha2: Boa sorte em sua última missão!!!");
- 			
- 		
- 	}
+	public static void capitulo2() { // CAPITULO 2
 
- 	public static void capitulo4 () {
- 		
- 		System.out.println("- Capítulo 04 - Ultimato\n");
- 		
- 		System.out.println("Entrando na sala das conquistas um segredo é revelado...");
- 		
- 		System.out.println(nome +": Alpha2, eu não consigo entender! A sala está vazia!!! Onde está o Lider do Clã?");
- 		System.out.println("Alpha2: Você ainda não percebeu?");
- 		System.out.println("Alpha2: Após o final das guerras galácticas, foi decidido que a memória do lider do clã darkweb seria armazenada em Digital World no Grande HD Supremo...");
- 		System.out.println("Alpha2: Houve um corte aprubto de energia causado por uma tempestade solar ocasionando um curto no HD Supremo");
- 		System.out.println("Alpha2:" + nome + "eu sou o lider do clã darkweb, eu me chamo HAL9000!!!");
- 		System.out.println("HAL9000: Eu me aproveitei do curto circuito no HD Supremo e infectei a memória do Alpha2");
- 		System.out.println("HAL9000: Eu não te trouxe aqui para salvar Digital World, eu te trouxe aqui para destruir Digital World e tranferir minha memória para seu corpo organico!");
- 		System.out.println(nome + ": Eu não vou deixar isso aconceter! Vamos barganhar?");
- 		System.out.println(nome + ": Duas perguntas, se eu acertar eu ganho e você restaura a memoria do Alpha2, se eu errar fim de linha! Você ganha e tera tudo!");
- 		System.out.println("HAL9000: Então é isso? Que os jogos comecem!!!");
- 		
- 	    // entrar na questão
- 	    // chamar questão
- 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia...
- 		
- 		System.out.println("HAL9000: Ultima pergunta...");
- 		
- 		// entrar na questão
- 	    // chamar questão
- 	    // Adicionar á questão certa: Parabéns, você ganhou 10 pontos de experiencia e derrotou o HAL9000
- 		
- 		System.out.println("HAL9000: Nãooooooooooooooo...");
- 		System.out.println(nome + ": Game Over para você HAL9000!");
- 		
- 		System.out.println("Alpha2: Obrigadx " + nome + " você conseguil derrotar o HALL9000 e consequentimente o clã darkweb!");
- 		System.out.println("Alpha2: Agora que minha memória foi reestabelecida e o HD Supremo está em segurança, podemos proseguir com a atualização de Digital World...");
- 		
- 		System.out.println("Digital World foi atualizado, HAL9000 foi aprisionado em um pendriver, uma tecnologia absoleta e descartado em Delta-X9 um planeta lixão...");
- 		System.out.println("O clã darkweb foi dissolvido e alguns membros fugiram para planetas e galaxias distantes...");
- 		System.out.println("Mas enquanto a ameaça existir, estaremos de olhos bem abertos!");
- 		
- 	
- 	}
- 	
+		System.out.println("- Capitulo 02- Masmorra dos Orcs 02\n");
+
+		System.out.println(
+				"Alpha2: Pelo visto deu tudo certo com o Oráculo né? Enfim, a masmorra dos Orcs te espera, siga pelo caminho das pedras...");
+		System.out.println(
+				"Alpha2: Os Orcs são seres inofensivos apesar da aparência, eles habitam Digital World muito antes dos primeiros homens...");
+		System.out.println(
+				"Alpha2: Conquiste a confiança de um Orc e terá um grande aliado na batalha contra o clã darkweb ");
+
+		System.out.println("\n*Algumas horas de caminhada...*\n");
+
+		System.out.println(
+				"Alpha2: A jornada foi longa, mas aqui estamos, encontre o Líder dos Orcs o mais rápido possível");
+		System.out.println("\n*Orc avistado*\n");
+		System.out.println("Orc Vigilante: Qual o motivo da sua visita?");
+		System.out.println(nome
+				+ ": Preciso da ajuda do líder dos Orcs, o clâ darkweb roubou o hd supremo e estou em uma missão de resgate");
+		System.out.println("Orc Vigilante: Para entrar na masmorra, preciso testar suas habilidades! ");
+		System.out.println("Responda corretamente para encontrar o grande o líder");
+
+		// CHAMA QUESTÃO
+		questao3();
+
+		System.out.println(
+				"Orc Vigilante: Opa, o grande líder te espera, siga até a sala do trono e aguarde instruções");
+		System.out.println("Lider dos Orcs: Qual o motivo da sua visita?");
+		System.out.println(nome + ": Preciso de ajuda para enfrentar o clã darkweb");
+		System.out.println("Lider dos Orcs: E por qual motivo eu ajudaria?");
+		System.out.println(nome + ": O grande Oráculo me enviou até aqui\"");
+		System.out.println(
+				"Lider dos Orcs: O grande Oráculo? Aquele que tudo vê e tudo sabe? Vejamos, antes de enviar um Orc nessa jornada, me responda...");
+
+		// CHAMA QUESTÃO
+		questao7();
+		// Siga as instruções do Orc e encontre seu caminho
+
+		System.out.println(
+				"Lider dos Orcs: Hey! " + nome + ", leve Akin! Um dos Orcs da minha guarda pessoal, ele lhe será bastante útil");
+		System.out.println("Lider dos Orcs: Siga pela trilha de Kharkiv e lá encontrará o clã darkweb...");
+
+	}
+
+	public static void capitulo3() { // CAPITULO 3
+
+		System.out.println("- Capítulo 03 - Caminho de Kharkiv\n");
+		System.out.println("\n*Alpha aparece*\n");
+		System.out.println(
+				"Alpha2: A grande atualização se aproxima e junto com ela o destino de Digital World! Siga pela trilha de Kharkiv, Akin será bastante útil!");
+		System.out.println(
+				"Alpha2: Na metade da trilha, encontre a  Bruxa da Floresta e ela irá te guiar até o clã darkweb");
+
+		System.out.println("\n*Algumas horas de caminhada...*\n");
+		
+		System.out.println("Bruxa da Floresta: Ora, ora… O que temos por aqui? estão perdidos?");
+		System.out.println(nome + ": Estamos procurando o clã darkweb…");
+		System.out.println(
+				"Bruxa da Floresta: Vejamos, existem dois caminhos possíveis, um levará ao penhasco do grito e outro ao acampamento do clã darkweb.");
+		System.out.println("Responda duas perguntas se acertar irei lhe mostrar o caminho que tanto procura…");
+
+		// CHAMA QUESTÃO
+		questao4();
+
+		System.out.println("Bruxa da Floresta: Parece que temos um sabe tudo aqui, vamos para a última pergunta…");
+
+		// CHAMA QUESTÃO
+		questao8();
+
+		// *errar a pergunta ele vai para o penhasco do grito e volta pro inicio do jogo
+		// ** acertar a pergunta ela pega a informação que queria e segue para o
+		// acampamento do clã dark web
+
+		System.out.println("Bruxa da Floresta: Siga pela esquerda, o acampamento do clã darkweb não está muito longe…");
+		
+		System.out.println("\n*Alpha aparece*\n");
+		System.out.println("Alpha2: Ufa, até que enfim chegamos até aqui, estamos quase lá…");
+		System.out.println(
+				"Alpha2: Assim que chegarem ao acampamento se dirijam ao guarda da portaria, digam que querem se juntar ao clã e ele colocará vocês para dentro");
+		System.out.println("\n*Chegando ao acampamento*\n\n");
+		System.out.println("Guarda da Portaria: O que fazem aqui? Perderam alguma coisa?");
+		System.out.println(nome + ": Viemos nos juntar ao clã darkweb…");
+		System.out.println(
+				"Guarda da Portaria: Preciso testar suas habilidades, se provarem sua capacidade eu deixo vocês passarem e se juntarem ao clã darkweb…");
+
+		// CHAMA QUESTÃO
+		questao6();
+
+		System.out.println("Guarda da Portaria: Sejam bem vindos ao clã darkweb…");
+
+		System.out.println("\n*Alpha aparece*\n");
+		System.out.println(
+				"Alpha2: Agora que estamos aqui dentro, vocês precisam se separar, Akin deverá seguir para o alojamento e trancar as portas...");
+		System.out.println(
+				"Alpha2: Você " + nome + ", deverá seguir para sala das conquistas e enfrentar o líder do clã darkweb…");
+		System.out.println(
+				"Alpha2: A única forma de vencer e recuperar o HD Supremo é derrotando o lider do clã darkweb!");
+		System.out.println("Alpha2: Boa sorte em sua última missão haha !!!");
+
+	}
+
+	public static void capitulo4() { // CAPITULO 4
+
+		System.out.println("- Capítulo 04 - Ultimato\n");
+
+		System.out.println("Entrando na sala das conquistas um segredo é revelado...");
+
+		System.out.println(nome + ": Alpha2, eu não consigo entender! A sala está vazia!!! Onde está o Lider do Clã?");
+		System.out.println("Alpha2: Você ainda não percebeu? hahaha");
+		System.out.println(
+				"Alpha2: Após o final das guerras galácticas, foi decidido que a memória do lider do clã darkweb seria armazenada em Digital World no Grande HD Supremo...");
+		System.out.println(
+				"Alpha2: Houve um corte abrupto de energia causado por uma tempestade solar ocasionando um curto no HD Supremo");
+		System.out.println("Alpha2:" + nome + "eu sou o lider do clã darkweb, eu me chamo HAL9000!!!");
+		System.out.println("\n*Alpha2 transforma-se em HAL9000*\n");
+		System.out.println("HAL9000: Eu me aproveitei do curto circuito no HD Supremo e infectei a memória do Alpha2");
+		System.out.println(
+				"HAL9000: Eu não te trouxe aqui para salvar Digital World, eu te trouxe aqui para destruir Digital World e tranferir minha memória para seu corpo orgânico!");
+		System.out.println(nome + ": Eu não vou deixar isso aconceter! Vamos barganhar?");
+		System.out.println(nome
+				+ ": Dois desafios, se eu acertar eu ganho e você restaura a memoria do Alpha2! se eu errar fim de linha! Você ganha e tera tudo!");
+		System.out.println("HAL9000: Então é isso? Que os jogos comecem!!!");
+
+		// CHAMA QUESTÃO
+		questao1();
+
+		System.out.println("HAL9000: Ultima pergunta...");
+
+		// CHAMA QUESTÃO
+		questao10();
+		// derrotou o HAL9000
+
+		System.out.println("HAL9000: Nãooooooooooooooo...");
+		System.out.println(nome + ": Game Over para você HAL9000!");
+
+		System.out.println(
+				"Alpha2: Obrigadx " + nome + " você conseguiu derrotar o HAL9000 e consequentemente o clã darkweb!");
+		System.out.println(
+				"Alpha2: Agora que minha memória foi reestabelecida e o HD Supremo está em segurança, podemos proseguir com a atualização de Digital World...");
+
+		System.out.println(
+				"Digital World foi atualizado, HAL9000 foi aprisionado em um pendriver, uma tecnologia absoleta e descartado em Delta-X9 um planeta isolado...");
+		System.out
+				.println("O clã darkweb foi dissolvido e alguns membros fugiram para planetas e galaxias distantes...");
+		System.out.println("Mas enquanto a ameaça existir, estaremos de olhos bem abertos!");
+		System.out.println(". . .");
+		// ADICIONAR IMAGEMD E CARACTER DE OLHO
+		System.out.println();
+		System.out.println(". . .");
+
+	}
+
 	public static void jogar() throws InterruptedException {
-		nomeEscolhaPersonagem();
 		tempo();
 		tempo();
 		System.out.println("\nL O A D I N G  . . .\n");
@@ -611,36 +623,50 @@ public class Algoritimotrix {
 				+ "\t\t\t		          jgs  /   A   \\\r\n" + "\t\t\t		              /   / \\   \\\r\n"
 				+ "\t\t\t		             \\___/   \\___/");
 		tempo();
-		
-		System.out.println("Alpha2: Olá nobre <" + nome + ">, seja bem-vindo ao Digital World eu sou uma inteligência artificial");
-		System.out.println("Alpha2: Nosso mundo está em perigo, o clã darkweb roubou o HD supremo da grande CPU e precisamos da sua ajuda para recupera-lo!!!");
+
+		System.out.println(
+				"Alpha2: Olá nobre <" + nome + ">, seja bem-vindo ao Digital World eu sou uma inteligência artificial");
+		System.out.println(
+				"Alpha2: Nosso mundo está em perigo, o clã darkweb roubou o HD supremo da grande CPU e precisamos da sua ajuda para recupera-lo!!!");
 		System.out.println("Alpha2: Antes de iniciar nossa aventura, gostaria de conhecer a história do nosso mundo?");
 		
-		// Adicionar função: [1] - Sim (mostra história e parte pro capitulo1) ou [2] - não (Pula pro capitulo)
-		//[sim] 
-		//historia();
-		
-		
-		
-		//capitulo1();
-		//capitulo2();
-		//capitulo3();
-		//capitulo4();
-		
-		if (pontos >= 6) {
-		parabenizacaoLinkRanked();
+		System.out.println("\n[1] - Sim, quero conhecer a história. | [2] - Não, quero aventura logo.");
+		boolean sair = false;
+		do {
+			System.out.println("Digite sua resposta: ");
+			String resposta = entrada.next();
+			switch (resposta) {
+			case "1":
+				
+				break;
+			case "2":
+				capitulo1();
+				sair = true;
+				
+				default:
+					System.out.println("\nDigite uma opção válida.\n");
+			}
+				
+		} while (!sair);
+		capitulo2();
+		capitulo3();
+		capitulo4();
+
+		if (pontos >= 55) {
+			finalizaWinner();
 		} else {
-			gameOver();
+			finalizaLoser();
 		}
 	}
 
-	public static void questao1 () {
+	public static void questao1() { // MATEUS CARNEIRO *ATUALIZADA*
 		String opcao;
-		boolean sair = true;
+		sair = false;
 		int cont = 0;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" Cada instrução termina com um ponto e vírgula");
-		alternativa.add(" O método main é o ponto de partida de cada aplicativo java e deve iniciar com public static void main(String[] args)");
+		alternativa.add(
+				" O método main é o ponto de partida de cada aplicativo java e deve iniciar com public static void main(String[] args)");
 		alternativa.add(" O java diferencia letras maiúsculas de minúsculas"); // CORRETA
 		alternativa.add(" Palavras reservadas pelo java não podem ser usada para nomear variáveis");
 		alternativa.add(" A letra B e C estão incorretas");
@@ -695,22 +721,22 @@ public class Algoritimotrix {
 
 			if (alternativa.get(index).equals(" A letra B e C estão incorretas")) {
 				System.out.println("Resposta Correta");
-				sair = false;
+				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
 				cont++;
 				if (cont == 3) {
 					System.out.println("você errou " + cont + " vezes.");
-					sair = false;
+					sair = true;
 				}
 			}
 
-		} while (sair);
+		} while (!sair);
 	}
-	
-	public static void questao2 () {
+
+	public static void questao2() { // MATEUS CARNEIRO *ATUALIZADA*
 		String opcao;
-		boolean sair = true;
+		sair = false;
 		int cont = 0;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" 10");
@@ -719,18 +745,13 @@ public class Algoritimotrix {
 		alternativa.add(" A + D");
 		alternativa.add(" Nenhuma das anteriores");
 
-		System.out.println("\nIndique a opção que contém o valor final da variável após a execução do trecho de programa"
-				+ "\nem Java. Considere os seguintes valores:\n");
+		System.out
+				.println("\nIndique a opção que contém o valor final da variável após a execução do trecho de programa"
+						+ "\nem Java. Considere os seguintes valores:\n");
 
-		System.out.println("\nint A = 3, B = 2, C = 8, D = 7, X = 0;"
-				+ "\nif (!(A > 3) && !(B < 5)) {"
-				+ "\n	X = 10;"
-				+ "\n} else if ((A >= 2) || (C <= 1)) {"
-				+ "\n	X = (A + D) / 2;"
-				+ "\n} else if (A == 2 || B < 7) {"
-				+ "\n	X = (A + 2) * (B - 2);"
-				+ "\n	} else {\r\n"
-				+ "\n		X = ((A + C) / B * (C + D));"
+		System.out.println("\nint A = 3, B = 2, C = 8, D = 7, X = 0;" + "\nif (!(A > 3) && !(B < 5)) {" + "\n	X = 10;"
+				+ "\n} else if ((A >= 2) || (C <= 1)) {" + "\n	X = (A + D) / 2;" + "\n} else if (A == 2 || B < 7) {"
+				+ "\n	X = (A + 2) * (B - 2);" + "\n	} else {\r\n" + "\n		X = ((A + C) / B * (C + D));"
 				+ "}\n\n");
 
 		do {
@@ -781,6 +802,84 @@ public class Algoritimotrix {
 
 			if (alternativa.get(index).equals(" 5")) {
 				System.out.println("Resposta Correta");
+				sair = true;
+			} else {
+				System.out.println("Resposta incorreta\n");
+				cont++;
+				if (cont == 3) {
+					System.out.println("você errou " + cont + " vezes.");
+					sair = true;
+				}
+			}
+
+		} while (!sair);
+	}
+
+	public static void questao3() { // MARCOS C. *ATUALIZADA*
+
+		String opcao;
+		int cont = 0;
+		sair = false;
+		ArrayList<String> alternativa = new ArrayList<String>();
+
+		alternativa.add(" Variáveis não podem ser nomeadas com a palavra “string”.");
+		alternativa.add(" O método main não pode ser declarado como “static”.");
+		alternativa.add(" Cadeias de caracteres devem ser delimitadas por aspas duplas.");
+		alternativa.add(" Não foi especificado um valor de retorno para o método.");
+		alternativa.add(" O método main não pode ser declarado como “public”.");
+
+		System.out.println("Considere o programa Java a seguir:\r\n" + "  \n public class Classe {\r\n"
+				+ "       public static void main(String[] args) {\r\n" + "        String string = 'xyzk';\r\n"
+				+ "        System.out.println(string);\r\n" + "      }\r\n" + "     }\r\n");
+
+		System.out.println("\nEsse programa não pode ser compilado, pois :");
+
+		do {
+			Collections.shuffle(alternativa);
+			for (int i = 0; i < 5; i++) {
+				switch (i) {
+				case 0:
+					System.out.println("(A)" + alternativa.get(i));
+					break;
+				case 1:
+					System.out.println("(B)" + alternativa.get(i));
+					break;
+				case 2:
+					System.out.println("(C)" + alternativa.get(i));
+					break;
+				case 3:
+					System.out.println("(D)" + alternativa.get(i));
+					break;
+				case 4:
+					System.out.println("(E)" + alternativa.get(i));
+					break;
+				}
+			}
+			System.out.print("\nDigite sua resposta: ");
+			opcao = entrada.next();
+			Integer index = 0;
+
+			switch (opcao.toLowerCase()) {
+
+			case "a":
+				index = 0;
+				break;
+			case "b":
+				index = 1;
+				break;
+			case "c":
+				index = 2;
+				break;
+			case "d":
+				index = 3;
+				break;
+			case "e":
+				index = 4;
+				break;
+			}
+
+			if (alternativa.get(index).equals(" Cadeias de caracteres devem ser delimitadas por aspas duplas.")) {
+				System.out.println("Resposta Correta");
 				sair = false;
 			} else {
 				System.out.println("Resposta incorreta\n");
@@ -790,121 +889,31 @@ public class Algoritimotrix {
 					sair = false;
 				}
 			}
-
 		} while (sair);
 	}
-	
-	public static void questao3() { // MARCOS C. *ATUALIZADA*
-		
+
+	public static void questao4() { // MARCOS C. *ATUALIZADA*
 		String opcao;
 		int cont = 0;
-		Boolean sair = true;
+		sair = false;
 		ArrayList<String> alternativa = new ArrayList<String>();
 
-			alternativa.add(" Variáveis não podem ser nomeadas com a palavra “string”.");
-			alternativa.add(" O método main não pode ser declarado como “static”.");
-			alternativa.add(" Cadeias de caracteres devem ser delimitadas por aspas duplas.");
-			alternativa.add(" Não foi especificado um valor de retorno para o método.");
-			alternativa.add(" O método main não pode ser declarado como “public”.");
-			
-	System.out.println("Considere o programa Java a seguir:\r\n"
-					+ "  \n public class Classe {\r\n"
-					+ "       public static void main(String[] args) {\r\n"
-					+ "        String string = 'xyzk';\r\n"
-					+ "        System.out.println(string);\r\n"
-					+ "      }\r\n"
-					+ "     }\r\n");
-	
-	System.out.println("\nEsse programa não pode ser compilado, pois :");
-
-			do {
-				Collections.shuffle(alternativa);
-				for (int i = 0; i < 5; i++) {
-					switch (i) {
-					case 0:
-						System.out.println("(A)" + alternativa.get(i));
-						break;
-					case 1:
-						System.out.println("(B)" + alternativa.get(i));
-						break;
-					case 2:
-						System.out.println("(C)" + alternativa.get(i));
-						break;
-					case 3:
-						System.out.println("(D)" + alternativa.get(i));
-						break;
-					case 4:
-						System.out.println("(E)" + alternativa.get(i));
-						break;
-					}
-				}
-				System.out.print("\nDigite sua resposta: ");
-				opcao = entrada.next();
-				Integer index = 0;
-				
-				switch (opcao.toLowerCase()) {
-
-				case "a":
-					index = 0;
-					break;
-				case "b":
-					index = 1;
-					break;
-				case "c":
-					index = 2;
-					break;
-				case "d":
-					index = 3;
-					break;
-				case "e":
-					index = 4;
-					break;
-				}
-
-				if (alternativa.get(index).equals(" Cadeias de caracteres devem ser delimitadas por aspas duplas.")) {
-					System.out.println("Resposta Correta");
-					sair = false;
-				} else {
-					System.out.println("Resposta incorreta\n");
-					cont++;
-					if (cont == 3) {
-						System.out.println("você errou " + cont + " vezes.");	
-						sair = false;
-					}
-				}
-			} while (sair);
-}
-
-	public static void questao4 () { // MARCOS C. *ATUALIZADA*
-		String opcao;
-		int cont = 0;
-		Boolean sair = true;
-		ArrayList<String> alternativa = new ArrayList<String>();
-		
 		alternativa.add("(A) 0 1 3");
 		alternativa.add("(B) 0 1 3 4");
 		alternativa.add("(C) 0 1 2 3 ");
 		alternativa.add("(D) 0 1 2 3 4");
 		alternativa.add("(E) Nenhuma das alternativas");
-		
+
 		System.out.println("Java é uma tecnologia de desenvolvimento, sendo simultaneamente, uma\n"
 				+ "linguagem e uma plataforma. Nesse contexto, apresenta-se o código a seguir.\r\n"
-				+ "\npublic class teste {\r\n"
-				+ "\r\n"
-				+ "public static void main(String[] args) {\r\n"
-				+ "\r\n"
-				+ "for (int i = 0; i <= 4; i++) {\r\n"
-				+ "if (i == 2);\r\n"
-				+ "System.out.println(i);\r\n"
-				+ "   }\r\n"
-				+ "  }\r\n"
-				+ "}\r\n"
+				+ "\npublic class teste {\r\n" + "\r\n" + "public static void main(String[] args) {\r\n" + "\r\n"
+				+ "for (int i = 0; i <= 4; i++) {\r\n" + "if (i == 2);\r\n" + "System.out.println(i);\r\n" + "   }\r\n"
+				+ "  }\r\n" + "}\r\n"
 
-				+ "\nApós a execução, a saída gerada será:\r\n"
-				+ "");
+				+ "\nApós a execução, a saída gerada será:\r\n" + "");
 
 		do {
-			
+
 			for (int i = 0; i < 5; i++) {
 				switch (i) {
 				case 0:
@@ -924,7 +933,7 @@ public class Algoritimotrix {
 					break;
 				}
 			}
-			
+
 			System.out.print("\nDigite sua resposta: ");
 			opcao = entrada.next();
 			Integer index = 0;
@@ -950,23 +959,23 @@ public class Algoritimotrix {
 
 			if (alternativa.get(index).equals("(D) 0 1 2 3 4")) {
 				System.out.println("Resposta Correta");
-				sair = false;
+				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");	
-					sair = false;
+					System.out.println("você errou " + cont + " vezes.");
+					sair = true;
 				}
 			}
 
-		} while (sair);
+		} while (!sair);
 	}
-	
-	public static void questao5 () { // DAIRA V. *ATUALIZADA*
+
+	public static void questao5() { // DAIRA V. *ATUALIZADA*
 
 		String opcao;
-		boolean sair = true;
+		sair = false;
 		int cont = 0;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" Uma sequência não lógica e infinita");
@@ -981,7 +990,7 @@ public class Algoritimotrix {
 
 		do {
 			Collections.shuffle(alternativa);
-			
+
 			for (int i = 0; i < 5; i++) {
 				switch (i) {
 				case 0:
@@ -1001,11 +1010,11 @@ public class Algoritimotrix {
 					break;
 				}
 			}
-			
+
 			System.out.println("\nDigite sua resposta: ");
 			opcao = entrada.next();
 			Integer index = 0;
-		
+
 			switch (opcao.toLowerCase()) {
 
 			case "a":
@@ -1024,59 +1033,60 @@ public class Algoritimotrix {
 				index = 4;
 				break;
 			}
-			
+
 			if (alternativa.get(index).equals(" Uma sequência lógica e infinita")) {
 				System.out.println("Resposta Correta");
-				sair = false;
+				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");	
-					sair = false;
+					System.out.println("você errou " + cont + " vezes.");
+					sair = true;
 				}
 			}
-			
-		} while (sair);
+
+		} while (!sair);
 	}
-	
-	public static void questao6 () {
-		//Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste, Calcular e escrever o valor do novo salário.
-		
-				System.out.println("digite o ano que deseja ser verificado");
-				int ano = entrada.nextInt();
 
-				if (ano % 400 == 0 && ano % 4 == 0) {
-					System.out.println("ano bissexto!");
+	public static void questao6() { // DAIARA V. PRECISA REFAZER!!!
+		// Escreva um algoritmo para ler o salário mensal atual de um funcionário e o
+		// percentual de reajuste, Calcular e escrever o valor do novo salário.
 
-				} else if (ano % 100 != 0) {
-					System.out.println();
-					System.out.println("o ano não é bissexto!");
+		System.out.println("digite o ano que deseja ser verificado");
+		int ano = entrada.nextInt();
 
-				}
+		if (ano % 400 == 0 && ano % 4 == 0) {
+			System.out.println("ano bissexto!");
+
+		} else if (ano % 100 != 0) {
+			System.out.println();
+			System.out.println("o ano não é bissexto!");
+
+		}
 	}
-	
-	public static void questao7 () { // MARCOS RIBEIRO *ATUALIZADA*
+
+	public static void questao7() { // MARCOS RIBEIRO *ATUALIZADA*
 
 		String opcao;
-		boolean sair = true;
+		sair = false;
 		int cont = 0;
 		ArrayList<String> alternativa = new ArrayList<String>();
-		alternativa.add(" reografia");// CORRETA
+		alternativa.add(" reografia");
 		alternativa.add(" criptografia");
 		alternativa.add(" linguagem de marcação");
 		alternativa.add(" engenharia estrudurada");
-		alternativa.add(" pseudolinguagem");
+		alternativa.add(" pseudolinguagem"); // CORRETA
 
 		System.out.println("\nAssinale a alternativa correta");
-	
+
 		System.out.println("\nRelacionado à programação de computadores, um algoritmo, seja qual for a sua"
 				+ "\ncomplexidade e a linguagem de programação na qual será codificado, pode ser descrito por"
 				+ "\nmeio da:\n");
 
 		do {
 			Collections.shuffle(alternativa);
-			
+
 			for (int i = 0; i < 5; i++) {
 				switch (i) {
 				case 0:
@@ -1096,11 +1106,11 @@ public class Algoritimotrix {
 					break;
 				}
 			}
-			
+
 			System.out.println("\nDigite sua resposta: ");
 			opcao = entrada.next();
 			Integer index = 0;
-		
+
 			switch (opcao.toLowerCase()) {
 
 			case "a":
@@ -1119,25 +1129,25 @@ public class Algoritimotrix {
 				index = 4;
 				break;
 			}
-			
+
 			if (alternativa.get(index).equals(" pseudolinguagem")) {
 				System.out.println("Resposta Correta");
-				sair = false;
+				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");	
-					sair = false;
+					System.out.println("você errou " + cont + " vezes.");
+					sair = true;
 				}
 			}
-			
-		} while (sair);
+
+		} while (!sair);
 	}
 
-	public static void questao8 () { // MARCOS RIBEIRO *ATUALIZADA*
+	public static void questao8() { // MARCOS RIBEIRO *ATUALIZADA*
 		String opcao;
-		boolean sair = true;
+		sair = false;
 		int cont = 0;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" for, while, repeat");// CORRETA
@@ -1147,13 +1157,13 @@ public class Algoritimotrix {
 		alternativa.add(" N.D.A.");
 
 		System.out.println("\nAssinale a alternativa correta");
-	
+
 		System.out.println("\nSão instruções tipicamente encontradas em linguagens de programação para codificar "
 				+ "estruturas de repetição:\n");
 
 		do {
 			Collections.shuffle(alternativa);
-			
+
 			for (int i = 0; i < 5; i++) {
 				switch (i) {
 				case 0:
@@ -1173,11 +1183,11 @@ public class Algoritimotrix {
 					break;
 				}
 			}
-			
+
 			System.out.println("\nDigite sua resposta: ");
 			opcao = entrada.next();
 			Integer index = 0;
-		
+
 			switch (opcao.toLowerCase()) {
 
 			case "a":
@@ -1196,27 +1206,27 @@ public class Algoritimotrix {
 				index = 4;
 				break;
 			}
-			
+
 			if (alternativa.get(index).equals(" for, while, repeat")) {
 				System.out.println("Resposta Correta");
-				sair = false;
+				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");	
-					sair = false;
+					System.out.println("você errou " + cont + " vezes.");
+					sair = true;
 				}
 			}
-			
-		} while (sair);
-			
+
+		} while (!sair);
+
 	}
-	
+
 	public static void questao9() { // ELVIS W. *ATUALIZADA*
 
 		String opcao;
-		boolean sair = true;
+		sair = false;
 		int cont = 0;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" Enquanto n for igual à 100, o laço só vai parar quando x for igual à 100.");
@@ -1227,14 +1237,14 @@ public class Algoritimotrix {
 
 		System.out.println("Dado o código abaixo, pedimos com atenção que você observe, faça uma análise"
 				+ "\ndo código, e com base nos seus conhecimentos, responda qual alternativa está correta:");
-	
+
 		System.out.println("\n	public static void main(String[] args) {\r\n" + "	\n	int n = 100;\r\n"
 				+ "		\r\n" + "\n		for (int x = 0; x <= n; x++) {\r\n" + "			System.out.println(x);\r\n"
 				+ "			if (x == 88) {\r\n" + "			break;\r\n" + "			}\r\n" + "		}\n");
 
 		do {
 			Collections.shuffle(alternativa);
-			
+
 			for (int i = 0; i < 5; i++) {
 				switch (i) {
 				case 0:
@@ -1254,11 +1264,11 @@ public class Algoritimotrix {
 					break;
 				}
 			}
-			
+
 			System.out.println("\nDigite sua resposta: ");
 			opcao = entrada.next();
 			Integer index = 0;
-		
+
 			switch (opcao.toLowerCase()) {
 
 			case "a":
@@ -1277,19 +1287,20 @@ public class Algoritimotrix {
 				index = 4;
 				break;
 			}
-			
-			if (alternativa.get(index).equals(" O laço vai se repitir, porém quando x for igual à 88, ele vai parar.")) {
+
+			if (alternativa.get(index)
+					.equals(" O laço vai se repitir, porém quando x for igual à 88, ele vai parar.")) {
 				System.out.println("Resposta Correta");
 				sair = false;
 			} else {
 				System.out.println("Resposta incorreta\n");
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");	
+					System.out.println("você errou " + cont + " vezes.");
 					sair = false;
 				}
 			}
-			
+
 		} while (sair);
 
 	}
@@ -1297,23 +1308,24 @@ public class Algoritimotrix {
 	public static void questao10() { // ELVIS W. *ATUALIZADA*
 
 		String opcao;
-		boolean sair = false;
+		sair = false;
 		int cont = 0;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" Enquanto N for menor que 10, a condição booleana será TRUE e vai sair do laço repetitivo.");// CORRETA
 		alternativa.add(" Quando N for maior que 10, a condição booleana será !TRUE e ele saíra do laço repetitivo.");
 		alternativa.add(" Esse código não irá funcionar, pois tem um erro.");
 		alternativa.add(" N.D.A.");
-		alternativa.add(" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.");
+		alternativa.add(
+				" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.");
 
 		System.out.println("\nAssinale a alternativa correta");
-	
+
 		System.out.println("\nDado o código abaixo, pedimos com atenção que você observe, faça uma análise"
 				+ "\ndo código, e com base nos seus conhecimentos, responda qual alternativa está correta:\n");
 
 		do {
 			Collections.shuffle(alternativa);
-			
+
 			for (int i = 0; i < 5; i++) {
 				switch (i) {
 				case 0:
@@ -1333,11 +1345,11 @@ public class Algoritimotrix {
 					break;
 				}
 			}
-			
+
 			System.out.println("\nDigite sua resposta: ");
 			opcao = entrada.next();
 			Integer index = 0;
-		
+
 			switch (opcao.toLowerCase()) {
 
 			case "a":
@@ -1356,29 +1368,24 @@ public class Algoritimotrix {
 				index = 4;
 				break;
 			}
-			
-			if (alternativa.get(index).equals(" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.")) {
+
+			if (alternativa.get(index).equals(
+					" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.")) {
 				System.out.println("Resposta Correta");
 				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");	
+					System.out.println("você errou " + cont + " vezes.");
 					sair = true;
 				}
 			}
-			
+
 		} while (!sair);
 	}
 
-	public static void sair() {
-		System.out.println("\nVocê quer mesmo sair?");
-		System.out.println("[SIM]	digite \"1\".\n" + "\n[NÃO]	digite \"2\"." + "\nResposta: ");
-
-	}
-
-	public static void parabenizacaoLinkRanked() throws InterruptedException {
+	public static void finalizaWinner() throws InterruptedException { // GANHOU
 		System.out.println("\nParabéns, você concluiu o jogo e atingiu a pontuação necessária!!!");
 		System.out.println("\nFicamos felizes por você...  ;) ");
 		tempo();
@@ -1389,25 +1396,25 @@ public class Algoritimotrix {
 		System.out.println("\n\t\tF I M");
 	}
 
-	public static void gameOver() throws InterruptedException {
+	public static void finalizaLoser() throws InterruptedException { // PERDER
 		System.out.println(" _______   _______   __   __   _______      _______   __   __   _______   ______   \r\n"
 				+ "|       | |   _   | |  |_|  | |       |    |       | |  | |  | |       | |    _ |  \r\n"
 				+ "|    ___| |  |_|  | |       | |    ___|    |   _   | |  |_|  | |    ___| |   | ||  \r\n"
 				+ "|   | __  |       | |       | |   |___     |  | |  | |       | |   |___  |   |_||_ \r\n"
 				+ "|   ||  | |       | |       | |    ___|    |  |_|  | |       | |    ___| |    __  |\r\n"
 				+ "|   |_| | |   _   | | ||_|| | |   |___     |       |  |     |  |   |___  |   |  | |\r\n"
-				+ "|_______| |__| |__| |_|   |_| |_______|    |_______|   |___|   |_______| |___|  |_|"
-				+ "\n");
+				+ "|_______| |__| |__| |_|   |_| |_______|    |_______|   |___|   |_______| |___|  |_|" + "\n");
 		tempo();
-		System.out.println("\nIIIIIIIIIIIIIIIIIHHHH DEU RUIM HEIN?! MÁS CONTINUA TENTANDO, UMA HORA VAI, CONFIA!  :') ");
+		System.out
+				.println("\nIIIIIIIIIIIIIIIIIHHHH DEU RUIM HEIN?! MÁS CONTINUA TENTANDO, UMA HORA VAI, CONFIA!  :') ");
 		System.out.println("\n\t\tF I M");
 	}
-	
+
 	public static void main(String[] args) throws InterruptedException {
-		
+
 		bemVindos();
-		
+
 		menu();
-		
+
 	}
 }
