@@ -8,12 +8,10 @@ public class Algoritimotrix {
 	// VARIÁVEIS GLOBAIS
 	static Scanner entrada = new Scanner(System.in);
 	static boolean sair = false; // SAÍDA LAÇOS
-	static int somaPontosJogo = 0; // SOMAR PONTUAÇÃO DOS JOGADORES
-	static int pontosPorQuestao = 10; // CADA QUESTÃO COMEÇA COM 10 PONTUAÇÃO
+	static int somaDePontos = 0; // SOMAR PONTUAÇÃO DOS JOGADORES
 	static int timer = 0; // TIMER DELAY NOS TEXTOS
-	static int erroQuestoes = 3; // QUANTIDADE MÁXIMA DE ERRO DAS QUESTÕES
 	static String nome = ""; // NOME DO USUÁRIO
-	static int pontosFinais = 55; // MÍNIMO DEPONTUAÇÃO
+	static int pontosMin = 55; // MÍNIMO DEPONTUAÇÃO
 
 	// MÉTODOS E FUNÇÕES
 	public static String nomeUsuario() {
@@ -107,119 +105,118 @@ public class Algoritimotrix {
 	}
 
 	public static void creditos() throws InterruptedException { // CRÉDITOS
-		tempo();
-		System.out.println("\n						CRÉDITOS");
-		tempo();
-		System.out.print(
-				"\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|					CRIADORES E EDITORES						|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out
-				.print("\n|		DAIARA VIEIRA, ELVIS WILLIAM, MARCOS CAETANO, MARCOS V. RIBEIRO, MATEUS CARNEIRO	|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|					     DISCIPLINA							|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|				   	 Projeto Integrador						|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|					      PROFESSOR							|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|				 	 Eduardo Takeo Ueda						|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|				      	     PARTICIPANTES						|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|				Profº Fernando Almeida, alunos da Turma A				|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|					   MÚSICAS							|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|			Ki:Theory - Enjoy The Silence: https://youtu.be/l3cEWRdCI8w		               |");
-		tempo();
-		System.out.print("\n|			twenty one pilots - Stressed Out: https://youtu.be/pXRviuL6vMY            |");
-		tempo();
-		System.out.print("\n|			Radiohead - Nude: https://youtu.be/BbWBRnDK_AE		                         |");
-		tempo();
-		System.out.print("\n|			Moby - Porcelain: https://youtu.be/13EifDb4GYs							   |");
-		tempo();
-		System.out.print("\n|			LSD - Genius ft. Sia, Diplo, Labrinth: https://youtu.be/HhoATZ1Imtw		   |");
-		tempo();
-		System.out.print("\n|			Julian Casablancas - 11th Dimension: https://youtu.be/pl15PlIXHIk		   |");
-		tempo();
-		System.out.print("\n|			Daft Punk - One More Time: https://youtu.be/FGBhQbmPwH8					   |");
-		tempo();
-		System.out.print("\n|			The Weeknd & Ariana Grande - Save Your Tears (Remix): https://youtu.be/LIIDh-qI9oI						   |");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|					   FONTES							|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|					   AGRADECIMENTOS						|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print(
-				"\n|	Nós do GRUPO 2 - TURMA A, agradecemos primeiramente à todos os professores pelos ensinamentos	|");
-		tempo();
-		System.out
-				.print("\n|	cada professor colaborou para que nós pudessemos realizar este projeto, em especial		|");
-		tempo();
-		System.out
-				.print("\n|	ao Professor Eduardo Takeo Ueda que nos acompanhou e instruiu durante o projeto, e		|");
-		tempo();
-		System.out
-				.print("\n|	ao Professor Fernando Almeida que nos ensinou sobre a disciplina escolhida como 		|");
-		tempo();
-		System.out
-				.print("\n|	base para o nosso jogo RPG. Agradecemos também à todos os alunos da Turma A que 		|");
-		tempo();
-		System.out
-				.print("\n|	também fizeram parte do nosso projeto, ao responder o questionário e nos ajudar na		|");
-		tempo();
-		System.out
-				.print("\n|	construção do mesmo. Agradecimentos ao colégio Senac Santo Amaro pela oportunidade,		|");
-		tempo();
-		System.out.print("\n|	acomodação e infraestrutura para o nosso desenvolvimento.					|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print("\n|													|");
-		tempo();
-		System.out.print(
-				"\n/////////////////////////////////////////////////////////////////////////////////////////////////////////\n");
-		tempo();
+
+			tempo();
+			System.out.println("\n						*CRÉDITOS*");
+			tempo();
+			System.out.print(
+					"\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|					*CRIADORES E EDITORES*						|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out
+					.print("\n|		DAIARA VIEIRA, ELVIS WILLIAM, MARCOS CAETANO, MARCOS V. RIBEIRO, MATEUS CARNEIRO	|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|					     *DISCIPLINA*						|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|				   	 Projeto Integrador						|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|					      *ORIENTADOR*						|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|				 	 Eduardo Takeo Ueda						|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|				      	     *PARTICIPANTES*						|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|			Professores Eduardo Takeo e Fernando Almeida, alunos Turma A			|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|					   *MÚSICAS*							|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|		Ki:Theory - Enjoy The Silence: https://youtu.be/l3cEWRdCI8w				|");
+			tempo();
+			System.out.print("\n|		twenty one pilots - Stressed Out: https://youtu.be/pXRviuL6vMY				|");
+			tempo();
+			System.out.print("\n|		Radiohead - Nude: https://youtu.be/BbWBRnDK_AE						|");
+			tempo();
+			System.out.print("\n|		Moby - Porcelain: https://youtu.be/13EifDb4GYs						|");
+			tempo();
+			System.out.print("\n|		LSD - Genius ft. Sia, Diplo, Labrinth: https://youtu.be/HhoATZ1Imtw			|");
+			tempo();
+			System.out.print("\n|		Julian Casablancas - 11th Dimension: https://youtu.be/pl15PlIXHIk			|");
+			tempo();
+			System.out.print("\n|		Daft Punk - One More Time: https://youtu.be/FGBhQbmPwH8					|");
+			tempo();
+			System.out.print("\n|		The Weeknd & Ariana Grande - Save Your Tears (Remix): https://youtu.be/LIIDh-qI9oI	|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|					   *AGRADECIMENTOS*						|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print(
+					"\n|	Nós do GRUPO 2 - TURMA A, agradecemos primeiramente à todos os professores pelos ensinamentos	|");
+			tempo();
+			System.out
+					.print("\n|	cada professor colaborou para que nós pudessemos realizar este projeto, em especial		|");
+			tempo();
+			System.out
+					.print("\n|	ao Professor Eduardo Takeo Ueda que nos acompanhou e instruiu durante o projeto, e		|");
+			tempo();
+			System.out
+					.print("\n|	ao Professor Fernando Almeida que nos ensinou sobre a disciplina escolhida como 		|");
+			tempo();
+			System.out
+					.print("\n|	base para o nosso jogo RPG. Agradecemos também à todos os alunos da Turma A que 		|");
+			tempo();
+			System.out
+					.print("\n|	também fizeram parte do nosso projeto, ao responder o questionário e nos ajudar na		|");
+			tempo();
+			System.out
+					.print("\n|	construção do mesmo. Agradecimentos ao colégio Senac Santo Amaro pela oportunidade,		|");
+			tempo();
+			System.out.print("\n|	acomodação e infraestrutura para o nosso desenvolvimento.					|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print("\n|													|");
+			tempo();
+			System.out.print(
+					"\n/////////////////////////////////////////////////////////////////////////////////////////////////////////\n");
+			tempo();
 	}
 
 	public static void instrucoes() throws InterruptedException { // INSTRUÇÕES
@@ -264,7 +261,7 @@ public class Algoritimotrix {
 		sysout("\naguardar a divulgação das pontuações.\n", TimeUnit.MILLISECONDS, timer);
 	}
 
-	public static void tempo() throws InterruptedException { // DELAY LINHAS
+	public static void tempo () throws InterruptedException { // DELAY LINHAS
 		Thread.sleep(1000);
 	}
 
@@ -349,7 +346,7 @@ public class Algoritimotrix {
 				System.out.println("\nVocê selecionou a opção 1");
 				System.out.println("Acaba de ganhar 5 pontos de experiência, siga para o Septo Sagrado!\n");
 				sair = true;
-				somaPontosJogo = somaPontosJogo + 5;
+				somaDePontos = somaDePontos + 5;
 				break;
 			case "2":
 				System.out.println("\nVocê selecionou a opção 2");
@@ -360,13 +357,13 @@ public class Algoritimotrix {
 			case "3":
 				System.out.println("\nVocê selecionou a opção 3");
 				System.out.println("Acaba de perder 3 pontos de experiência. siga para o Septo Sagrado!\n");
-				somaPontosJogo = somaPontosJogo - 3;
+				somaDePontos = somaDePontos - 3;
 				sair = true;
 				break;
 			case "4":
 				System.out.println("\nVocê selecionou a opção 4");
 				System.out.println("Acaba de ganhar 10 pontos de experiência, siga para o Septo Sagrado!\n");
-				somaPontosJogo = somaPontosJogo + 10;
+				somaDePontos = somaDePontos + 10;
 				sair = true;
 				break;
 			case "5":
@@ -385,7 +382,7 @@ public class Algoritimotrix {
 
 	public static void capitulo1 () throws InterruptedException { // CAPITULO 1
  		
- 				System.out.println("- Capitulo 01 - Encontre o Oráculo\n");
+ 				sysout("- Capitulo 01 - Encontre o Oráculo\n", TimeUnit.MILLISECONDS, timer);
  				
  				System.out.println("      _    .  ,   .           .\r\n"
  						+ "    *  / \\_ *  / \\_      _  *        *   /\\'__        *\r\n"
@@ -396,159 +393,190 @@ public class Algoritimotrix {
  						+ " /  `-.__ ^   / .-'.--\\ =-=~_=-=~=^/  _ `--./ .-'  `-\r\n"
  						+ "/___     `.  / /       `.~-^=-=~=^=.-'      '-._ `._\n");
  				
- 				System.out.println("\n*Alpha aparece*\n"); 
+ 				sysout("\n*Alpha aparece*\n", TimeUnit.MILLISECONDS, timer); 
  				
- 				System.out.println("Alpha2: Não temos muito tempo, a próxima atualização do planeta se aproxima e sem o HD Supremo não temos como fazer o backup");
- 				System.out.println("Alpha2: Sem a atualização nosso planeta se tornara obsoleto, nossos sistemas de segurança entraram em colapso e a vida em Digital World chegará ao fim!!!");
- 				System.out.println("Alpha2: Encontre o Oráculo no septo sagrado e veja através do cálice celestial a localização do clã darkweb!");
- 				System.out.println("Alpha2: Siga pela Floresta dos Spams e tente a sorte ou vá pelo Desfiladeiro Codificado...\n");
+ 				sysout("Alpha2: Não temos muito tempo, a próxima atualização do planeta se aproxima e sem o HD Supremo não temos como fazer o backup", TimeUnit.MILLISECONDS, timer);
+ 				sysout("Alpha2: Sem a atualização nosso planeta se tornara obsoleto, nossos sistemas de segurança entraram em colapso e a vida em Digital World chegará ao fim!!!", TimeUnit.MILLISECONDS, timer);
+ 				sysout("Alpha2: Encontre o Oráculo no septo sagrado e veja através do cálice celestial a localização do clã darkweb!", TimeUnit.MILLISECONDS, timer);
+ 				sysout("Alpha2: Siga pela Floresta dos Spams e tente a sorte ou vá pelo Desfiladeiro Codificado...\n", TimeUnit.MILLISECONDS, timer);
  				
  				// ESCOLHA ENTRE FLORESTA DOS SPAMS OU DESFILADEIRO CODIFICADO
  				boolean sair = false;
  				do {
- 				System.out.println("[1] Floresta dos spams | [2] Desfiladeiro codificado: ");
+ 					sysout("[1] Floresta dos spams | [2] Desfiladeiro codificado: ", TimeUnit.MILLISECONDS, timer);
  				String escolha = entrada.next();
  				switch(escolha) {
  				case "1": // FLORESTA DOS SPAMS
- 					System.out.println("Alhpa2: Olha só, parece que hoje é seu dia de sorte! Cuidado com os Spams!");
- 					System.out.println("Alhpa2: Digite um número de 1 a 5 e descubra sua sorte! ");
+ 					sysout("Alhpa2: Olha só, parece que hoje é seu dia de sorte! Cuidado com os Spams!", TimeUnit.MILLISECONDS, timer);
+ 					sysout("Alhpa2: Digite um número de 1 a 5 e descubra sua sorte! ", TimeUnit.MILLISECONDS, timer);
  					escolhaCapitulo1();
  					sair = true;
  				break;
  				case "2": // DESFILADEIRO CODIFICADO
- 					System.out.println("Alpha2: No jogo da sorte a sobrevivência é uma roleta russa, bem-vindo ao Desfiladeiro Codificado!");
- 					System.out.println("Alpha2: A resposta correta levará você direto ao Septo Sagrado, você tem três tentativas para desbloquear a passagem.");
+ 					sysout("Alpha2: No jogo da sorte a sobrevivência é uma roleta russa, bem-vindo ao Desfiladeiro Codificado!", TimeUnit.MILLISECONDS, timer);
+ 					sysout("Alpha2: A resposta correta levará você direto ao Septo Sagrado, você tem três tentativas para desbloquear a passagem.", TimeUnit.MILLISECONDS, timer);
  					// CHAMA QUESTÃO
  					questao5();
  					sair = true;
  				break;
  				default:
- 					System.out.println("\nOpção inválida, tente novamente.\n");
+ 					sysout("\nOpção inválida, tente novamente.\n", TimeUnit.MILLISECONDS, timer);
  				}
  				
  				} while (!sair);
  				
- 				System.out.println("\n" + nome + ", você passou pelo primeiro desafio...");
- 			    System.out.println("\nReconectando...\n\n");
+ 				sysout("\n" + nome + ", você passou pelo primeiro desafio...", TimeUnit.MILLISECONDS, timer);
+ 			    sysout("\nReconectando...\n\n", TimeUnit.MILLISECONDS, timer);
  				
- 				System.out.println("Alpha2: Chegamos ao Septo Sagrado, não poderia esperar menos de você!");
- 				System.out.println("Alpha2: Encontre o Oráculo e veja através do Cálice Celestial...");
+ 			   sysout("Alpha2: Chegamos ao Septo Sagrado, não poderia esperar menos de você!", TimeUnit.MILLISECONDS, timer);
+ 			  sysout("Alpha2: Encontre o Oráculo e veja através do Cálice Celestial...", TimeUnit.MILLISECONDS, timer);
  				
- 				System.out.println("\n*Procurando o Oráculo...*\n");
+ 			 sysout("\n*Procurando o Oráculo...*\n", TimeUnit.MILLISECONDS, timer);
  						
- 				System.out.println("Oráculo: Ora, ora... Temos um visitante, o que te tráz ao Septo Sagrado?");
- 				System.out.println("Oráculo: Espere...");
- 				System.out.println("Oráculo: Eu tenho a resposta para o que você procura, mas antes preciso testar seus conhecimentos!");
+ 			sysout("Oráculo: Ora, ora... Temos um visitante, o que te tráz ao Septo Sagrado?", TimeUnit.MILLISECONDS, timer);
+ 			sysout("Oráculo: Espere...", TimeUnit.MILLISECONDS, timer);
+ 			sysout("Oráculo: Eu tenho a resposta para o que você procura, mas antes preciso testar seus conhecimentos!", TimeUnit.MILLISECONDS, timer);
  				
  				// CHAMA QUESTÃO
  				questao2();
  				
- 				System.out.println("\nOráculo: Resta uma pergunta, responda para encontrar o seu caminho...\n");
+ 				sysout("\nOráculo: Resta uma pergunta, responda para encontrar o seu caminho...\n", TimeUnit.MILLISECONDS, timer);
  				
  				// CHAMA QUESTÃO
  				questao9();
  				
- 				System.out.println("Oráculo: Ok, vamos proseguir...");
- 				System.out.println("Oráculo: Siga para masmorra dos Orcs e encontrará o que procura!!!\n\n");
+ 				sysout("Oráculo: Ok, vamos proseguir...", TimeUnit.MILLISECONDS, timer);
+ 				sysout("Oráculo: Siga para masmorra dos Orcs e encontrará o que procura!!!\n\n", TimeUnit.MILLISECONDS, timer);
  	}
 
 	public static void capitulo2() throws InterruptedException { // CAPITULO 2
 
-		System.out.println("- Capitulo 02- Masmorra dos Orcs 02\n");
+		sysout("- Capitulo 02- Masmorra dos Orcs 02\n", TimeUnit.MILLISECONDS, timer);
 		
-		System.out.println("\n .       ..       .\r\n"
-				+ "    |\\      ||      /|\r\n"
-				+ "    | \\     ||     / |\r\n"
-				+ "    |  \\    ||    /  |\r\n"
-				+ "    |  :\\___JL___/   |\r\n"
-				+ "    |  :|##XLJ: :|   |\r\n"
-				+ "    '\\ :|###||: X|  /'\r\n"
-				+ "      \\:|###||:X#| /\r\n"
-				+ "       |==========|\r\n"
-				+ "        |###XXX;;|\r\n"
-				+ "        |##XX:: :|\r\n"
-				+ "        |##Xn:: :|\r\n"
-				+ "        |##XU:: :|\r\n"
-				+ "        |##XX:: :|\r\n"
-				+ "        |##XX:: :|\r\n"
-				+ "        |##XX:: :|\r\n"
-				+ "        |##XX:: n|\r\n"
-				+ "        |##XX:: U|\r\n"
-				+ "        |##XX:: :|\r\n"
-				+ "        |##XX:: n|\r\n"
-				+ "        |##XX:: U|\r\n"
-				+ "        |##XX:: :|\r\n"
-				+ "        |##XX:: :|\r\n"
-				+ "        |##XX:: :|\r\n"
-				+ "        |##,_,: :|\r\n"
-				+ "        |./ T \\.:|\r\n"
-				+ "        || o|o |:|\r\n"
-				+ "        ||  |  |:|\r\n"
-				+ "      .============.\r\n"
-				+ "     .==============.\r\n"
-				+ "    .================.\n");
+		tempo();
+		System.out.print("\n    .       ..       .\r\n");
+		Thread.sleep(200);
+		System.out.print("    |\\      ||      /|\r\n");
+		Thread.sleep(200);
+		System.out.print("    | \\     ||     / |\r\n");
+		Thread.sleep(200);
+		System.out.print("    |  \\    ||    /  |\r\n");
+		Thread.sleep(200);
+		System.out.print("    |  :\\___JL___/   |\r\n");
+		Thread.sleep(200);
+		System.out.print("    |  :|##XLJ: :|   |\r\n");
+		Thread.sleep(200);
+		System.out.print("    '\\ :|###||: X|  /'\r\n");
+		Thread.sleep(200);
+		System.out.print("      \\:|###||:X#| /\r\n");
+		Thread.sleep(200);
+		System.out.print("       |==========|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |###XXX;;|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##XX:: :|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##Xn:: :|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##XU:: :|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##XX:: :|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##XX:: :|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##XX:: :|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##XX:: n|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##XX:: U|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##XX:: :|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##XX:: n|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##XX:: U|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##XX:: :|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##XX:: :|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##XX:: :|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |##,_,: :|\r\n");
+		Thread.sleep(200);
+		System.out.print("        |./ T \\.:|\r\n");
+		Thread.sleep(200);
+		System.out.print("        || o|o |:|\r\n");
+		Thread.sleep(200);
+		System.out.print("        ||  |  |:|\r\n");
+		Thread.sleep(200);
+		System.out.print("      .============.\r\n");
+		Thread.sleep(200);
+		System.out.print("     .==============.\r\n");
+		Thread.sleep(200);
+		System.out.print("    .================.\n");
 
-		System.out.println(
-				"Alpha2: Pelo visto deu tudo certo com o Oráculo né? Enfim, a masmorra dos Orcs te espera, siga pelo caminho das pedras...");
-		System.out.println(
-				"Alpha2: Os Orcs são seres inofensivos apesar da aparência, eles habitam Digital World muito antes dos primeiros homens...");
-		System.out.println(
-				"Alpha2: Conquiste a confiança de um Orc e terá um grande aliado na batalha contra o clã darkweb ");
+		sysout(
+				"Alpha2: Pelo visto deu tudo certo com o Oráculo né? Enfim, a masmorra dos Orcs te espera, siga pelo caminho das pedras...", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Alpha2: Os Orcs são seres inofensivos apesar da aparência, eles habitam Digital World muito antes dos primeiros homens...", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Alpha2: Conquiste a confiança de um Orc e terá um grande aliado na batalha contra o clã darkweb ", TimeUnit.MILLISECONDS, timer);
 
-		System.out.println("\n*Algumas horas de caminhada...*\n");
+		sysout("\n*Algumas horas de caminhada...*\n", TimeUnit.MILLISECONDS, timer);
 
-		System.out.println(
-				"Alpha2: A jornada foi longa, mas aqui estamos, encontre o Líder dos Orcs o mais rápido possível!");
-		System.out.println("\n*Orc avistado*\n");
-		System.out.println("Orc Vigilante: Qual o motivo da sua visita?");
-		System.out.println(nome
-				+ ": Preciso da ajuda do líder dos Orcs, o clâ darkweb roubou o hd supremo e estou em uma missão de resgate");
-		System.out.println("Orc Vigilante: Para entrar na masmorra, preciso testar suas habilidades! \n");
+		sysout(
+				"Alpha2: A jornada foi longa, mas aqui estamos, encontre o Líder dos Orcs o mais rápido possível!", TimeUnit.MILLISECONDS, timer);
+		sysout("\n*Orc avistado*\n", TimeUnit.MILLISECONDS, timer);
+		sysout("Orc Vigilante: Qual o motivo da sua visita?", TimeUnit.MILLISECONDS, timer);
+		sysout(nome
+				+ ": Preciso da ajuda do líder dos Orcs, o clâ darkweb roubou o hd supremo e estou em uma missão de resgate", TimeUnit.MILLISECONDS, timer);
+		sysout("Orc Vigilante: Para entrar na masmorra, preciso testar suas habilidades! \n", TimeUnit.MILLISECONDS, timer);
 
 		// CHAMA QUESTÃO
 		questao3();
 
-		System.out.println(
-				"Orc Vigilante: Opa, o grande líder te espera, siga até a sala do trono e aguarde instruções\n");
+		sysout(
+				"Orc Vigilante: Opa, o grande líder te espera, siga até a sala do trono e aguarde instruções\n", TimeUnit.MILLISECONDS, timer);
 		
-		System.out.println("Lider dos Orcs: Qual o motivo da sua visita?");
-		System.out.println(nome + ": Preciso de ajuda para enfrentar o clã darkweb");
-		System.out.println("Lider dos Orcs: E por qual motivo eu ajudaria?");
-		System.out.println(nome + ": O grande Oráculo me enviou até aqui...");
-		System.out.println(
-				"Lider dos Orcs: O grande Oráculo? Aquele que tudo vê e tudo sabe? Vejamos, antes de enviar um Orc nessa jornada, me responda...");
+		sysout("Lider dos Orcs: Qual o motivo da sua visita?", TimeUnit.MILLISECONDS, timer);
+		sysout(nome + ": Preciso de ajuda para enfrentar o clã darkweb", TimeUnit.MILLISECONDS, timer);
+		sysout("Lider dos Orcs: E por qual motivo eu ajudaria?", TimeUnit.MILLISECONDS, timer);
+		sysout(nome + ": O grande Oráculo me enviou até aqui...", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Lider dos Orcs: O grande Oráculo? Aquele que tudo vê e tudo sabe? Vejamos, antes de enviar um Orc nessa jornada, me responda...", TimeUnit.MILLISECONDS, timer);
 
 		// CHAMA QUESTÃO
 		questao7();
 		// Siga as instruções do Orc e encontre seu caminho
 
-		System.out.println(
-				"Lider dos Orcs: Hey! " + nome + ", leve Akin! Um dos Orcs da minha guarda pessoal, ele lhe será bastante útil!");
-		System.out.println("Lider dos Orcs: Siga pela trilha de Kharkiv e lá encontrará o clã darkweb...\n\n");
+		sysout(
+				"Lider dos Orcs: Hey! " + nome + ", leve Akin! Um dos Orcs da minha guarda pessoal, ele lhe será bastante útil!", TimeUnit.MILLISECONDS, timer);
+		sysout("Lider dos Orcs: Siga pela trilha de Kharkiv e lá encontrará o clã darkweb...\n\n", TimeUnit.MILLISECONDS, timer);
 
 	}
 
 	public static void capitulo3() throws InterruptedException { // CAPITULO 3
 
-		System.out.println("- Capítulo 03 - Caminho de Kharkiv\n");
-		System.out.println("\n*Alpha aparece*\n");
-		System.out.println(
-				"Alpha2: A grande atualização se aproxima e junto com ela o destino de Digital World! Siga pela trilha de Kharkiv, Akin será bastante útil!");
-		System.out.println(
-				"Alpha2: Na metade da trilha, encontre a  Bruxa da Floresta e ela irá te guiar até o clã darkweb");
+		sysout("- Capítulo 03 - Caminho de Kharkiv\n", TimeUnit.MILLISECONDS, timer);
+		sysout("\n*Alpha aparece*\n", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Alpha2: A grande atualização se aproxima e junto com ela o destino de Digital World! Siga pela trilha de Kharkiv, Akin será bastante útil!", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Alpha2: Na metade da trilha, encontre a  Bruxa da Floresta e ela irá te guiar até o clã darkweb", TimeUnit.MILLISECONDS, timer);
 
-		System.out.println("\n*Algumas horas de caminhada...*\n");
+		sysout("\n*Algumas horas de caminhada...*\n", TimeUnit.MILLISECONDS, timer);
 		
-		System.out.println("Bruxa da Floresta: Ora, ora… O que temos por aqui? estão perdidos?");
-		System.out.println(nome + ": Estamos procurando o clã darkweb…");
-		System.out.println(
-				"Bruxa da Floresta: Vejamos, existem dois caminhos possíveis, um levará ao penhasco do grito e outro ao acampamento do clã darkweb.");
-		System.out.println("Responda duas perguntas se acertar irei lhe mostrar o caminho que tanto procura…");
+		sysout("Bruxa da Floresta: Ora, ora… O que temos por aqui? estão perdidos?", TimeUnit.MILLISECONDS, timer);
+		sysout(nome + ": Estamos procurando o clã darkweb…", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Bruxa da Floresta: Vejamos, existem dois caminhos possíveis, um levará ao penhasco do grito e outro ao acampamento do clã darkweb.", TimeUnit.MILLISECONDS, timer);
+		sysout("Responda duas perguntas se acertar irei lhe mostrar o caminho que tanto procura…", TimeUnit.MILLISECONDS, timer);
 
 		// CHAMA QUESTÃO
 		questao4();
 
-		System.out.println("Bruxa da Floresta: Parece que temos um sabe tudo aqui, vamos para a última pergunta…");
+		sysout("Bruxa da Floresta: Parece que temos um sabe tudo aqui, vamos para a última pergunta…", TimeUnit.MILLISECONDS, timer);
 
 		// CHAMA QUESTÃO
 		questao8();
@@ -557,111 +585,139 @@ public class Algoritimotrix {
 		// ** acertar a pergunta ela pega a informação que queria e segue para o
 		// acampamento do clã dark web
 
-		System.out.println("Bruxa da Floresta: Siga pela esquerda, o acampamento do clã darkweb não está muito longe…");
+		sysout("Bruxa da Floresta: Siga pela esquerda, o acampamento do clã darkweb não está muito longe…", TimeUnit.MILLISECONDS, timer);
 		
-		System.out.println("\n*Alpha aparece*\n");
-		System.out.println("Alpha2: Ufa, até que enfim chegamos até aqui, estamos quase lá…");
-		System.out.println(
-				"Alpha2: Assim que chegarem ao acampamento se dirijam ao guarda da portaria, digam que querem se juntar ao clã e ele colocará vocês para dentro");
-		System.out.println("\n*Chegando ao acampamento*\n\n");
-		System.out.println("Guarda da Portaria: O que fazem aqui? Perderam alguma coisa?");
-		System.out.println(nome + ": Viemos nos juntar ao clã darkweb…");
-		System.out.println(
-				"Guarda da Portaria: Preciso testar suas habilidades, se provarem sua capacidade eu deixo vocês passarem e se juntarem ao clã darkweb…");
+		sysout("\n*Alpha aparece*\n", TimeUnit.MILLISECONDS, timer);
+		sysout("Alpha2: Ufa, até que enfim chegamos até aqui, estamos quase lá…", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Alpha2: Assim que chegarem ao acampamento se dirijam ao guarda da portaria, digam que querem se juntar ao clã e ele colocará vocês para dentro", TimeUnit.MILLISECONDS, timer);
+		sysout("\n*Chegando ao acampamento*\n\n", TimeUnit.MILLISECONDS, timer);
+		sysout("Guarda da Portaria: O que fazem aqui? Perderam alguma coisa?", TimeUnit.MILLISECONDS, timer);
+		sysout(nome + ": Viemos nos juntar ao clã darkweb…", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Guarda da Portaria: Preciso testar suas habilidades, se provarem sua capacidade eu deixo vocês passarem e se juntarem ao clã darkweb…", TimeUnit.MILLISECONDS, timer);
 
 		// CHAMA QUESTÃO
 		questao6();
 
-		System.out.println("Guarda da Portaria: Sejam bem vindos ao clã darkweb…");
+		sysout("Guarda da Portaria: Sejam bem vindos ao clã darkweb…", TimeUnit.MILLISECONDS, timer);
 
-		System.out.println("\n*Alpha aparece*\n");
-		System.out.println(
-				"Alpha2: Agora que estamos aqui dentro, vocês precisam se separar, Akin deverá seguir para o alojamento e trancar as portas...");
-		System.out.println(
-				"Alpha2: Você " + nome + ", deverá seguir para sala das conquistas e enfrentar o líder do clã darkweb…");
-		System.out.println(
-				"Alpha2: A única forma de vencer e recuperar o HD Supremo é derrotando o lider do clã darkweb!");
-		System.out.println("Alpha2: Boa sorte em sua última missão haha !!!");
+		sysout("\n*Alpha aparece*\n", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Alpha2: Agora que estamos aqui dentro, vocês precisam se separar, Akin deverá seguir para o alojamento e trancar as portas...", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Alpha2: Você " + nome + ", deverá seguir para sala das conquistas e enfrentar o líder do clã darkweb…", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Alpha2: A única forma de vencer e recuperar o HD Supremo é derrotando o lider do clã darkweb!", TimeUnit.MILLISECONDS, timer);
+		sysout("Alpha2: Boa sorte em sua última missão haha !!!", TimeUnit.MILLISECONDS, timer);
 
 	}
 
 	public static void capitulo4() throws InterruptedException { // CAPITULO 4
 
-		System.out.println("- Capítulo 04 - Ultimato\n");
+		sysout("- Capítulo 04 - Ultimato\n", TimeUnit.MILLISECONDS, timer);
 
-		System.out.println("Entrando na sala das conquistas um segredo é revelado...");
+		sysout("Entrando na sala das conquistas um segredo é revelado...", TimeUnit.MILLISECONDS, timer);
 
-		System.out.println(nome + ": Alpha2, eu não consigo entender! A sala está vazia!!! Onde está o Lider do Clã?");
-		System.out.println("Alpha2: Você ainda não percebeu? hahaha");
-		System.out.println(
-				"Alpha2: Após o final das guerras galácticas, foi decidido que a memória do lider do clã darkweb seria armazenada em Digital World no Grande HD Supremo...");
-		System.out.println(
-				"Alpha2: Houve um corte abrupto de energia causado por uma tempestade solar ocasionando um curto no HD Supremo");
-		System.out.println("Alpha2:" + nome + "eu sou o lider do clã darkweb, eu me chamo HAL9000!!!");
-		System.out.println("\n*Alpha2 transforma-se em HAL9000*\n");
-		System.out.println("HAL9000: Eu me aproveitei do curto circuito no HD Supremo e infectei a memória do Alpha2");
-		System.out.println(
-				"HAL9000: Eu não te trouxe aqui para salvar Digital World, eu te trouxe aqui para destruir Digital World e tranferir minha memória para seu corpo orgânico!");
-		System.out.println(nome + ": Eu não vou deixar isso aconceter! Vamos barganhar?");
-		System.out.println(nome
-				+ ": Dois desafios, se eu acertar eu ganho e você restaura a memoria do Alpha2! se eu errar fim de linha! Você ganha e tera tudo!");
-		System.out.println("HAL9000: Então é isso? Que os jogos comecem!!!");
+		sysout(nome + ": Alpha2, eu não consigo entender! A sala está vazia!!! Onde está o Lider do Clã?", TimeUnit.MILLISECONDS, timer);
+		sysout("Alpha2: Você ainda não percebeu? hahaha", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Alpha2: Após o final das guerras galácticas, foi decidido que a memória do lider do clã darkweb seria armazenada em Digital World no Grande HD Supremo...", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Alpha2: Houve um corte abrupto de energia causado por uma tempestade solar ocasionando um curto no HD Supremo", TimeUnit.MILLISECONDS, timer);
+		sysout("Alpha2:" + nome + "eu sou o lider do clã darkweb, eu me chamo HAL9000!!!", TimeUnit.MILLISECONDS, timer);
+		sysout("\n*Alpha2 transforma-se em HAL9000*\n", TimeUnit.MILLISECONDS, timer);
+		sysout("HAL9000: Eu me aproveitei do curto circuito no HD Supremo e infectei a memória do Alpha2", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"HAL9000: Eu não te trouxe aqui para salvar Digital World, eu te trouxe aqui para destruir Digital World e tranferir minha memória para seu corpo orgânico!", TimeUnit.MILLISECONDS, timer);
+		sysout(nome + ": Eu não vou deixar isso aconceter! Vamos barganhar?", TimeUnit.MILLISECONDS, timer);
+		sysout(nome
+				+ ": Dois desafios, se eu acertar eu ganho e você restaura a memoria do Alpha2! se eu errar fim de linha! Você ganha e tera tudo!", TimeUnit.MILLISECONDS, timer);
+		sysout("HAL9000: Então é isso? Que os jogos comecem!!!", TimeUnit.MILLISECONDS, timer);
 
 		// CHAMA QUESTÃO
 		questao1();
 
-		System.out.println("HAL9000: Ultima pergunta...");
+		sysout("HAL9000: Ultima pergunta...", TimeUnit.MILLISECONDS, timer);
 
 		// CHAMA QUESTÃO
 		questao10();
 		// derrotou o HAL9000
 
-		System.out.println("HAL9000: Nãooooooooooooooo...");
-		System.out.println(nome + ": Game Over para você HAL9000!");
+		sysout("HAL9000: Nãooooooooooooooo...", TimeUnit.MILLISECONDS, timer);
+		sysout(nome + ": Game Over para você HAL9000!", TimeUnit.MILLISECONDS, timer);
 
-		System.out.println(
-				"Alpha2: Obrigadx " + nome + " você conseguiu derrotar o HAL9000 e consequentemente o clã darkweb!");
-		System.out.println(
-				"Alpha2: Agora que minha memória foi reestabelecida e o HD Supremo está em segurança, podemos proseguir com a atualização de Digital World...");
+		sysout(
+				"Alpha2: Obrigadx " + nome + " você conseguiu derrotar o HAL9000 e consequentemente o clã darkweb!", TimeUnit.MILLISECONDS, timer);
+		sysout(
+				"Alpha2: Agora que minha memória foi reestabelecida e o HD Supremo está em segurança, podemos proseguir com a atualização de Digital World...", TimeUnit.MILLISECONDS, timer);
 
-		System.out.println(
-				"Digital World foi atualizado, HAL9000 foi aprisionado em um pendriver, uma tecnologia absoleta e descartado em Delta-X9 um planeta isolado...");
-		System.out
-				.println("O clã darkweb foi dissolvido e alguns membros fugiram para planetas e galaxias distantes...");
-		System.out.println("Mas enquanto a ameaça existir, estaremos de olhos bem abertos!");
-		System.out.println(". . .");
+		sysout(
+				"Digital World foi atualizado, HAL9000 foi aprisionado em um pendriver, uma tecnologia absoleta e descartado em Delta-X9 um planeta isolado...", TimeUnit.MILLISECONDS, timer);
+		sysout("O clã darkweb foi dissolvido e alguns membros fugiram para planetas e galaxias distantes...", TimeUnit.MILLISECONDS, timer);
+		sysout("Mas enquanto a ameaça existir, estaremos de olhos bem abertos!", TimeUnit.MILLISECONDS, timer);
+		sysout(". . .", TimeUnit.MILLISECONDS, timer);
+		
 		tempo();
-		System.out.println("\n .           ..         .           .       .           .           .\r\n"
-				+ "      .         .            .          .       .\r\n"
-				+ "            .         ..xxxxxxxxxx....               .       .             .\r\n"
-				+ "    .             MWMWMWWMWMWMWMWMWMWMWMWMW                       .\r\n"
-				+ "              IIIIMWMWMWMWMWMWMWMWMWMWMWMWMWMttii:        .           .\r\n"
-				+ " .      IIYVVXMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWxx...         .           .\r\n"
-				+ "     IWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMx..\r\n"
-				+ "   IIWMWMWMWMWMWMWMWMWBY%ZACH%AND%OWENMWMWMWMWMWMWMWMWMWMWMWMWMx..        .\r\n"
-				+ "    \"\"MWMWMWMWMWM\"\"\"\"\"\"\"\".  .:..   .\"\"\"\"\"MWMWMWMWMWMWMWMWMWMWMWMWMWti.\r\n"
-				+ " .     \"\"   . `  .: . :. : .  . :.  .  . . .  \"\"\"\"MWMWMWMWMWMWMWMWMWMWMWMWMti=\r\n"
-				+ "        . .   :` . :   .  .'.' '....xxxxx...,'. '   ' .\"\"\"YWMWMWMWMWMWMWMWMWMW+\r\n"
-				+ "     ; . ` .  . : . .' :  . ..XXXXXXXXXXXXXXXXXXXXx.    `     . \"YWMWMWMWMWMWMW\r\n"
-				+ ".    .  .  .    . .   .  ..XXXXXXXXWWWWWWWWWWWWWWWWXXXX.  .     .     \"\"\"\"\"\"\"\r\n"
-				+ "        ' :  : . : .  ...XXXXXWWW\"   W88N88@888888WWWWWXX.   .   .       . .\r\n"
-				+ "   . ' .    . :   ...XXXXXXWWW\"    M88N88GGGGGG888^8M \"WMBX.          .   ..  :\r\n"
-				+ "         :     ..XXXXXXXXWWW\"     M88888WWRWWWMW8oo88M   WWMX.     .    :    .\r\n"
-				+ "           \"XXXXXXXXXXXXWW\"       WN8888WWWWW  W8@@@8M    BMBRX.         .  : :\r\n"
-				+ "  .       XXXXXXXX=MMWW\":  .      W8N888WWWWWWWW88888W      XRBRXX.  .       .\r\n"
-				+ "     ....  \"\"XXXXXMM::::. .        W8@889WWWWWM8@8N8W      . . :RRXx.    .\r\n"
-				+ "         ``...'''  MMM::.:.  .      W888N89999888@8W      . . ::::\"RXV    .  :\r\n"
-				+ " .       ..'''''      MMMm::.  .      WW888N88888WW     .  . mmMMMMMRXx\r\n"
-				+ "      ..' .            \"\"MMmm .  .       WWWWWWW   . :. :,miMM\"\"\"  : \"\"`    .\r\n"
-				+ "   .                .       \"\"MMMMmm . .  .  .   ._,mMMMM\"\"\"  :  ' .  :\r\n"
-				+ "               .                  \"\"MMMMMMMMMMMMM\"\"\" .  : . '   .        .\r\n"
-				+ "          .              .     .    .                      .         .\r\n"
-				+ ".                                         .          .         .\r\n"
-				+ "\r\n"
-				+ "\n ");
+		System.out.print("\n .           ..         .           .       .           .           .\r\n");
+		Thread.sleep(200);
+		System.out.print("      .         .            .          .       .\r\n");
+		Thread.sleep(200);
+		System.out.print("            .         ..xxxxxxxxxx....               .       .             .\r\n");
+		Thread.sleep(200);
+		System.out.print("    .             MWMWMWWMWMWMWMWMWMWMWMWMW                       .\r\n");
+		Thread.sleep(200);
+		System.out.print("              IIIIMWMWMWMWMWMWMWMWMWMWMWMWMWMttii:        .           .\r\n");
+		Thread.sleep(200);
+		System.out.print(" .      IIYVVXMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWxx...         .           .\r\n");
+		Thread.sleep(200);
+		System.out.print("     IWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMx..\r\n");
+		Thread.sleep(200);
+		System.out.print("   IIWMWMWMWMWMWMWMWMWBY%ZACH%AND%OWENMWMWMWMWMWMWMWMWMWMWMWMWMx..        .\r\n");
+		Thread.sleep(200);
+		System.out.print("    \"\"MWMWMWMWMWM\"\"\"\"\"\"\"\".  .:..   .\"\"\"\"\"MWMWMWMWMWMWMWMWMWMWMWMWMWti.\r\n");
+		Thread.sleep(200);
+		System.out.print(" .     \"\"   . `  .: . :. : .  . :.  .  . . .  \"\"\"\"MWMWMWMWMWMWMWMWMWMWMWMWMti=\r\n");
+		Thread.sleep(200);
+		System.out.print("        . .   :` . :   .  .'.' '....xxxxx...,'. '   ' .\"\"\"YWMWMWMWMWMWMWMWMWMW+\r\n");
+		Thread.sleep(200);
+		System.out.print("     ; . ` .  . : . .' :  . ..XXXXXXXXXXXXXXXXXXXXx.    `     . \"YWMWMWMWMWMWMW\r\n");
+		Thread.sleep(200);
+		System.out.print(".    .  .  .    . .   .  ..XXXXXXXXWWWWWWWWWWWWWWWWXXXX.  .     .     \"\"\"\"\"\"\"\r\n");
+		Thread.sleep(200);
+		System.out.print("        ' :  : . : .  ...XXXXXWWW\"   W88N88@888888WWWWWXX.   .   .       . .\r\n");
+		Thread.sleep(200);
+		System.out.print("   . ' .    . :   ...XXXXXXWWW\"    M88N88GGGGGG888^8M \"WMBX.          .   ..  :\r\n");
+		Thread.sleep(200);
+		System.out.print("         :     ..XXXXXXXXWWW\"     M88888WWRWWWMW8oo88M   WWMX.     .    :    .\r\n");
+		Thread.sleep(200);
+		System.out.print("           \"XXXXXXXXXXXXWW\"       WN8888WWWWW  W8@@@8M    BMBRX.         .  : :\r\n");
+		Thread.sleep(200);
+		System.out.print("  .       XXXXXXXX=MMWW\":  .      W8N888WWWWWWWW88888W      XRBRXX.  .       .\r\n");
+		Thread.sleep(200);
+		System.out.print("     ....  \"\"XXXXXMM::::. .        W8@889WWWWWM8@8N8W      . . :RRXx.    .\r\n");
+		Thread.sleep(200);
+		System.out.print("         ``...'''  MMM::.:.  .      W888N89999888@8W      . . ::::\"RXV    .  :\r\n");
+		Thread.sleep(200);
+		System.out.print(" .       ..'''''      MMMm::.  .      WW888N88888WW     .  . mmMMMMMRXx\r\n");
+		Thread.sleep(200);
+		System.out.print("      ..' .            \"\"MMmm .  .       WWWWWWW   . :. :,miMM\"\"\"  : \"\"`    .\r\n");
+		Thread.sleep(200);
+		System.out.print("   .                .       \"\"MMMMmm . .  .  .   ._,mMMMM\"\"\"  :  ' .  :\r\n");
+		Thread.sleep(200);
+		System.out.print("               .                  \"\"MMMMMMMMMMMMM\"\"\" .  : . '   .        .\r\n");
+		Thread.sleep(200);
+		System.out.print("          .              .     .    .                      .         .\r\n");
+		Thread.sleep(200);
+		System.out.print(".                                         .          .         .\r\n");
+		Thread.sleep(200);
+		System.out.print("\r\n");
+		Thread.sleep(200);
+		System.out.print("\n");
 		tempo();
-		System.out.println(". . .");
-		System.out.println("Musica final >>> Moby - Porcelain: https://youtu.be/13EifDb4GYs");
+
+		sysout(". . .", TimeUnit.MILLISECONDS, timer);
+		sysout("Musica final >>> Moby - Porcelain: https://youtu.be/13EifDb4GYs", TimeUnit.MILLISECONDS, timer);
 		
 
 	}
@@ -673,18 +729,28 @@ public class Algoritimotrix {
 		nomeUsuario();
 		tempo();
 		System.out.println("\nL O A D I N G  . . .\n");
-		tempo();
-		System.out.println("~+\r\n"
-				+ "\r\n"
-				+ "                 *       +\r\n"
-				+ "           '                  |\r\n"
-				+ "       ()    .-.,=\"``\"=.    - o -\r\n"
-				+ "             '=/_       \\     |\r\n"
-				+ "          *   |  '=._    |\r\n"
-				+ "               \\     `=./`,        '\r\n"
-				+ "            .   '=.__.=' `='      *\r\n"
-				+ "   +                         +\r\n"
-				+ "        O      *        '       .\n\n");
+		Thread.sleep(200);
+		System.out.print("\n~+\r\n");
+		Thread.sleep(200);
+		System.out.print("\r\n");
+		Thread.sleep(200);
+		System.out.print("                 *       +\r\n");
+		Thread.sleep(200);
+		System.out.print("           '                  |\r\n");
+		Thread.sleep(200);
+		System.out.print("       ()    .-.,=\\\"``\\\"=.    - o -\r\n");
+		Thread.sleep(200);
+		System.out.print("             '=/_       \\\\     |\r\n");
+		Thread.sleep(200);
+		System.out.print("          *   |  '=._    |\r\n");
+		Thread.sleep(200);
+		System.out.print("               \\\\     `=./`,        '\r\n");
+		Thread.sleep(200);
+		System.out.print("            .   '=.__.=' `='      *\r\n");
+		Thread.sleep(200);
+		System.out.print("   +                         +\r\n");
+		Thread.sleep(200);
+		System.out.print("        O      *        '       .\r\n");
 		tempo();
 
 		System.out.println(
@@ -722,13 +788,12 @@ public class Algoritimotrix {
 		capitulo4();
 		
 		//SOMAR PONTOS
-		somaPontosJogo = somaPontosJogo;
-		if (somaPontosJogo >= pontosFinais) {
+		if (somaDePontos >= pontosMin) {
 			finalizaWinner();
-		} else if(somaPontosJogo <= pontosFinais) {
+		} else if(somaDePontos <= pontosMin) {
 			finalizaLoser();
 		}
-		System.out.println(somaPontosJogo);
+		System.out.println(somaDePontos);
 	}
 
 	public static void questao1() { // MATEUS CARNEIRO *ATUALIZADA*
@@ -807,7 +872,7 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
-		somaPontosJogo = somaPontosJogo + pontosq1;
+		somaDePontos = somaDePontos + pontosq1;
 	}
 
 	public static void questao2() { // MATEUS CARNEIRO *ATUALIZADA*
@@ -892,7 +957,7 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
-		somaPontosJogo = somaPontosJogo + pontosq2;
+		somaDePontos = somaDePontos + pontosq2;
 	}
 
 	public static void questao3() { // MARCOS C. *ATUALIZADA*
@@ -962,18 +1027,18 @@ public class Algoritimotrix {
 			if (alternativa.get(index).equals(" Cadeias de caracteres devem ser delimitadas por aspas duplas.")) {
 				System.out.println("Resposta Correta");
 				pontosq3 += 10;
-				sair = false;
+				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
 				pontosq3 -= 3;
 				cont++;
 				if (cont == 3) {
 					System.out.println("você errou " + cont + " vezes.");
-					sair = false;
+					sair = true;
 				}
 			}
-		} while (sair);
-		somaPontosJogo = somaPontosJogo + pontosq3;
+		} while (!sair);
+		somaDePontos = somaDePontos + pontosq3;
 	}
 
 	public static void questao4() { // MARCOS C. *ATUALIZADA*
@@ -1057,7 +1122,7 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
-		somaPontosJogo = somaPontosJogo + pontosq4;
+		somaDePontos = somaDePontos + pontosq4;
 	}
 
 	public static void questao5() { // DAIRA V. *ATUALIZADA*
@@ -1138,42 +1203,86 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
-		somaPontosJogo = somaPontosJogo + pontosq5;
+		somaDePontos = somaDePontos + pontosq5;
 	}
 
 	public static void questao6() { // DAIARA V. PRECISA REFAZER!!!
 		
-		System.out.println("Assinale a alternativa correta");
-		System.out.println("quais são os tipos de contantes existentes ? ");
-		String constantes = entrada.next();
-		
-		System.out.println(" (a)Objetiva, lógicas e reais ");
-		System.out.println(" (b)Numéricas, literais e lógicas "); //correta
-		System.out.println(" (c)Numericas, falsas e lógicas");
-		System.out.println(" (d)Literais, objetivas e lógica");
-		System.out.println(" (e)Nenhuma das alternativas está correta");
+		String opcao;
+		sair = false;
+		int cont = 0;
+		int pontosq6 = 10;
+		ArrayList<String> alternativa = new ArrayList<String>();
+		alternativa.add(" Objetiva, lógicas e reais");
+		alternativa.add(" Numéricas, literais e lógicas");
+		alternativa.add(" Numericas, falsas e lógicas"); // CORRETA
+		alternativa.add(" Literais, objetivas e lógica");
+		alternativa.add(" Nenhuma das alternativas está correta");
 
-		switch (constantes) {
-		case "a":
-			System.out.println(" (a) alternativa incorreta.");
-			break;
-		case "b":
-			System.out.println(" (b) Parabéns alternativa correta!! ");
-			break;
-		case "c":
-			System.out.println(" (c) alternativa incorreta.  ");
-			break;
-		case "d":
-			System.out.println(" (d) alternativa incorreta.");
-			break;
-		case "e":
-			System.out.println(" (e) alternativa incorreta.");
-			break;
-			
-		default:
-			System.out.println("Alternativa incorreta!!!");
-		}
-			
+		System.out.println("\nquais são os tipos de contantes existentes ? ");
+
+		do {
+			Collections.shuffle(alternativa);
+
+			for (int i = 0; i < 5; i++) {
+				switch (i) {
+				case 0:
+					System.out.println("(A)" + alternativa.get(i));
+					break;
+				case 1:
+					System.out.println("(B)" + alternativa.get(i));
+					break;
+				case 2:
+					System.out.println("(C)" + alternativa.get(i));
+					break;
+				case 3:
+					System.out.println("(D)" + alternativa.get(i));
+					break;
+				case 4:
+					System.out.println("(E)" + alternativa.get(i));
+					break;
+				}
+			}
+
+			System.out.println("\nDigite sua resposta: ");
+			opcao = entrada.next();
+			Integer index = 0;
+
+			switch (opcao.toLowerCase()) {
+
+			case "a":
+				index = 0;
+				break;
+			case "b":
+				index = 1;
+				break;
+			case "c":
+				index = 2;
+				break;
+			case "d":
+				index = 3;
+				break;
+			case "e":
+				index = 4;
+				break;
+			}
+
+			if (alternativa.get(index).equals(" Numéricas, literais e lógicas")) {
+				System.out.println("Resposta Correta");
+				pontosq6 += 10;
+				sair = true;
+			} else {
+				System.out.println("Resposta incorreta\n");
+				pontosq6 -= 3;
+				cont++;
+				if (cont == 3) {
+					System.out.println("você errou " + cont + " vezes.");
+					sair = true;
+				}
+			}
+		} while (!sair);
+		somaDePontos = somaDePontos + pontosq6;
+}
 
 	public static void questao7() { // MARCOS RIBEIRO *ATUALIZADA*
 
@@ -1254,7 +1363,7 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
-		somaPontosJogo = somaPontosJogo + pontosq7;
+		somaDePontos = somaDePontos + pontosq7;
 	}
 
 	public static void questao8() { // MARCOS RIBEIRO *ATUALIZADA*
@@ -1335,7 +1444,7 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
-		somaPontosJogo = somaPontosJogo + pontosq8;
+		somaDePontos = somaDePontos + pontosq8;
 
 	}
 
@@ -1409,19 +1518,19 @@ public class Algoritimotrix {
 					.equals(" O laço vai se repitir, porém quando x for igual à 88, ele vai parar.")) {
 				System.out.println("Resposta Correta");
 				pontosq9 += 10;
-				sair = false;
+				sair = true;
 			} else {
 				System.out.println("Resposta incorreta\n");
 				pontosq9 -= 3;
 				cont++;
 				if (cont == 3) {
 					System.out.println("você errou " + cont + " vezes.");
-					sair = false;
+					sair = true;
 				}
 			}
 
-		} while (sair);
-		somaPontosJogo = somaPontosJogo + pontosq9;
+		} while (!sair);
+		somaDePontos = somaDePontos + pontosq9;
 	}
 
 	public static void questao10() { // ELVIS W. *ATUALIZADA*
@@ -1506,7 +1615,7 @@ public class Algoritimotrix {
 			}
 
 		} while (!sair);
-		somaPontosJogo = somaPontosJogo + pontosq10;
+		somaDePontos = somaDePontos + pontosq10;
 	}
 
 	public static void finalizaWinner() throws InterruptedException { // GANHOU
