@@ -347,32 +347,32 @@ public class Algoritimotrix {
 			switch (escolha) {
 			case "1":
 				sysout("\n\nVocê selecionou a opção 1", TimeUnit.MILLISECONDS, timer);
-				sysout("\nAcaba de ganhar 5 pontos de experiência, siga para o Septo Sagrado!\n", TimeUnit.MILLISECONDS, timer);
+				sysout("\nAcaba de ganhar 5 pontos de experiência, siga para o Septo Sagrado! Más antes... um desafio para aquecer rsrs\n", TimeUnit.MILLISECONDS, timer);
 				sair = true;
 				somaDePontos = somaDePontos + 5;
 				break;
 			case "2":
 				sysout("\n\nVocê selecionou a opção 2", TimeUnit.MILLISECONDS, timer);
 				System.out.println("\nAqui está o link de uma música caso queira ouvir: < twenty one pilots: Stressed Out - https://youtu.be/pXRviuL6vMY >\n");
-				sysout("\nSiga para o Septo Sagrado!\n", TimeUnit.MILLISECONDS, timer);
+				sysout("\nSiga para o Septo Sagrado! Más antes... um desafio para aquecer rsrs\n", TimeUnit.MILLISECONDS, timer);
 				sair = true;
 				break;
 			case "3":
 				sysout("\n\nVocê selecionou a opção 3", TimeUnit.MILLISECONDS, timer);
-				sysout("\nAcaba de perder 3 pontos de experiência. siga para o Septo Sagrado!\n", TimeUnit.MILLISECONDS, timer);
+				sysout("\nAcaba de perder 3 pontos de experiência. siga para o Septo Sagrado! Más antes... um desafio para aquecer rsrs\n", TimeUnit.MILLISECONDS, timer);
 				somaDePontos = somaDePontos - 3;
 				sair = true;
 				break;
 			case "4":
 				sysout("\n\nVocê selecionou a opção 4", TimeUnit.MILLISECONDS, timer);
-				sysout("\nAcaba de ganhar 10 pontos de experiência, siga para o Septo Sagrado!\n", TimeUnit.MILLISECONDS, timer);
+				sysout("\nAcaba de ganhar 10 pontos de experiência, siga para o Septo Sagrado! Más antes... um desafio para aquecer rsrs\n", TimeUnit.MILLISECONDS, timer);
 				somaDePontos = somaDePontos + 10;
 				sair = true;
 				break;
 			case "5":
 				sysout("\n\nVocê selecionou a opção 5", TimeUnit.MILLISECONDS, timer);
 				System.out.println("\nAqui está o link de uma música caso queira ouvir: < Ki:Theory - Enjoy The Silence - https://youtu.be/l3cEWRdCI8w >\n");
-				sysout("\nSiga para o Septo Sagrado!\n", TimeUnit.MILLISECONDS, timer);
+				sysout("\nSiga para o Septo Sagrado! Más antes... um desafio para aquecer rsrs\n", TimeUnit.MILLISECONDS, timer);
 				sair = true;
 				break;
 			default:
@@ -413,11 +413,12 @@ public class Algoritimotrix {
  					sysout("\nAlhpa2: Olha só, parece que hoje é seu dia de sorte! Cuidado com os Spams!", TimeUnit.MILLISECONDS, timer);
  					sysout("\nAlhpa2: Digite um número de 1 a 5 e descubra sua sorte! \n", TimeUnit.MILLISECONDS, timer);
  					escolhaCapitulo1();
+ 					questao5();
  					sair = true;
  				break;
  				case "2": // DESFILADEIRO CODIFICADO
  					sysout("\nAlpha2: No jogo da sorte a sobrevivência é uma roleta russa, bem-vindo ao Desfiladeiro Codificado!", TimeUnit.MILLISECONDS, timer);
- 					sysout("\nAlpha2: A resposta correta levará você direto ao Septo Sagrado, você tem três tentativas para desbloquear a passagem.", TimeUnit.MILLISECONDS, timer);
+ 					sysout("\nAlpha2: A resposta correta levará você direto ao Septo Sagrado, vá para o primeiro desafio para desbloquear a passagem.", TimeUnit.MILLISECONDS, timer);
  					// CHAMA QUESTÃO
  					questao5();
  					sair = true;
@@ -429,8 +430,10 @@ public class Algoritimotrix {
  				} while (!sair);
  				
  				sysout("\n" + nome + ", você passou pelo primeiro desafio...", TimeUnit.MILLISECONDS, timer);
- 			    sysout("\nReconectando...\n\n", TimeUnit.MILLISECONDS, timer);
- 				
+ 				tempo();
+ 			    sysout("\n\nReconectando...\n\n", TimeUnit.MILLISECONDS, 40);
+ 				tempo();
+ 				tempo();
  			   sysout("\n\nAlpha2: Chegamos ao Septo Sagrado, não poderia esperar menos de você!", TimeUnit.MILLISECONDS, timer);
  			  sysout("\n\nAlpha2: Encontre o Oráculo e veja através do Cálice Celestial...", TimeUnit.MILLISECONDS, timer);
  				
@@ -732,6 +735,7 @@ public class Algoritimotrix {
 		nomeUsuario();
 		tempo();
 		sysout("\nL O A D I N G  . . .\n", TimeUnit.MILLISECONDS, 30);
+		tempo();
 		tempo();
 		Thread.sleep(200);
 		System.out.print("\n~+\r\n");
