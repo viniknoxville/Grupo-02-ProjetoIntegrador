@@ -604,6 +604,30 @@ public class Algoritimotrix {
 	public static void capitulo3() throws InterruptedException { // CAPITULO 3
 
 		sysout("\n- Capítulo 03 - Caminho de Kharkiv\n", TimeUnit.MILLISECONDS, 40);
+		
+		tempo();
+		System.out.print(" _____________________________________________\r\n"
+				+ "|.'',                                     ,''.|\r\n"
+				+ "|.'.'',                                 ,''.'.|\r\n"
+				+ "|.'.'.'',           Kharkiv           ,''.'.'.|\r\n"
+				+ "|.'.'.'.'',                         ,''.'.'.'.|\r\n"
+				+ "|.'.'.'.'.|                         |.'.'.'.'.|\r\n"
+				+ "|.'.'.'.'.|===;                 ;===|.'.'.'.'.|\r\n"
+				+ "|.'.'.'.'.|:::|',             ,'|:::|.'.'.'.'.|\r\n"
+				+ "|.'.'.'.'.|---|'.|, _______ ,|.'|---|.'.'.'.'.|\r\n"
+				+ "|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|\r\n"
+				+ "|,',',',',|---|',|'|???????|'|,'|---|,',',',',|\r\n"
+				+ "|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|\r\n"
+				+ "|.'.'.'.'.|---|','   /%%%\\   ','|---|.'.'.'.'.|\r\n"
+				+ "|.'.'.'.'.|===:'    /%%%%%\\    ':===|.'.'.'.'.|\r\n"
+				+ "|.'.'.'.'.|%%%%%%%%%%%%%%%%%%%%%%%%%|.'.'.'.'.|\r\n"
+				+ "|.'.'.'.','       /%%%%%%%%%\\       ','.'.'.'.|\r\n"
+				+ "|.'.'.','        /%%%%%%%%%%%\\        ','.'.'.|\r\n"
+				+ "|.'.','         /%%%%%%%%%%%%%\\         ','.'.|\r\n"
+				+ "|.','          /%%%%%%%%%%%%%%%\\          ','.|\r\n"
+				+ "|;____________/%%%%%SPACEE%%%%%%\\____________;|");
+	
+		
 		sysout("\n\n*Alpha aparece*\n\n", TimeUnit.MILLISECONDS, timer);
 		sysout("\nAlpha2: A grande atualização se aproxima e junto com ela o destino de Digital World! Siga pela trilha de Kharkiv, Akin será bastante útil!",
 				TimeUnit.MILLISECONDS, timer);
