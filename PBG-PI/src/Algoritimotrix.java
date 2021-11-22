@@ -704,6 +704,19 @@ public class Algoritimotrix {
 
 		sysout("\n- Capítulo 04 - Ultimato\n", TimeUnit.MILLISECONDS, 40);
 		
+		tempo();
+		System.out.print("     .\r\n"
+				+ "       |\r\n"
+				+ "       |\r\n"
+				+ "    ,-'\"`-.\r\n"
+				+ "  ,'       `.\r\n"
+				+ "  |  _____  |      .-( Nem tudo o que vemos,)\r\n"
+				+ "  | (_o_o_) |    ,'    ( é o que parece ser..)\r\n"
+				+ "  |         | ,-'\r\n"
+				+ "  | |HHHHH| |\r\n"
+				+ "  | |HHHHH| |\r\n"
+				+ "-'`-._____.-'`- \n");
+		
 		sysout("\n. . .", TimeUnit.MILLISECONDS, timer);
 		sysout("\nMúsica Capítulo 04 >>> Radiohead - Nude: https://youtu.be/BbWBRnDK_AE \n", TimeUnit.MILLISECONDS, timer);
 	
@@ -717,7 +730,7 @@ public class Algoritimotrix {
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\nAlpha2: Houve um corte abrupto de energia causado por uma tempestade solar ocasionando um curto no HD Supremo",
 				TimeUnit.MILLISECONDS, timer);
-		sysout("\nAlpha2:" + nome + "eu sou o lider do clã darkweb, eu me chamo HAL9000!!!", TimeUnit.MILLISECONDS,
+		sysout("\nAlpha2:" + nome + " eu sou o lider do clã darkweb, eu me chamo HAL9000!!!", TimeUnit.MILLISECONDS,
 				timer);
 		sysout("\n\n*Alpha2 transforma-se em HAL9000*\n\n", TimeUnit.MILLISECONDS, timer);
 		sysout("\nHAL9000: Eu me aproveitei do curto circuito no HD Supremo e infectei a memória do Alpha2",
@@ -733,7 +746,7 @@ public class Algoritimotrix {
 		// CHAMA QUESTÃO
 		questao1();
 
-		sysout("\nHAL9000: Muito bem" +nome+ " agora, a última pergunta...", TimeUnit.MILLISECONDS, timer);
+		sysout("\nHAL9000: Muito bem " +nome+ " agora, a última pergunta...", TimeUnit.MILLISECONDS, timer);
 
 		// CHAMA QUESTÃO
 		questao10();
