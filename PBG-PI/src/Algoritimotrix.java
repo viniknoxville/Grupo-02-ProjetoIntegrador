@@ -33,7 +33,30 @@ public class Algoritimotrix {
 		Scanner entrada = new Scanner(System.in);
 		String sair, sim = "1", nao = "2";
 		boolean saida = false;
-		String[] opcaoMenu = { "1 - Jogar		", "2 - Instruções		", "3 - Crédito		", "4 - Sair		" };
+		String[] opcaoMenu = { "1 - Jogar		", "2 - Instruções		", "3 - Créditos		", "4 - Sair		" };
+		
+		tempo();
+		System.out.println(
+				"           _      _____  ____  _____  _____ _______ __  __  ____ _______ _____  _______   __");
+		Thread.sleep(100);
+		System.out.println(
+				"     /\\   | |    / ____|/ __ \\|  __ \\|_   _|__   __|  \\/  |/ __ \\__   __|  __ \\|_   _\\ \\ / /");
+		Thread.sleep(100);
+		System.out.println(
+				"    /  \\  | |   | |  __| |  | | |__) | | |    | |  | \\  / | |  | | | |  | |__) | | |  \\ V / ");
+		Thread.sleep(100);
+		System.out.println(
+				"   / /\\ \\ | |   | | |_ | |  | |  _  /  | |    | |  | |\\/| | |  | | | |  |  _  /  | |   > <  ");
+		Thread.sleep(100);
+		;
+		System.out.println(
+				"  / ____ \\| |___| |__| | |__| | | \\ \\ _| |_   | |  | |  | | |__| | | |  | | \\ \\ _| |_ / . \\ ");
+		Thread.sleep(100);
+		System.out.println(
+				" /_/    \\_\\______\\_____|\\____/|_|  \\_\\_____|  |_|  |_|  |_|\\____/  |_|  |_|  \\_\\_____/_/ \\_\\");
+		System.out.println();
+		tempo();
+		
 		do {
 			System.out.println("\n\t\t________________________________________________");
 			System.out.println("\t\t|						|");
@@ -116,118 +139,126 @@ public class Algoritimotrix {
 
 		tempo();
 		System.out.println("\n						*CRÉDITOS*");
-		tempo();
+		Thread.sleep(200);
 		System.out.print(
 				"\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|					*CRIADORES E EDITORES*						|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out
 				.print("\n|		DAIARA VIEIRA, ELVIS WILLIAM, MARCOS CAETANO, MARCOS V. RIBEIRO, MATEUS CARNEIRO	|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|					     *DISCIPLINA*						|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|				   	 Projeto Integrador						|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|					      *ORIENTADOR*						|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|				 	 Eduardo Takeo Ueda						|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|				      	     *PARTICIPANTES*						|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|			Professores Eduardo Takeo e Fernando Almeida, alunos Turma A			|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|					   *MÚSICAS*							|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|		Ki:Theory - Enjoy The Silence: https://youtu.be/l3cEWRdCI8w				|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|		twenty one pilots - Stressed Out: https://youtu.be/pXRviuL6vMY				|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|		Radiohead - Nude: https://youtu.be/BbWBRnDK_AE						|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|		Moby - Porcelain: https://youtu.be/13EifDb4GYs						|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|		LSD - Genius ft. Sia, Diplo, Labrinth: https://youtu.be/HhoATZ1Imtw			|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|		Julian Casablancas - 11th Dimension: https://youtu.be/pl15PlIXHIk			|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|		Daft Punk - One More Time: https://youtu.be/FGBhQbmPwH8					|");
-		tempo();
+		Thread.sleep(200);
 		System.out
 				.print("\n|		The Weeknd & Ariana Grande - Save Your Tears (Remix): https://youtu.be/LIIDh-qI9oI	|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|					   *AGRADECIMENTOS*						|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print(
-				"\n|	Nós do GRUPO 2 - TURMA A, agradecemos primeiramente à todos os professores pelos ensinamentos	|");
-		tempo();
+				"\n|	Nós do GRUPO 2 - TURMA A, agradecemos à todos os professores pelos ensinamentos			|");
+		Thread.sleep(200);
 		System.out
 				.print("\n|	cada professor colaborou para que nós pudessemos realizar este projeto, em especial		|");
-		tempo();
+		Thread.sleep(200);
 		System.out
 				.print("\n|	ao Professor Eduardo Takeo Ueda que nos acompanhou e instruiu durante o projeto, e		|");
-		tempo();
+		Thread.sleep(200);
 		System.out
 				.print("\n|	ao Professor Fernando Almeida que nos ensinou sobre a disciplina escolhida como 		|");
-		tempo();
+		Thread.sleep(200);
 		System.out
 				.print("\n|	base para o nosso jogo RPG. Agradecemos também à todos os alunos da Turma A que 		|");
-		tempo();
+		Thread.sleep(200);
 		System.out
 				.print("\n|	também fizeram parte do nosso projeto, ao responder o questionário e nos ajudar na		|");
-		tempo();
+		Thread.sleep(200);
 		System.out
 				.print("\n|	construção do mesmo. Agradecimentos ao colégio Senac Santo Amaro pela oportunidade,		|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|	acomodação e infraestrutura para o nosso desenvolvimento.					|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print("\n|													|");
-		tempo();
+		Thread.sleep(200);
 		System.out.print(
 				"\n/////////////////////////////////////////////////////////////////////////////////////////////////////////\n");
 		tempo();
 	}
-
+	
+	public static void pontosDecisao () throws InterruptedException {	
+		if (somaDePontos >= pontosMin) {
+			finalizaWinner();
+		} else {
+			finalizaLoser();
+		}
+	}
+	
 	public static void instrucoes() throws InterruptedException { // INSTRUÇÕES
 		tempo();
 
@@ -272,29 +303,6 @@ public class Algoritimotrix {
 
 	public static void tempo() throws InterruptedException { // DELAY LINHAS
 		Thread.sleep(1000);
-	}
-
-	public static void bemVindos() throws InterruptedException { // BEM VINDO
-		tempo();
-		System.out.println(
-				"           _      _____  ____  _____  _____ _______ __  __  ____ _______ _____  _______   __");
-		Thread.sleep(100);
-		System.out.println(
-				"     /\\   | |    / ____|/ __ \\|  __ \\|_   _|__   __|  \\/  |/ __ \\__   __|  __ \\|_   _\\ \\ / /");
-		Thread.sleep(100);
-		System.out.println(
-				"    /  \\  | |   | |  __| |  | | |__) | | |    | |  | \\  / | |  | | | |  | |__) | | |  \\ V / ");
-		Thread.sleep(100);
-		System.out.println(
-				"   / /\\ \\ | |   | | |_ | |  | |  _  /  | |    | |  | |\\/| | |  | | | |  |  _  /  | |   > <  ");
-		Thread.sleep(100);
-		;
-		System.out.println(
-				"  / ____ \\| |___| |__| | |__| | | \\ \\ _| |_   | |  | |  | | |__| | | |  | | \\ \\ _| |_ / . \\ ");
-		Thread.sleep(100);
-		System.out.println(
-				" /_/    \\_\\______\\_____|\\____/|_|  \\_\\_____|  |_|  |_|  |_|\\____/  |_|  |_|  \\_\\_____/_/ \\_\\");
-
 	}
 
 	public static void vilao() throws InterruptedException { // VILÃO
@@ -410,14 +418,23 @@ public class Algoritimotrix {
 
 		sysout("\n- Capitulo 01 - Encontre o Oráculo\n", TimeUnit.MILLISECONDS, 40);
 
-		System.out.println(
-				"      _    .  ,   .           .\r\n" + "    *  / \\_ *  / \\_      _  *        *   /\\'__        *\r\n"
-						+ "      /    \\  /    \\,   ((        .    _/  /  \\  *'.\r\n"
-						+ " .   /\\/\\  /\\/ :' __ \\_  `          _^/  ^/    `--.\r\n"
-						+ "    /    \\/  \\  _/  \\-'\\      *    /.' ^_   \\_   .'\\  *\r\n"
-						+ "  /\\  .-   `. \\/     \\ /==~=-=~=-=-;.  _/ \\ -. `_/   \\\r\n"
-						+ " /  `-.__ ^   / .-'.--\\ =-=~_=-=~=^/  _ `--./ .-'  `-\r\n"
-						+ "/___     `.  / /       `.~-^=-=~=^=.-'      '-._ `._\n");
+		System.out.println("      _    .  ,   .           .");
+		Thread.sleep(100);
+		System.out.println("    *  / \\_ *  / \\_      _  *        *   /\\'__        *");
+		Thread.sleep(100);
+		System.out.println("      /    \\  /    \\,   ((        .    _/  /  \\  *'.");
+		Thread.sleep(100);
+		System.out.println(" .   /\\/\\  /\\/ :' __ \\_  `          _^/  ^/    `--.");
+		Thread.sleep(100);
+		System.out.println("    /    \\/  \\  _/  \\-'\\      *    /.' ^_   \\_   .'\\  *");
+		Thread.sleep(100);
+		System.out.println("  /\\  .-   `. \\/     \\ /==~=-=~=-=-;.  _/ \\ -. `_/   \\");
+		Thread.sleep(100);
+		System.out.println(" /  `-.__ ^   / .-'.--\\ =-=~_=-=~=^/  _ `--./ .-'  `-");
+		Thread.sleep(100);
+		System.out.println("/___     `.  / /       `.~-^=-=~=^=.-'      '-._ `._");
+		Thread.sleep(100);
+		System.out.println();
 
 		sysout("\n\n*Alpha aparece*\n\n", TimeUnit.MILLISECONDS, timer);
 
@@ -606,28 +623,48 @@ public class Algoritimotrix {
 		sysout("\n- Capítulo 03 - Caminho de Kharkiv\n", TimeUnit.MILLISECONDS, 40);
 		
 		tempo();
-		System.out.print(" _____________________________________________\r\n"
-				+ "|.'',                                     ,''.|\r\n"
-				+ "|.'.'',                                 ,''.'.|\r\n"
-				+ "|.'.'.'',           Kharkiv           ,''.'.'.|\r\n"
-				+ "|.'.'.'.'',                         ,''.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|                         |.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|===;                 ;===|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|:::|',             ,'|:::|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|---|'.|, _______ ,|.'|---|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|\r\n"
-				+ "|,',',',',|---|',|'|???????|'|,'|---|,',',',',|\r\n"
-				+ "|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|---|','   /%%%\\   ','|---|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|===:'    /%%%%%\\    ':===|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|%%%%%%%%%%%%%%%%%%%%%%%%%|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.','       /%%%%%%%%%\\       ','.'.'.'.|\r\n"
-				+ "|.'.'.','        /%%%%%%%%%%%\\        ','.'.'.|\r\n"
-				+ "|.'.','         /%%%%%%%%%%%%%\\         ','.'.|\r\n"
-				+ "|.','          /%%%%%%%%%%%%%%%\\          ','.|\r\n"
-				+ "|;____________/%%%%%SPACEE%%%%%%\\____________;|");
+		Thread.sleep(100);
+		System.out.println(" _____________________________________________");
+		Thread.sleep(100);
+		System.out.println("|.'',                                     ,''.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'',                                 ,''.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'',           Kharkiv           ,''.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'',                         ,''.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|                         |.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|===;                 ;===|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|:::|',             ,'|:::|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|---|'.|, _______ ,|.'|---|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|,',',',',|---|',|'|???????|'|,'|---|,',',',',|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|---|','   /%%%\\   ','|---|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|===:'    /%%%%%\\    ':===|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|%%%%%%%%%%%%%%%%%%%%%%%%%|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.','       /%%%%%%%%%\\       ','.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.','        /%%%%%%%%%%%\\        ','.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.','         /%%%%%%%%%%%%%\\         ','.'.|");
+		Thread.sleep(100);
+		System.out.println("|.','          /%%%%%%%%%%%%%%%\\          ','.|");
+		Thread.sleep(100);
+		System.out.println("|;____________/%%%%%SPACEE%%%%%%\\____________;|\n");
+		Thread.sleep(100);
 	
-		
 		sysout("\n\n*Alpha aparece*\n\n", TimeUnit.MILLISECONDS, timer);
 		sysout("\nAlpha2: A grande atualização se aproxima e junto com ela o destino de Digital World! Siga pela trilha de Kharkiv, Akin será bastante útil!",
 				TimeUnit.MILLISECONDS, timer);
@@ -720,7 +757,7 @@ public class Algoritimotrix {
 		// CHAMA QUESTÃO
 		questao10();
 		// derrotou o HAL9000
-
+		
 		sysout("\nHAL9000: Nãooooooooooooooo...", TimeUnit.MILLISECONDS, timer);
 		sysout("\n" + nome + ": Game Over para você HAL9000!", TimeUnit.MILLISECONDS, timer);
 
@@ -796,7 +833,9 @@ public class Algoritimotrix {
 
 		sysout("\n. . .", TimeUnit.MILLISECONDS, timer);
 		sysout("\nMusica final >>> Moby - Porcelain: https://youtu.be/13EifDb4GYs", TimeUnit.MILLISECONDS, timer);
-
+		
+		pontosDecisao();
+		
 	}
 
 	public static void jogar() throws InterruptedException {
@@ -865,14 +904,6 @@ public class Algoritimotrix {
 		capitulo2();
 		capitulo3();
 		capitulo4();
-
-		// SOMAR PONTOS
-		if (somaDePontos >= pontosMin) {
-			finalizaWinner();
-		} else if (somaDePontos <= pontosMin) {
-			finalizaLoser();
-		}
-		System.out.println(somaDePontos);
 	}
 
 	public static void questao1() throws InterruptedException { // MATEUS CARNEIRO *ATUALIZADA*
@@ -1702,8 +1733,8 @@ public class Algoritimotrix {
 	public static void finalizaWinner() throws InterruptedException { // GANHOU
 
 		tempo();
-		System.out.println("                                                                         ");
-		System.out.println(" _______  _______  ______    _______  _______  _______  __    _  _______ ");
+		System.out.println();
+		System.out.println("\n _______  _______  ______    _______  _______  _______  __    _  _______ ");
 		Thread.sleep(100);
 		System.out.println("|       ||   _   ||    _ |  |   _   ||  _    ||       ||  |  | ||       |");
 		Thread.sleep(100);
@@ -1733,7 +1764,8 @@ public class Algoritimotrix {
 
 	public static void finalizaLoser() throws InterruptedException { // PERDER
 		tempo();
-		System.out.println(" _______   _______   __   __   _______      _______   __   __   _______   ______   ");
+		System.out.println();
+		System.out.println("\n _______   _______   __   __   _______      _______   __   __   _______   ______   ");
 		Thread.sleep(100);
 		System.out.println("|       | |   _   | |  |_|  | |       |    |       | |  | |  | |       | |    _ |  ");
 		Thread.sleep(100);
@@ -1741,7 +1773,6 @@ public class Algoritimotrix {
 		Thread.sleep(100);
 		System.out.println("|   | __  |       | |       | |   |___     |  | |  | |       | |   |___  |   |_||_ ");
 		Thread.sleep(100);
-		;
 		System.out.println("|   ||  | |       | |       | |    ___|    |  |_|  | |       | |    ___| |    __  |");
 		Thread.sleep(100);
 		System.out.println("|   |_| | |   _   | | ||_|| | |   |___     |       |  |     |  |   |___  |   |  | |");
@@ -1754,8 +1785,6 @@ public class Algoritimotrix {
 	}
 
 	public static void main(String[] args) throws InterruptedException {
-
-		bemVindos();
 
 		menu();
 
