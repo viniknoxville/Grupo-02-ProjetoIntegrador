@@ -418,6 +418,11 @@ public class Algoritimotrix {
 						+ "  /\\  .-   `. \\/     \\ /==~=-=~=-=-;.  _/ \\ -. `_/   \\\r\n"
 						+ " /  `-.__ ^   / .-'.--\\ =-=~_=-=~=^/  _ `--./ .-'  `-\r\n"
 						+ "/___     `.  / /       `.~-^=-=~=^=.-'      '-._ `._\n");
+		
+		
+		sysout("\n. . .", TimeUnit.MILLISECONDS, timer);
+		sysout("\nMúsica Capítulo 01 >>> Julian Casablancas - 11th Dimension: https://youtu.be/pl15PlIXHIk \n", TimeUnit.MILLISECONDS, timer);
+	
 
 		sysout("\n\n*Alpha aparece*\n\n", TimeUnit.MILLISECONDS, timer);
 
@@ -556,6 +561,11 @@ public class Algoritimotrix {
 		System.out.print("     .==============.\r\n");
 		Thread.sleep(200);
 		System.out.print("    .================.\n");
+		
+		
+		sysout("\n. . .", TimeUnit.MILLISECONDS, timer);
+		sysout("\nMúsica Capítulo 02 >>> Daft Punk - One More Time: https://youtu.be/FGBhQbmPwH8 \n", TimeUnit.MILLISECONDS, timer);
+		
 
 		sysout("\nAlpha2: Pelo visto deu tudo certo com o Oráculo né? Enfim, a masmorra dos Orcs te espera, siga pelo caminho das pedras...",
 				TimeUnit.MILLISECONDS, timer);
@@ -626,6 +636,10 @@ public class Algoritimotrix {
 				+ "|.'.','         /%%%%%%%%%%%%%\\         ','.'.|\r\n"
 				+ "|.','          /%%%%%%%%%%%%%%%\\          ','.|\r\n"
 				+ "|;____________/%%%%%SPACEE%%%%%%\\____________;|");
+		
+		
+		sysout("\n. . .", TimeUnit.MILLISECONDS, timer);
+		sysout("\nMúsica Capítulo 03 >>> LSD - Genius ft. Sia, Diplo, Labrinth: https://youtu.be/HhoATZ1Imtw \n", TimeUnit.MILLISECONDS, timer);
 	
 		
 		sysout("\n\n*Alpha aparece*\n\n", TimeUnit.MILLISECONDS, timer);
@@ -689,6 +703,10 @@ public class Algoritimotrix {
 	public static void capitulo4() throws InterruptedException { // CAPITULO 4
 
 		sysout("\n- Capítulo 04 - Ultimato\n", TimeUnit.MILLISECONDS, 40);
+		
+		sysout("\n. . .", TimeUnit.MILLISECONDS, timer);
+		sysout("\nMúsica Capítulo 04 >>> Radiohead - Nude: https://youtu.be/BbWBRnDK_AE \n", TimeUnit.MILLISECONDS, timer);
+	
 
 		sysout("\nEntrando na sala das conquistas um segredo é revelado...", TimeUnit.MILLISECONDS, timer);
 
@@ -831,6 +849,9 @@ public class Algoritimotrix {
 		Thread.sleep(200);
 		System.out.print("        O      *        '       .\r\n");
 		tempo();
+		
+		sysout("\n. . .", TimeUnit.MILLISECONDS, timer);
+		sysout("\nMúsica Inicio jogo >>> The Weeknd & Ariana Grande - Save Your Tears (Remix): https://youtu.be/LIIDh-qI9oI \n", TimeUnit.MILLISECONDS, timer);
 
 		sysout("\nAlpha2: Olá " + nome + ", seja bem-vindo a Digital World!", TimeUnit.MILLISECONDS, timer);
 		sysout("\nAlpha2: Eu sou uma inteligência artificial e responsável por manter a ordem e o planeta atualizado e conectado!",
