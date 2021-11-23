@@ -276,24 +276,19 @@ public class Algoritimotrix {
 
 	public static void bemVindos() throws InterruptedException { // BEM VINDO
 		tempo();
-		System.out.println(
-				"           _      _____  ____  _____  _____ _______ __  __  ____ _______ _____  _______   __");
+		System.out.println("           _      _____  ____  _____  _____ _______ __  __  ____ _______ _____  _______   __");
 		Thread.sleep(100);
-		System.out.println(
-				"     /\\   | |    / ____|/ __ \\|  __ \\|_   _|__   __|  \\/  |/ __ \\__   __|  __ \\|_   _\\ \\ / /");
+		System.out.println("     /\\   | |    / ____|/ __ \\|  __ \\|_   _|__   __|  \\/  |/ __ \\__   __|  __ \\|_   _\\ \\ / /");
 		Thread.sleep(100);
-		System.out.println(
-				"    /  \\  | |   | |  __| |  | | |__) | | |    | |  | \\  / | |  | | | |  | |__) | | |  \\ V / ");
+		System.out.println("    /  \\  | |   | |  __| |  | | |__) | | |    | |  | \\  / | |  | | | |  | |__) | | |  \\ V / ");
 		Thread.sleep(100);
-		System.out.println(
-				"   / /\\ \\ | |   | | |_ | |  | |  _  /  | |    | |  | |\\/| | |  | | | |  |  _  /  | |   > <  ");
+		System.out.println("   / /\\ \\ | |   | | |_ | |  | |  _  /  | |    | |  | |\\/| | |  | | | |  |  _  /  | |   > <  ");
+		Thread.sleep(100);;
+		System.out.println("  / ____ \\| |___| |__| | |__| | | \\ \\ _| |_   | |  | |  | | |__| | | |  | | \\ \\ _| |_ / . \\ ");
 		Thread.sleep(100);
-		;
-		System.out.println(
-				"  / ____ \\| |___| |__| | |__| | | \\ \\ _| |_   | |  | |  | | |__| | | |  | | \\ \\ _| |_ / . \\ ");
+		System.out.println(" /_/    \\_\\______\\_____|\\____/|_|  \\_\\_____|  |_|  |_|  |_|\\____/  |_|  |_|  \\_\\_____/_/ \\_\\");
 		Thread.sleep(100);
-		System.out.println(
-				" /_/    \\_\\______\\_____|\\____/|_|  \\_\\_____|  |_|  |_|  |_|\\____/  |_|  |_|  \\_\\_____/_/ \\_\\");
+		System.out.println("                                                                                            \r\n");
 
 	}
 
@@ -614,28 +609,48 @@ public class Algoritimotrix {
 	public static void capitulo3() throws InterruptedException { // CAPITULO 3
 
 		sysout("\n- Capítulo 03 - Caminho de Kharkiv\n", TimeUnit.MILLISECONDS, 40);
-		
 		tempo();
-		System.out.print(" _____________________________________________\r\n"
-				+ "|.'',                                     ,''.|\r\n"
-				+ "|.'.'',                                 ,''.'.|\r\n"
-				+ "|.'.'.'',           Kharkiv           ,''.'.'.|\r\n"
-				+ "|.'.'.'.'',                         ,''.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|                         |.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|===;                 ;===|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|:::|',             ,'|:::|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|---|'.|, _______ ,|.'|---|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|\r\n"
-				+ "|,',',',',|---|',|'|???????|'|,'|---|,',',',',|\r\n"
-				+ "|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|---|','   /%%%\\   ','|---|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|===:'    /%%%%%\\    ':===|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.'.|%%%%%%%%%%%%%%%%%%%%%%%%%|.'.'.'.'.|\r\n"
-				+ "|.'.'.'.','       /%%%%%%%%%\\       ','.'.'.'.|\r\n"
-				+ "|.'.'.','        /%%%%%%%%%%%\\        ','.'.'.|\r\n"
-				+ "|.'.','         /%%%%%%%%%%%%%\\         ','.'.|\r\n"
-				+ "|.','          /%%%%%%%%%%%%%%%\\          ','.|\r\n"
-				+ "|;____________/%%%%%SPACEE%%%%%%\\____________;|");
+		System.out.println(" _____________________________________________");
+		Thread.sleep(100);
+		System.out.println("|.'',                                     ,''.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'',                                 ,''.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'',           Kharkiv           ,''.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'',                         ,''.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|                         |.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|===;                 ;===|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|:::|',             ,'|:::|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|---|'.|, _______ ,|.'|---|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|,',',',',|---|',|'|???????|'|,'|---|,',',',',|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|---|','   /%%%\\   ','|---|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|===:'    /%%%%%\\    ':===|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.'.|%%%%%%%%%%%%%%%%%%%%%%%%%|.'.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.'.','       /%%%%%%%%%\\       ','.'.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.'.','        /%%%%%%%%%%%\\        ','.'.'.|");
+		Thread.sleep(100);
+		System.out.println("|.'.','         /%%%%%%%%%%%%%\\         ','.'.|");
+		Thread.sleep(100);
+		System.out.println("|.','          /%%%%%%%%%%%%%%%\\          ','.|");
+		Thread.sleep(100);
+		System.out.println("|;____________/%%%%%SPACEE%%%%%%\\____________;|");
+		Thread.sleep(100);
+		System.out.println();
 		
 		
 		sysout("\n. . .", TimeUnit.MILLISECONDS, timer);
@@ -705,17 +720,27 @@ public class Algoritimotrix {
 		sysout("\n- Capítulo 04 - Ultimato\n", TimeUnit.MILLISECONDS, 40);
 		
 		tempo();
-		System.out.print("     .\r\n"
-				+ "       |\r\n"
-				+ "       |\r\n"
-				+ "    ,-'\"`-.\r\n"
-				+ "  ,'       `.\r\n"
-				+ "  |  _____  |      .-( Nem tudo o que vemos,)\r\n"
-				+ "  | (_o_o_) |    ,'    ( é o que parece ser..)\r\n"
-				+ "  |         | ,-'\r\n"
-				+ "  | |HHHHH| |\r\n"
-				+ "  | |HHHHH| |\r\n"
-				+ "-'`-._____.-'`- \n");
+		System.out.println("     .");
+		Thread.sleep(100);
+		System.out.println("       |");
+		Thread.sleep(100);
+		System.out.println("       |");
+		Thread.sleep(100);
+		System.out.println("    ,-'\"`-.");
+		Thread.sleep(100);;
+		System.out.println("  ,'       `.");
+		Thread.sleep(100);
+		System.out.println("  |  _____  |      .-( Nem tudo o que vemos,)");
+		Thread.sleep(100);
+		System.out.println("  | (_o_o_) |    ,'    ( é o que parece ser..)");
+		Thread.sleep(100);
+		System.out.println("  |         | ,-'");
+		Thread.sleep(100);;
+		System.out.println("  | |HHHHH| |");
+		Thread.sleep(100);
+		System.out.println("  | |HHHHH| |");
+		Thread.sleep(100);
+		System.out.println("-'`-._____.-'`- \n");
 		
 		sysout("\n. . .", TimeUnit.MILLISECONDS, timer);
 		sysout("\nMúsica Capítulo 04 >>> Radiohead - Nude: https://youtu.be/BbWBRnDK_AE \n", TimeUnit.MILLISECONDS, timer);
