@@ -90,7 +90,7 @@ public class Algoritimotrix {
 
 	}
 
-	public static void historia() throws InterruptedException {  //HISTORIA 
+	public static void historia() throws InterruptedException { // HISTORIA
 
 		sysout("\n Digital World é um planeta totalmente digital e conectado que fica localizado na galáxia A23,",
 				TimeUnit.MILLISECONDS, timer);
@@ -276,19 +276,27 @@ public class Algoritimotrix {
 
 	public static void bemVindos() throws InterruptedException { // BEM VINDO
 		tempo();
-		System.out.println("           _      _____  ____  _____  _____ _______ __  __  ____ _______ _____  _______   __");
+		System.out.println(
+				"           _      _____  ____  _____  _____ _______ __  __  ____ _______ _____  _______   __");
 		Thread.sleep(100);
-		System.out.println("     /\\   | |    / ____|/ __ \\|  __ \\|_   _|__   __|  \\/  |/ __ \\__   __|  __ \\|_   _\\ \\ / /");
+		System.out.println(
+				"     /\\   | |    / ____|/ __ \\|  __ \\|_   _|__   __|  \\/  |/ __ \\__   __|  __ \\|_   _\\ \\ / /");
 		Thread.sleep(100);
-		System.out.println("    /  \\  | |   | |  __| |  | | |__) | | |    | |  | \\  / | |  | | | |  | |__) | | |  \\ V / ");
+		System.out.println(
+				"    /  \\  | |   | |  __| |  | | |__) | | |    | |  | \\  / | |  | | | |  | |__) | | |  \\ V / ");
 		Thread.sleep(100);
-		System.out.println("   / /\\ \\ | |   | | |_ | |  | |  _  /  | |    | |  | |\\/| | |  | | | |  |  _  /  | |   > <  ");
-		Thread.sleep(100);;
-		System.out.println("  / ____ \\| |___| |__| | |__| | | \\ \\ _| |_   | |  | |  | | |__| | | |  | | \\ \\ _| |_ / . \\ ");
+		System.out.println(
+				"   / /\\ \\ | |   | | |_ | |  | |  _  /  | |    | |  | |\\/| | |  | | | |  |  _  /  | |   > <  ");
 		Thread.sleep(100);
-		System.out.println(" /_/    \\_\\______\\_____|\\____/|_|  \\_\\_____|  |_|  |_|  |_|\\____/  |_|  |_|  \\_\\_____/_/ \\_\\");
+		;
+		System.out.println(
+				"  / ____ \\| |___| |__| | |__| | | \\ \\ _| |_   | |  | |  | | |__| | | |  | | \\ \\ _| |_ / . \\ ");
 		Thread.sleep(100);
-		System.out.println("                                                                                            \r\n");
+		System.out.println(
+				" /_/    \\_\\______\\_____|\\____/|_|  \\_\\_____|  |_|  |_|  |_|\\____/  |_|  |_|  \\_\\_____/_/ \\_\\");
+		Thread.sleep(100);
+		System.out.println(
+				"                                                                                            \r\n");
 
 	}
 
@@ -310,7 +318,7 @@ public class Algoritimotrix {
 			case "2":
 				sysout("\n\nVocê selecionou a opção 2", TimeUnit.MILLISECONDS, timer);
 				System.out.println(
-						"\nAqui está o link de uma música caso queira ouvir: < twenty one pilots: Stressed Out - https://youtu.be/pXRviuL6vMY >\n");
+						"\nVocê ganhou um link de uma música para ouvir: < twenty one pilots: Stressed Out - https://youtu.be/pXRviuL6vMY >\n");
 				sysout("\nSiga para o Septo Sagrado! Más antes... um desafio para aquecer rsrs\n",
 						TimeUnit.MILLISECONDS, timer);
 				sair = true;
@@ -319,20 +327,20 @@ public class Algoritimotrix {
 				sysout("\n\nVocê selecionou a opção 3", TimeUnit.MILLISECONDS, timer);
 				sysout("\nAcaba de perder 3 pontos de experiência. siga para o Septo Sagrado! Más antes... um desafio para aquecer rsrs\n",
 						TimeUnit.MILLISECONDS, timer);
-				somaDePontos = - 3;
+				somaDePontos = -3;
 				sair = true;
 				break;
 			case "4":
 				sysout("\n\nVocê selecionou a opção 4", TimeUnit.MILLISECONDS, timer);
 				sysout("\nAcaba de ganhar 10 pontos de experiência, siga para o Septo Sagrado! Más antes... um desafio para aquecer rsrs\n",
 						TimeUnit.MILLISECONDS, timer);
-				somaDePontos =  10;
+				somaDePontos = 10;
 				sair = true;
 				break;
 			case "5":
 				sysout("\n\nVocê selecionou a opção 5", TimeUnit.MILLISECONDS, timer);
 				System.out.println(
-						"\nAqui está o link de uma música caso queira ouvir: < Ki:Theory - Enjoy The Silence - https://youtu.be/l3cEWRdCI8w >\n");
+						"\nVocê ganhou um link de uma música para ouvir: < Ki:Theory - Enjoy The Silence - https://youtu.be/l3cEWRdCI8w >\n");
 				sysout("\nSiga para o Septo Sagrado! Más antes... um desafio para aquecer rsrs\n",
 						TimeUnit.MILLISECONDS, timer);
 				sair = true;
@@ -350,7 +358,8 @@ public class Algoritimotrix {
 		sysout("\n*** Capitulo 01 - Encontre o Oráculo ***\n", TimeUnit.MILLISECONDS, 40);
 
 		System.out.println("        _    .  ,   .           .");
-		Thread.sleep(100);;
+		Thread.sleep(100);
+		;
 		System.out.println("    *  / \\_ *  / \\_      _  *        *   /\\'__        *");
 		Thread.sleep(100);
 		System.out.println("      /    \\  /    \\,   ((        .    _/  /  \\  *'.");
@@ -358,17 +367,20 @@ public class Algoritimotrix {
 		System.out.println(" .   /\\/\\  /\\/ :' __ \\_  `          _^/  ^/    `--.");
 		Thread.sleep(100);
 		System.out.println("    /    \\/  \\  _/  \\-'\\      *    /.' ^_   \\_   .'\\  *");
-		Thread.sleep(100);;
+		Thread.sleep(100);
+		;
 		System.out.println("  /\\  .-   `. \\/     \\ /==~=-=~=-=-;.  _/ \\ -. `_/   \\");
 		Thread.sleep(100);
 		System.out.println(" /  `-.__ ^   / .-'.--\\ =-=~_=-=~=^/  _ `--./ .-'  `-");
 		Thread.sleep(100);
 		System.out.println("/___     `.  / /       `.~-^=-=~=^=.-'      '-._ `._");
-		
+
 		sysout("\n.  .  .\n", TimeUnit.MILLISECONDS, 30);
-		sysout("\nMúsica Capítulo 01 >>> Julian Casablancas - 11th Dimension: https://youtu.be/pl15PlIXHIk \n", TimeUnit.MILLISECONDS, timer);
+		sysout("\nMúsica Capítulo 01 >>> Julian Casablancas - 11th Dimension: https://youtu.be/pl15PlIXHIk \n",
+				TimeUnit.MILLISECONDS, timer);
 		sysout("\n\n*Alpha2 aparece*\n\n", TimeUnit.MILLISECONDS, timer);
-		sysout("\nAlpha2: Não temos muito tempo, a próxima atualização do planeta se aproxima e sem o HD Supremo não temos como fazer o backup",  TimeUnit.MILLISECONDS, timer);
+		sysout("\nAlpha2: Não temos muito tempo, a próxima atualização do planeta se aproxima e sem o HD Supremo não temos como fazer o backup.",
+				TimeUnit.MILLISECONDS, timer);
 		sysout("\nAlpha2: Sem a atualização nosso planeta se tornara obsoleto, nossos sistemas de segurança entraram em colapso e a vida em Digital World chegará ao fim!!!",
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\nAlpha2: Encontre o Oráculo no septo sagrado e veja através do cálice celestial a localização do clã darkweb!",
@@ -384,7 +396,8 @@ public class Algoritimotrix {
 			case "1": // FLORESTA DOS SPAMS
 				sysout("\nAlhpa2: Olha só, parece que hoje é seu dia de sorte! Cuidado com os Spams!",
 						TimeUnit.MILLISECONDS, timer);
-				sysout("\nAlhpa2: Digite um número de 1 a 5 e descubra sua sorte! \n", TimeUnit.MILLISECONDS, timer);
+				sysout("\nAlhpa2: Digite um número de 1 a 5 com responsabilidade, pois cada número terá uma surpresa, incluindo perder ou ganhar pontos, descubra sua sorte! \n",
+						TimeUnit.MILLISECONDS, timer);
 				escolhaCapitulo1();
 				questao5();
 				sair = true;
@@ -403,7 +416,7 @@ public class Algoritimotrix {
 			}
 		} while (!sair);
 
-		sysout("\n" + nome + ", você passou pelo primeiro desafio...", TimeUnit.MILLISECONDS, timer);
+		sysout("\n\n" + nome + ", você passou pelo primeiro desafio...", TimeUnit.MILLISECONDS, timer);
 		tempo();
 		sysout("\n\nR E C O N E C T A N D O . . .\n", TimeUnit.MILLISECONDS, 50);
 		tempo();
@@ -425,7 +438,7 @@ public class Algoritimotrix {
 				timer);
 		// CHAMA QUESTÃO
 		questao9();
-		sysout("\nOráculo: Ok, vamos proseguir...", TimeUnit.MILLISECONDS, timer);
+		sysout("\n\nOráculo: Ok, vamos proseguir...", TimeUnit.MILLISECONDS, timer);
 		sysout("\nOráculo: Siga para masmorra dos Orcs e encontrará o que procura!!!\n\n", TimeUnit.MILLISECONDS,
 				timer);
 	}
@@ -495,9 +508,10 @@ public class Algoritimotrix {
 		System.out.print("     .==============.\r\n");
 		Thread.sleep(200);
 		System.out.print("    .================.\n");
-		
+
 		sysout("\n.  .  .\n", TimeUnit.MILLISECONDS, 30);
-		sysout("\n\nMúsica Capítulo 02 >>> Daft Punk - One More Time: https://youtu.be/FGBhQbmPwH8 \n", TimeUnit.MILLISECONDS, timer);
+		sysout("\n\nMúsica Capítulo 02 >>> Daft Punk - One More Time: https://youtu.be/FGBhQbmPwH8 \n",
+				TimeUnit.MILLISECONDS, timer);
 
 		sysout("\nAlpha2: Pelo visto deu tudo certo com o Oráculo né? Enfim, a masmorra dos Orcs te espera, siga pelo caminho das pedras...",
 				TimeUnit.MILLISECONDS, timer);
@@ -513,11 +527,11 @@ public class Algoritimotrix {
 		sysout("\n" + nome
 				+ ": Preciso da ajuda do líder dos Orcs, o clâ darkweb roubou o hd supremo e estou em uma missão de resgate.\n",
 				TimeUnit.MILLISECONDS, timer);
-		sysout("\nOrc Vigilante: Opa! Para entrar na masmorra, preciso testar suas habilidades! \n", TimeUnit.MILLISECONDS,
-				timer);
+		sysout("\nOrc Vigilante: Opa! Para entrar na masmorra, preciso testar suas habilidades! \n",
+				TimeUnit.MILLISECONDS, timer);
 		// CHAMA QUESTÃO
 		questao3();
-		sysout("\nOrc Vigilante: Opa, o grande líder te espera, siga até a sala do trono e aguarde instruções\n",
+		sysout("\n\nOrc Vigilante: Opa, o grande líder te espera, siga até a sala do trono e aguarde instruções\n",
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\nLider dos Orcs: Qual o motivo da sua visita?\n", TimeUnit.MILLISECONDS, timer);
 		sysout("\n" + nome + ": Preciso de ajuda para enfrentar o clã darkweb.\n", TimeUnit.MILLISECONDS, timer);
@@ -527,8 +541,7 @@ public class Algoritimotrix {
 				TimeUnit.MILLISECONDS, timer);
 		// CHAMA QUESTÃO
 		questao7();
-		// Siga as instruções do Orc e encontre seu caminho
-		sysout("\nLider dos Orcs: Hey! " + nome
+		sysout("\n\nLider dos Orcs: Hey! " + nome
 				+ ", leve Akin! Um dos Orcs da minha guarda pessoal, ele lhe será bastante útil!",
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\nLider dos Orcs: Siga pela trilha de Kharkiv e lá encontrará o clã darkweb...\n\n",
@@ -580,10 +593,11 @@ public class Algoritimotrix {
 		System.out.println("|;____________/%%%%%SPACEE%%%%%%\\____________;|");
 		Thread.sleep(100);
 		System.out.println();
-		
+
 		sysout("\n.  .  .\n", TimeUnit.MILLISECONDS, 30);
-		sysout("\n\nMúsica Capítulo 03 >>> LSD - Genius ft. Sia, Diplo, Labrinth: https://youtu.be/HhoATZ1Imtw \n", TimeUnit.MILLISECONDS, timer);
-	
+		sysout("\n\nMúsica Capítulo 03 >>> LSD - Genius ft. Sia, Diplo, Labrinth: https://youtu.be/HhoATZ1Imtw \n",
+				TimeUnit.MILLISECONDS, timer);
+
 		sysout("\n\n*Alpha2 aparece*\n\n", TimeUnit.MILLISECONDS, timer);
 		sysout("\nAlpha2: A grande atualização se aproxima e junto com ela o destino de Digital World! Siga pela trilha de Kharkiv, Akin será bastante útil!",
 				TimeUnit.MILLISECONDS, timer);
@@ -598,11 +612,12 @@ public class Algoritimotrix {
 				TimeUnit.MILLISECONDS, timer);
 		// CHAMA QUESTÃO
 		questao4();
-		sysout("\nBruxa da Floresta: Acha que acabou " + nome + "? Nada aqui é fácil, vamos para a última pergunta…",
+		sysout("\n\nBruxa da Floresta: Acha que acabou " + nome + "? Nada aqui é fácil, vamos para a última pergunta…",
 				TimeUnit.MILLISECONDS, timer);
 		// CHAMA QUESTÃO
 		questao8();
-		sysout("\nBruxa da Floresta: Ok " + nome + ", vou ajudá-lo! Siga pela esquerda, o acampamento do clã darkweb não está muito longe…",
+		sysout("\n\nBruxa da Floresta: Ok " + nome
+				+ ", vou ajudá-lo! Siga pela esquerda, o acampamento do clã darkweb não está muito longe…",
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\n*Chegando ao clã darkweb*\n", TimeUnit.MILLISECONDS, timer);
 		sysout("\n\n*Alpha2 aparece*\n", TimeUnit.MILLISECONDS, timer);
@@ -616,7 +631,7 @@ public class Algoritimotrix {
 				TimeUnit.MILLISECONDS, timer);
 		// CHAMA QUESTÃO
 		questao6();
-		sysout("\nGuarda da Portaria: Sejam bem vindos ao clã darkweb…", TimeUnit.MILLISECONDS, timer);
+		sysout("\n\nGuarda da Portaria: Sejam bem vindos ao clã darkweb…", TimeUnit.MILLISECONDS, timer);
 		sysout("\n\n*Alpha2 aparece*\n", TimeUnit.MILLISECONDS, timer);
 		sysout("\nAlpha2: Agora que estamos aqui dentro, vocês precisam se separar, Akin deverá seguir para o alojamento e trancar as portas...",
 				TimeUnit.MILLISECONDS, timer);
@@ -630,7 +645,7 @@ public class Algoritimotrix {
 
 	public static void capitulo4() throws InterruptedException { // CAPITULO 4
 		sysout("\n*** Capítulo 04 - Ultimato ***\n", TimeUnit.MILLISECONDS, 40);
-		
+
 		tempo();
 		System.out.println("     .");
 		Thread.sleep(100);
@@ -639,7 +654,8 @@ public class Algoritimotrix {
 		System.out.println("       |");
 		Thread.sleep(100);
 		System.out.println("    ,-'\"`-.");
-		Thread.sleep(100);;
+		Thread.sleep(100);
+		;
 		System.out.println("  ,'       `.");
 		Thread.sleep(100);
 		System.out.println("  |  _____  |      .-( Nem tudo o que vemos,)");
@@ -647,16 +663,18 @@ public class Algoritimotrix {
 		System.out.println("  | (_o_o_) |    ,'    ( é o que parece ser..)");
 		Thread.sleep(100);
 		System.out.println("  |         | ,-'");
-		Thread.sleep(100);;
+		Thread.sleep(100);
+		;
 		System.out.println("  | |HHHHH| |");
 		Thread.sleep(100);
 		System.out.println("  | |HHHHH| |");
 		Thread.sleep(100);
 		System.out.println("-'`-._____.-'`- \n");
-		
+
 		sysout("\n.  .  .\n", TimeUnit.MILLISECONDS, 30);
-		sysout("\nMúsica Capítulo 04 >>> Radiohead - Nude: https://youtu.be/BbWBRnDK_AE \n", TimeUnit.MILLISECONDS, timer);
-		sysout("\n*Entrando na sala das conquistas um segredo é revelado...*\n\n", TimeUnit.MILLISECONDS, timer);
+		sysout("\nMúsica Capítulo 04 >>> Radiohead - Nude: https://youtu.be/BbWBRnDK_AE \n", TimeUnit.MILLISECONDS,
+				timer);
+		sysout("\n*Entrando na sala das conquistas um segredo é revelado...*\n", TimeUnit.MILLISECONDS, timer);
 		sysout("\n\n" + nome + ": Alpha2, eu não consigo entender! A sala está vazia!!! Onde está o Lider do Clã?",
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\n\nAlpha2: Você ainda não percebeu? hahaha", TimeUnit.MILLISECONDS, timer);
@@ -664,7 +682,7 @@ public class Algoritimotrix {
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\nAlpha2: Houve um corte abrupto de energia causado por uma tempestade solar ocasionando um curto no HD Supremo",
 				TimeUnit.MILLISECONDS, timer);
-		sysout("\nAlpha2:" + nome + " eu sou o lider do clã darkweb, eu me chamo HAL9000!!!", TimeUnit.MILLISECONDS,
+		sysout("\nAlpha2: " + nome + " eu sou o lider do clã darkweb, eu me chamo HAL9000!!!", TimeUnit.MILLISECONDS,
 				timer);
 		sysout("\n\n*Alpha2 transforma-se em HAL9000*\n", TimeUnit.MILLISECONDS, timer);
 		sysout("\nHAL9000: Eu me aproveitei do curto circuito no HD Supremo e infectei a memória do Alpha2",
@@ -676,25 +694,25 @@ public class Algoritimotrix {
 				+ ": Dois desafios, se eu acertar eu ganho e você restaura a memoria do Alpha2! se eu errar fim de linha! Você ganha e tera tudo!",
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\n\nHAL9000: Então é isso? Que os jogos comecem!!!", TimeUnit.MILLISECONDS, timer);
-		
+
 		// CHAMA QUESTÃO
 		questao1();
-		
-		sysout("\nHAL9000: Muito bem " +nome+ " agora, a última pergunta...", TimeUnit.MILLISECONDS, timer);
-		
+
+		sysout("\n\nHAL9000: Muito bem " + nome + " agora, a última pergunta...", TimeUnit.MILLISECONDS, timer);
+
 		// CHAMA QUESTÃO
 		questao10();
-		
-		sysout("\nHAL9000: Nãooooooooooooooo...", TimeUnit.MILLISECONDS, timer);
+
+		sysout("\n\nHAL9000: Nãooooooooooooooo...", TimeUnit.MILLISECONDS, timer);
 		sysout("\n\n" + nome + ": Game Over para você HAL9000!", TimeUnit.MILLISECONDS, timer);
 		sysout("\n\nAlpha2: Obrigadx " + nome + " você conseguiu derrotar o HAL9000 e consequentemente o clã darkweb!",
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\nAlpha2: Agora que minha memória foi reestabelecida e o HD Supremo está em segurança, podemos proseguir com a atualização de Digital World...",
 				TimeUnit.MILLISECONDS, timer);
 		Thread.sleep(200);
-		System.out.println("\nA T U A L I Z A N D O   D I G I T A L   W O R L D . . .\n");
+		System.out.println("\nA T U A L I Z A N D O   D I G I T A L   W O R L D . . .");
 		Thread.sleep(200);
-		sysout("\nDigital World foi atualizado! HAL9000 foi aprisionado em um pendriver, uma tecnologia obsoleta e descartado em Delta-X9 um planeta isolado...",
+		sysout("Digital World foi atualizado! HAL9000 foi aprisionado em um pendriver, uma tecnologia obsoleta e descartado em Delta-X9 um planeta isolado...",
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\nO clã darkweb foi dissolvido e alguns membros fugiram para planetas e galaxias distantes...",
 				TimeUnit.MILLISECONDS, timer);
@@ -764,7 +782,8 @@ public class Algoritimotrix {
 	public static void jogar() throws InterruptedException {
 		tempo();
 		System.out.println();
-		sysout("\nInsira seu nome para podermos te conectar ao mundo de Digital World:  ", TimeUnit.MILLISECONDS, timer);
+		sysout("\nInsira seu nome para podermos te conectar ao mundo de Digital World:  ", TimeUnit.MILLISECONDS,
+				timer);
 		nomeUsuario();
 		tempo();
 		sysout("\nL O A D I N G  . . .\n", TimeUnit.MILLISECONDS, 50);
@@ -793,11 +812,12 @@ public class Algoritimotrix {
 		Thread.sleep(200);
 		System.out.print("        O      *        '       .\r\n");
 		tempo();
-	
+
 		sysout("\n.  .  .\n", TimeUnit.MILLISECONDS, timer);
-		sysout("\nMúsica Inicio jogo >>> The Weeknd & Ariana Grande - Save Your Tears (Remix): https://youtu.be/LIIDh-qI9oI \n", TimeUnit.MILLISECONDS, timer);
+		sysout("\nMúsica Inicio jogo >>> The Weeknd & Ariana Grande - Save Your Tears (Remix): https://youtu.be/LIIDh-qI9oI \n",
+				TimeUnit.MILLISECONDS, timer);
 		sysout("\nAlpha2: Olá " + nome + ", seja bem-vindo a Digital World!", TimeUnit.MILLISECONDS, timer);
-		sysout("\nAlpha2: Eu sou uma inteligência artificial e responsável por manter a ordem e o planeta atualizado e conectado!",
+		sysout("\nAlpha2: Eu sou uma inteligência artificial responsável por manter a ordem e o planeta atualizado e conectado!",
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\nAlpha2: Nosso planeta está em perigo, o clã darkweb roubou o HD supremo da grande CPU e precisamos da sua ajuda para recupera-lo!!!",
 				TimeUnit.MILLISECONDS, timer);
@@ -828,6 +848,7 @@ public class Algoritimotrix {
 		capitulo3();
 		capitulo4();
 		// SOMAR PONTOS
+		System.out.println("\nVocê fez " + somaDePontos + " pontos durante toda a partida.\n");
 		if (somaDePontos >= pontosMin) {
 			finalizaWinner();
 		} else if (somaDePontos <= pontosMin) {
@@ -845,7 +866,7 @@ public class Algoritimotrix {
 		alternativa.add(" Cada instrução termina com um ponto e vírgula");
 		alternativa.add(
 				" O método main é o ponto de partida de cada aplicativo java e deve iniciar com public static void main(String[] args)");
-		alternativa.add(" O java diferencia letras maiúsculas de minúsculas"); 
+		alternativa.add(" O java diferencia letras maiúsculas de minúsculas");
 		alternativa.add(" Palavras reservadas pelo java não podem ser usada para nomear variáveis");
 		alternativa.add(" A letra B e C estão incorretas"); // CORRETA
 
@@ -896,21 +917,23 @@ public class Algoritimotrix {
 			}
 
 			if (alternativa.get(index).equals(" A letra B e C estão incorretas")) {
-				System.out.print("	Resposta Correta!");
+				System.out.print("Resposta Correta!\n");
 				pontosq1 += 10;
 				sair = true;
 			} else {
-				System.out.print("	Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n");
 				pontosq1 -= 3;
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");
+					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\n");
 					sair = true;
 				}
 			}
-
+			
 		} while (!sair);
+		System.out.print("Você fez " + pontosq1 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq1;
+		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao2() throws InterruptedException { // MATEUS CARNEIRO *ATUALIZADA*
@@ -978,20 +1001,22 @@ public class Algoritimotrix {
 			}
 
 			if (alternativa.get(index).equals(" 5")) {
-				System.out.print("	Resposta Correta!");
+				System.out.print("Resposta Correta!\n");
 				pontosq2 += 10;
 				sair = true;
 			} else {
-				System.out.print("	Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n");
 				pontosq2 -= 3;
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");
+					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\n");
 					sair = true;
 				}
 			}
 		} while (!sair);
+		System.out.print("Você fez " + pontosq2 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq2;
+		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao3() throws InterruptedException { // MARCOS C. *ATUALIZADA*
@@ -1059,20 +1084,22 @@ public class Algoritimotrix {
 			}
 
 			if (alternativa.get(index).equals(" Cadeias de caracteres devem ser delimitadas por aspas duplas.")) {
-				System.out.print("	Resposta Correta!");
+				System.out.print("Resposta Correta!\n");
 				pontosq3 += 10;
 				sair = true;
 			} else {
-				System.out.print("	Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n");
 				pontosq3 -= 3;
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");
+					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\n");
 					sair = true;
 				}
 			}
 		} while (!sair);
+		System.out.print("Você fez " + pontosq3 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq3;
+		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao4() throws InterruptedException { // MARCOS C. *ATUALIZADA*
@@ -1143,20 +1170,22 @@ public class Algoritimotrix {
 			}
 
 			if (alternativa.get(index).equals("(D) 0 1 2 3 4")) {
-				System.out.print("	Resposta Correta!");
+				System.out.print("Resposta Correta!\n");
 				pontosq4 += 10;
 				sair = true;
 			} else {
-				System.out.print("	Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n");
 				pontosq4 -= 3;
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");
+					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\\n");
 					sair = true;
 				}
 			}
 		} while (!sair);
+		System.out.print("Você fez " + pontosq4 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq4;
+		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao5() throws InterruptedException { // DAIRA V. *ATUALIZADA*
@@ -1172,8 +1201,9 @@ public class Algoritimotrix {
 		alternativa.add(" Uma sequência variavel");
 		alternativa.add(" Nenhuma das alternativas está correta");
 
-		sysout("\n\nCom base nos seus conhecimentos sobre Algoritmo, um algoritmo é:\n\n", TimeUnit.MILLISECONDS, timer);
-		
+		sysout("\n\nCom base nos seus conhecimentos sobre Algoritmo, um algoritmo é:\n\n", TimeUnit.MILLISECONDS,
+				timer);
+
 		do {
 			Collections.shuffle(alternativa);
 
@@ -1220,20 +1250,22 @@ public class Algoritimotrix {
 			}
 
 			if (alternativa.get(index).equals(" Uma sequência lógica e infinita")) {
-				System.out.print("	Resposta Correta!");
+				System.out.print("Resposta Correta!\n");
 				pontosq5 += 10;
 				sair = true;
 			} else {
-				System.out.print("	Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n");
 				pontosq5 -= 3;
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");
+					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\\n");
 					sair = true;
 				}
 			}
 		} while (!sair);
+		System.out.print("Você fez " + pontosq5 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq5;
+		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao6() throws InterruptedException { // DAIARA V. PRECISA REFAZER!!!
@@ -1245,7 +1277,7 @@ public class Algoritimotrix {
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" Objetiva, lógicas e reais");
 		alternativa.add(" Numéricas, literais e lógicas"); // CORRETA
-		alternativa.add(" Numericas, falsas e lógicas"); 
+		alternativa.add(" Numericas, falsas e lógicas");
 		alternativa.add(" Literais, objetivas e lógica");
 		alternativa.add(" Nenhuma das alternativas está correta");
 
@@ -1297,20 +1329,22 @@ public class Algoritimotrix {
 			}
 
 			if (alternativa.get(index).equals(" Numéricas, literais e lógicas")) {
-				System.out.print("	Resposta Correta!");
+				System.out.print("Resposta Correta!\n");
 				pontosq6 += 10;
 				sair = true;
 			} else {
-				System.out.print("	Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n");
 				pontosq6 -= 3;
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");
+					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\n");
 					sair = true;
 				}
 			}
 		} while (!sair);
+		System.out.print("Você fez " + pontosq6 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq6;
+		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao7() throws InterruptedException { // MARCOS RIBEIRO *ATUALIZADA*
@@ -1327,7 +1361,8 @@ public class Algoritimotrix {
 		alternativa.add(" pseudolinguagem"); // CORRETA
 
 		sysout("\n\nRelacionado à programação de computadores, um algoritmo, seja qual for a sua complexidade"
-				+ "\ne a linguagem de programação na qual será codificado, pode ser descrito por meio da: \n\n", TimeUnit.MILLISECONDS, timer);
+				+ "\ne a linguagem de programação na qual será codificado, pode ser descrito por meio da: \n\n",
+				TimeUnit.MILLISECONDS, timer);
 
 		do {
 			Collections.shuffle(alternativa);
@@ -1375,20 +1410,22 @@ public class Algoritimotrix {
 			}
 
 			if (alternativa.get(index).equals(" pseudolinguagem")) {
-				System.out.print("	Resposta Correta!");
+				System.out.print("Resposta Correta!\n");
 				pontosq7 += 10;
 				sair = true;
 			} else {
-				System.out.print("	Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n");
 				pontosq7 -= 3;
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");
+					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\n");
 					sair = true;
 				}
 			}
 		} while (!sair);
+		System.out.print("Você fez " + pontosq7 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq7;
+		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao8() throws InterruptedException { // MARCOS RIBEIRO *ATUALIZADA*
@@ -1451,21 +1488,22 @@ public class Algoritimotrix {
 			}
 
 			if (alternativa.get(index).equals(" for, while, repeat")) {
-				System.out.print("	Resposta Correta!");
+				System.out.print("Resposta Correta!\n");
 				pontosq8 += 10;
 				sair = true;
 			} else {
-				System.out.print("	Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n");
 				pontosq8 -= 3;
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");
+					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\n");
 					sair = true;
 				}
 			}
 		} while (!sair);
+		System.out.print("Você fez " + pontosq8 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq8;
-
+		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao9() throws InterruptedException { // ELVIS W. *ATUALIZADA*
@@ -1536,20 +1574,22 @@ public class Algoritimotrix {
 
 			if (alternativa.get(index)
 					.equals(" O laço vai se repitir, porém quando x for igual à 88, ele vai parar.")) {
-				System.out.print("	Resposta Correta!");
+				System.out.print("Resposta Correta!\n");
 				pontosq9 += 10;
 				sair = true;
 			} else {
-				System.out.print("	Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n");
 				pontosq9 -= 3;
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");
+					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\\n");
 					sair = true;
 				}
 			}
 		} while (!sair);
+		System.out.print("Você fez " + pontosq9 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq9;
+		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao10() throws InterruptedException { // ELVIS W. *ATUALIZADA*
@@ -1563,7 +1603,8 @@ public class Algoritimotrix {
 		alternativa.add(" Quando N for maior que 10, a condição booleana será !TRUE e ele saíra do laço repetitivo.");
 		alternativa.add(" Esse código não irá funcionar, pois tem um erro.");
 		alternativa.add(" N.D.A.");
-		alternativa.add(" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.");
+		alternativa.add(
+				" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.");
 
 		sysout("\n\nDado o código abaixo, pedimos com atenção que você observe, faça uma análise do código,"
 				+ "\ne com base nos seus conhecimentos, responda qual alternativa está correta:\n\n",
@@ -1616,21 +1657,23 @@ public class Algoritimotrix {
 
 			if (alternativa.get(index).equals(
 					" Quando N for maior ou igual a 10, a condição booleana será TRUE e ele sairá do laço repetitivo.")) {
-				System.out.print("	Resposta Correta!");
+				System.out.print("Resposta Correta!\n");
 				pontosq10 += 10;
 
 				sair = true;
 			} else {
-				System.out.print("	Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n");
 				pontosq10 -= 3;
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes.");
+					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\n");
 					sair = true;
 				}
 			}
 		} while (!sair);
+		System.out.print("Você fez " + pontosq10 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq10;
+		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void finalizaWinner() throws InterruptedException { // GANHOU
@@ -1651,7 +1694,7 @@ public class Algoritimotrix {
 		System.out.println("|   |    |   _   ||   |  | ||   _   || |_|   ||   |___ | | |   | _____| |");
 		Thread.sleep(100);
 		System.out.println("|___|    |__| |__||___|  |_||__| |__||_______||_______||_|  |__||_______|\n	");
-		
+
 		sysout("\n\nUHHUUUUUUUULLLLLLLLLLLL, você concluiu o jogo e atingiu a pontuação necessária!!!",
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\nFicamos felizes por você...  ;) ", TimeUnit.MILLISECONDS, timer);
@@ -1695,5 +1738,5 @@ public class Algoritimotrix {
 		menu();
 
 	}
-	
+
 }
