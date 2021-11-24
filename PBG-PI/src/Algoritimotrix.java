@@ -12,7 +12,7 @@ public class Algoritimotrix {
 	static int timer = 10; // TIMER DELAY NOS TEXTOS
 	static String nome = ""; // NOME DO USUÁRIO
 	static int pontosMin = 55; // MÍNIMO DEPONTUAÇÃO
-
+// apresentação
 	// MÉTODOS E FUNÇÕES
 	public static String nomeUsuario() {
 

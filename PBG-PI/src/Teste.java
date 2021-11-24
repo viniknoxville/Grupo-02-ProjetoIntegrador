@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-
+//teste
 public class Teste {
 	
 	//variaveis globais
