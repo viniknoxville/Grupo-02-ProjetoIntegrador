@@ -779,6 +779,15 @@ public class Algoritimotrix {
 		sysout("\n\nMusica final >>> Moby - Porcelain: https://youtu.be/13EifDb4GYs", TimeUnit.MILLISECONDS, timer);
 	}
 
+	public static void pontos() throws InterruptedException {
+		System.out.println("\nVocê fez " + somaDePontos + " pontos durante toda a partida.\n");
+		if (somaDePontos >= pontosMin) {
+			finalizaWinner();
+		} else if (somaDePontos <= pontosMin) {
+			finalizaLoser();
+		}
+	}
+	
 	public static void jogar() throws InterruptedException {
 		tempo();
 		System.out.println();
@@ -848,13 +857,7 @@ public class Algoritimotrix {
 		capitulo3();
 		capitulo4();
 		// SOMAR PONTOS
-		System.out.println("\nVocê fez " + somaDePontos + " pontos durante toda a partida.\n");
-		if (somaDePontos >= pontosMin) {
-			finalizaWinner();
-		} else if (somaDePontos <= pontosMin) {
-			finalizaLoser();
-		}
-		System.out.println(somaDePontos);
+		pontos();
 	}
 
 	public static void questao1() throws InterruptedException { // MATEUS CARNEIRO *ATUALIZADA*
@@ -933,7 +936,7 @@ public class Algoritimotrix {
 		} while (!sair);
 		System.out.print("Você fez " + pontosq1 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq1;
-		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
+		System.out.println(" Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao2() throws InterruptedException { // MATEUS CARNEIRO *ATUALIZADA*
@@ -1016,7 +1019,7 @@ public class Algoritimotrix {
 		} while (!sair);
 		System.out.print("Você fez " + pontosq2 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq2;
-		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
+		System.out.println(" Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao3() throws InterruptedException { // MARCOS C. *ATUALIZADA*
@@ -1099,7 +1102,7 @@ public class Algoritimotrix {
 		} while (!sair);
 		System.out.print("Você fez " + pontosq3 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq3;
-		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
+		System.out.println(" Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao4() throws InterruptedException { // MARCOS C. *ATUALIZADA*
@@ -1185,7 +1188,7 @@ public class Algoritimotrix {
 		} while (!sair);
 		System.out.print("Você fez " + pontosq4 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq4;
-		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
+		System.out.println(" Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao5() throws InterruptedException { // DAIRA V. *ATUALIZADA*
@@ -1265,7 +1268,7 @@ public class Algoritimotrix {
 		} while (!sair);
 		System.out.print("Você fez " + pontosq5 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq5;
-		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
+		System.out.println(" Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao6() throws InterruptedException { // DAIARA V. PRECISA REFAZER!!!
@@ -1344,7 +1347,7 @@ public class Algoritimotrix {
 		} while (!sair);
 		System.out.print("Você fez " + pontosq6 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq6;
-		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
+		System.out.println(" Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao7() throws InterruptedException { // MARCOS RIBEIRO *ATUALIZADA*
@@ -1425,7 +1428,7 @@ public class Algoritimotrix {
 		} while (!sair);
 		System.out.print("Você fez " + pontosq7 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq7;
-		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
+		System.out.println(" Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao8() throws InterruptedException { // MARCOS RIBEIRO *ATUALIZADA*
@@ -1503,7 +1506,7 @@ public class Algoritimotrix {
 		} while (!sair);
 		System.out.print("Você fez " + pontosq8 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq8;
-		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
+		System.out.println(" Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao9() throws InterruptedException { // ELVIS W. *ATUALIZADA*
@@ -1589,7 +1592,7 @@ public class Algoritimotrix {
 		} while (!sair);
 		System.out.print("Você fez " + pontosq9 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq9;
-		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
+		System.out.println(" Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void questao10() throws InterruptedException { // ELVIS W. *ATUALIZADA*
@@ -1673,7 +1676,7 @@ public class Algoritimotrix {
 		} while (!sair);
 		System.out.print("Você fez " + pontosq10 + " pontos neste desafio.");
 		somaDePontos = somaDePontos + pontosq10;
-		System.out.println("Você tem até agora " + somaDePontos + " pontos.");
+		System.out.println(" Você tem até agora " + somaDePontos + " pontos.");
 	}
 
 	public static void finalizaWinner() throws InterruptedException { // GANHOU
