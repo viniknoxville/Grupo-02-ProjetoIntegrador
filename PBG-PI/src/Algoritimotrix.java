@@ -90,7 +90,7 @@ public class Algoritimotrix {
 
 	}
 
-	public static void historia() throws InterruptedException {
+	public static void historia() throws InterruptedException {  //HISTORIA 
 
 		sysout("\n Digital World é um planeta totalmente digital e conectado que fica localizado na galáxia A23,",
 				TimeUnit.MILLISECONDS, timer);
@@ -290,62 +290,6 @@ public class Algoritimotrix {
 		Thread.sleep(100);
 		System.out.println("                                                                                            \r\n");
 
-	}
-
-	public static void vilao() throws InterruptedException { // VILÃO
-		tempo();
-		tempo();
-		System.out.println();
-		System.out.println("\nDevemos deter o vilão e recuperar nosso HD Supremo\n");
-		tempo();
-		System.out.println("\n                                                           / /\r\n"
-				+ "                                                        | | |  /\r\n"
-				+ "                                                         \\|_|_/\r\n"
-				+ "                                                       ,--/.__/--'\r\n"
-				+ "                       _.-/   _   \\-._                    .'|\r\n"
-				+ "                     .'::(_,-' `-._)::`.                  |:|\r\n"
-				+ "                    (:::::::::::::::::::)                .':|\r\n"
-				+ "                     \\_:::;;;::::;;;:::/    /            |::|\r\n"
-				+ "             \\        ,---'..\\::/..`-.'    /             |::|\r\n"
-				+ "              \\       \\_;:....|'...:_ )   /             .'=||\r\n"
-				+ "               \\.       )---. )_.--< (   /'             ||=||\r\n"
-				+ "                \\\\     //|:: /--\\:::\\\\\\ //             _||= |\r\n"
-				+ "                 \\\\   ||::\\:|----|:/:||/--.______,--==' \\ - /\r\n"
-				+ "          -._     \\`.  \\\\:|:|-- -|:\\:/-.,,\\\\  .----'//'_.`-'\r\n"
-				+ "      \\.     `-.   \\ \\ _|:|:|-- -|::||::\\,,||-'////---' |/'\r\n"
-				+ "       \\\\       `._)\\ / |\\/:|-/|--\\:/|. :\\_,'---'       /\r\n"
-				+ "        \\\\_      /,,\\/:.'\\\\/-.'`-.-//  \\ |\r\n"
-				+ "        /`\\-    //,,,' |-.\\-'\\--/|-/ ./| |             /\r\n"
-				+ "         /||-   ||, /| |\\. |.-==-.| . /| |            | /\r\n"
-				+ " __  |    /||-  ||,,\\- | .  \\;;;;/ .  .':/         _,-=/-'\r\n"
-				+ "/  \\//    /||-  ' `,-|::\\ . \\,..,/   /: /         /.-'\r\n"
-				+ ",--||      /||-/.-.'  \\  `._ `--' _.' .'|        //\r\n"
-				+ ".--||`.    /||//\\ '   |-'.___`___' _,'|//       /;\r\n"
-				+ "  /\\| \\     ///\\ /     \\\\_`-.`--`-'_==|'       /;'\r\n"
-				+ " / |'\\ \\.   //\\ /       \\_\\__)\\`==-_'_|       / /\r\n"
-				+ "  .'  \\.=`./|\\ /          \\`-- \\--._/_/------( /\r\n"
-				+ "       \\.=| `_/|-          |\\`-| -/| `--------'\r\n"
-				+ "        \\\\` ./|-/-         |\\`-| |-|     ________\r\n"
-				+ "         `--\\ |=|'        _|\\`-| |-|----'.-._ ..\\`-.\r\n"
-				+ "             -|-|-     .-':`-;-| |./.-.-( | ||..|=-\\\\\r\n"
-				+ "             `'= /'   / ,--.:|-| ||_|_|_|_|-'__ .`-._)\r\n"
-				+ "              /|-|- .' /\\ \\ \\|-` \\\\ ____,---'  `-. ..|\r\n"
-				+ "               /\\=\\/..'\\ \\_>-'`-\\ \\'              \\ .|\r\n"
-				+ "               `,-':/\\`.>' |\\/ \\/\\ \\              `- |\r\n"
-				+ "               //::/\\ \\/_/|-' \\/| \\ `.            / ||\r\n"
-				+ "              / (:|\\ \\/) \\ \\|.'-'  `-\\\\          |;:|\\_\r\n"
-				+ "             || |:`-/:.'-|-' \\|       \\\\          `;_\\-`-._\r\n"
-				+ "             \\\\=/:_/::/\\| \\|          |\\\\            `-._ =`-._\r\n"
-				+ "              \\_)' |:|                | //               `--.__`-.\r\n"
-				+ "                   |:|                                         )\\|\r\n"
-				+ "                   /;/                                         / (\\_\r\n"
-				+ "                  / /                                         |\\\\;;_`-.\r\n"
-				+ "                _/ /                                          ' `---\\.-\\\r\n"
-				+ "               /::||\r\n" + "              /:::/\r\n" + "             //;;'\r\n"
-				+ "             `-'\r\n" + "\n");
-		tempo();
-		System.out.println("\nEste é HAL9000 DO PLANETA MIRACULOUS, o vilão mais maldoso da GALÁXIA e quer destruir"
-				+ "\ntodos os planetas de toda a Galáxia, é ele quem devemos deter e isso não será uma tarefa fácil!\n");
 	}
 
 	public static void escolhaCapitulo1() throws InterruptedException { // ESCOLHA DO CAPITULO
@@ -1819,4 +1763,5 @@ public class Algoritimotrix {
 		menu();
 
 	}
+	
 }
