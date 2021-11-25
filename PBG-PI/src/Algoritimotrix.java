@@ -12,13 +12,12 @@ public class Algoritimotrix {
 	static int timer = 10; // TIMER DELAY NOS TEXTOS
 	static String nome = ""; // NOME DO USUÁRIO
 	static int pontosMin = 55; // MÍNIMO DEPONTUAÇÃO
-	static String opcao = "";
+	static String opcao = "";// RESPOSTA DO USUÁRIO
 
 	// MÉTODOS E FUNÇÕES
 	public static String nomeUsuario() {
 
 		nome = entrada.nextLine();
-
 		return nome;
 	}
 
@@ -1733,12 +1732,15 @@ public class Algoritimotrix {
 		bemVindos();
 
 		menu();
-
+		
+		/*System.out.println("\n\n");
+		System.out.println("TESTE SOMA DE PONTOS");
 		testePontos somaPontos = new testePontos();
 		somaPontos.soma(somaDePontos);
-		
+		System.out.println();
+		System.out.println("TESTE RESPOSTA DO USUÁRIO");
 		testeQuestao respostaUsuario = new testeQuestao();
-		respostaUsuario.resposta(opcao);
+		respostaUsuario.resposta(opcao);*/
 		
 	}
 
