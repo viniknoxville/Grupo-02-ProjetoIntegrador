@@ -1,16 +1,28 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-//teste
-public class Teste {
+import java.util.concurrent.TimeUnit;
+
+// TESTE
+public class testeQuestão {
 	
-	//variaveis globais
+	// VARIÁVEIS GLOBAIS
 	static Scanner entrada = new Scanner(System.in);
 	static String opcao = "";
+	static int timer = 10;
+	static int somaDePontos = 0;
 	static boolean sair = false;
 
-	//metodo a ser testado
-	public static void questao1() { // MATEUS CARNEIRO *ATUALIZADA*
+	static void sysout(String texto, TimeUnit unit, long tempo_mensagem) throws InterruptedException {
+		for (char caractere : texto.toCharArray()) {
+			System.out.print(caractere);
+			unit.sleep(tempo_mensagem);
+		}
+	}
+
+	
+	// MÉTODO A SER TESTADO
+	public static void questao1 () throws InterruptedException { // MATEUS CARNEIRO *ATUALIZADA*
 		int cont = 0;
 		int pontosq1 = 10;
 		ArrayList<String> alternativa = new ArrayList<String>();
@@ -21,8 +33,7 @@ public class Teste {
 		alternativa.add(" Palavras reservadas pelo java não podem ser usada para nomear variáveis");
 		alternativa.add(" A letra B e C estão incorretas"); // CORRETA
 
-		// sysout("\n\nConsiderando linguagem em java, assinale a opção INCORRETA:\n\n",
-		// TimeUnit.MILLISECONDS, timer);
+		sysout("\n\nConsiderando linguagem em java, assinale a opção INCORRETA:\n\n", TimeUnit.MILLISECONDS, timer);
 
 		do {
 			Collections.shuffle(alternativa);
@@ -85,14 +96,14 @@ public class Teste {
 			}
 
 		} while (!sair);
-		// somaDePontos = somaDePontos + pontosq1;
+		somaDePontos = somaDePontos + pontosq1;
 	}
 
-	//teste no main principal
-	public static void main(String[] args) {
-
+	// TESTE NO MAIN PRINCIPAL
+	public static void main(String[] args) throws InterruptedException  {
+		
 		questao1();
-
+		
 		  if (opcao.equals("a") || opcao.equals("b") || opcao.equals("c")
 				|| opcao.equals("d") || opcao.equals("e") || opcao.equals("A") || opcao.equals("B") || opcao.equals("C")
 				|| opcao.equals("D") || opcao.equals("E")) {

@@ -1612,7 +1612,15 @@ public class Algoritimotrix {
 		sysout("\n\nDado o código abaixo, pedimos com atenção que você observe, faça uma análise do código,"
 				+ "\ne com base nos seus conhecimentos, responda qual alternativa está correta:\n\n",
 				TimeUnit.MILLISECONDS, timer);
-
+		
+		System.out.println("\npublic static void main(String[] args) {\r\n" + "\n	boolean sair = false;\r\n"
+				+ "	int n, i = 1;\r\n" + "		 \r\n" + "	do {\r\n"
+				+ "	     System.out.println(\"Digite n\" + i + \": \");\r\n" + "	     n = entrada.nextInt();\r\n"
+				+ "	     i++;\r\n" + "\r\n" + "	     if (n >= 10) {\r\n"
+				+ "	         System.out.println(\"\\nO número digitado é igual ou maior que 10.\");\r\n"
+				+ "	         sair = true;	\r\n" + "	         break;\r\n" + "	     }	 \r\n"
+				+ "	 } while (true);\n");
+		
 		do {
 			Collections.shuffle(alternativa);
 
@@ -1703,6 +1711,7 @@ public class Algoritimotrix {
 		sysout("\nFicamos felizes por você...  ;) ", TimeUnit.MILLISECONDS, timer);
 		tempo();
 		sysout("\nAgora para concluir, acesse o link da nossa Ranked:\n\n", TimeUnit.MILLISECONDS, timer);
+		System.out.println("				*** L I N K   DO   R A N K E D ***");
 		System.out.println(
 				"\nhttps://docs.google.com/forms/d/e/1FAIpQLSe7zFesTvPsBO8pwjj3bvx0hlGBDWTxCVwRlhJJR9kKA-xlxw/viewform?usp=sf_link");
 		sysout("\n\nCopie o link acima e cole na aba do seu navegador, digite seu nome, a sua pontuação e aguarde ser divulgado.\n",
