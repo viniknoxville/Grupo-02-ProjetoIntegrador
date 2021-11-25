@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 // TESTE
-public class testeQuestão {
+public class testeQuestao {
 	
 	// VARIÁVEIS GLOBAIS
 	static Scanner entrada = new Scanner(System.in);

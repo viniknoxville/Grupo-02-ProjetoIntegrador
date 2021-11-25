@@ -12,6 +12,7 @@ public class Algoritimotrix {
 	static int timer = 10; // TIMER DELAY NOS TEXTOS
 	static String nome = ""; // NOME DO USUÁRIO
 	static int pontosMin = 55; // MÍNIMO DEPONTUAÇÃO
+	static String opcao = "";
 
 	// MÉTODOS E FUNÇÕES
 	public static String nomeUsuario() {
@@ -861,7 +862,6 @@ public class Algoritimotrix {
 	}
 
 	public static void questao1() throws InterruptedException { // MATEUS CARNEIRO *ATUALIZADA*
-		String opcao;
 		sair = false;
 		int cont = 0;
 		int pontosq1 = 0;
@@ -940,7 +940,6 @@ public class Algoritimotrix {
 	}
 
 	public static void questao2() throws InterruptedException { // MATEUS CARNEIRO *ATUALIZADA*
-		String opcao;
 		sair = false;
 		int cont = 0;
 		int pontosq2 = 0;
@@ -1023,8 +1022,6 @@ public class Algoritimotrix {
 	}
 
 	public static void questao3() throws InterruptedException { // MARCOS C. *ATUALIZADA*
-
-		String opcao;
 		int cont = 0;
 		sair = false;
 		int pontosq3 = 0;
@@ -1106,7 +1103,6 @@ public class Algoritimotrix {
 	}
 
 	public static void questao4() throws InterruptedException { // MARCOS C. *ATUALIZADA*
-		String opcao;
 		int cont = 0;
 		sair = false;
 		int pontosq4 = 0;
@@ -1192,8 +1188,6 @@ public class Algoritimotrix {
 	}
 
 	public static void questao5() throws InterruptedException { // DAIRA V. *ATUALIZADA*
-
-		String opcao;
 		sair = false;
 		int cont = 0;
 		int pontosq5 = 0;
@@ -1272,8 +1266,6 @@ public class Algoritimotrix {
 	}
 
 	public static void questao6() throws InterruptedException { // DAIARA V. PRECISA REFAZER!!!
-
-		String opcao;
 		sair = false;
 		int cont = 0;
 		int pontosq6 = 0;
@@ -1351,8 +1343,6 @@ public class Algoritimotrix {
 	}
 
 	public static void questao7() throws InterruptedException { // MARCOS RIBEIRO *ATUALIZADA*
-
-		String opcao;
 		sair = false;
 		int cont = 0;
 		int pontosq7 = 0;
@@ -1432,7 +1422,6 @@ public class Algoritimotrix {
 	}
 
 	public static void questao8() throws InterruptedException { // MARCOS RIBEIRO *ATUALIZADA*
-		String opcao;
 		sair = false;
 		int cont = 0;
 		int pontosq8 = 0;
@@ -1510,8 +1499,6 @@ public class Algoritimotrix {
 	}
 
 	public static void questao9() throws InterruptedException { // ELVIS W. *ATUALIZADA*
-
-		String opcao;
 		sair = false;
 		int cont = 0;
 		int pontosq9 = 0;
@@ -1596,8 +1583,6 @@ public class Algoritimotrix {
 	}
 
 	public static void questao10() throws InterruptedException { // ELVIS W. *ATUALIZADA*
-
-		String opcao;
 		sair = false;
 		int cont = 0;
 		int pontosq10 = 0;
@@ -1749,6 +1734,12 @@ public class Algoritimotrix {
 
 		menu();
 
+		testePontos somaPontos = new testePontos();
+		somaPontos.soma(somaDePontos);
+		
+		testeQuestao respostaUsuario = new testeQuestao();
+		respostaUsuario.resposta(opcao);
+		
 	}
 
 }
