@@ -6,13 +6,13 @@ import java.util.concurrent.TimeUnit;
 public class Algoritimotrix {
 
 	// VARIÁVEIS GLOBAIS
-	static Scanner entrada = new Scanner(System.in);
+	static Scanner entrada = new Scanner(System.in); //MODO DE CAPTURA DE DADOS PELO USUÁRIO
 	static boolean sair = false; // SAÍDA LAÇOS
 	static int somaDePontos = 0; // SOMAR PONTUAÇÃO DOS JOGADORES
 	static int timer = 10; // TIMER DELAY NOS TEXTOS
 	static String nome = ""; // NOME DO USUÁRIO
 	static int pontosMin = 55; // MÍNIMO DEPONTUAÇÃO
-	static String opcao = "";// RESPOSTA DO USUÁRIO
+	static String opcao = "";// RESPOSTA DE DADOS DO USUÁRIO
 
 	// MÉTODOS E FUNÇÕES
 	public static String nomeUsuario() {
@@ -34,6 +34,7 @@ public class Algoritimotrix {
 		String sair, sim = "1", nao = "2";
 		boolean saida = false;
 		String[] opcaoMenu = { "1 - Jogar		", "2 - Instruções		", "3 - Crédito		", "4 - Sair		" };
+		
 		do {
 			System.out.println("\n\t\t________________________________________________");
 			System.out.println("\t\t|						|");
@@ -45,7 +46,7 @@ public class Algoritimotrix {
 			}
 			System.out.println("\t\t|_______________________________________________|");
 
-			System.out.printf("\n\t\tInforme a opção: ");
+			System.out.printf("\n\t\tInforme a sua opção: ");
 			String opcao = entrada.next();
 
 			switch (opcao.toUpperCase()) {
@@ -68,12 +69,12 @@ public class Algoritimotrix {
 
 			case "4", "QUATRO":
 				sysout("\nVocê selecionou a opção - Sair", TimeUnit.MILLISECONDS, timer);
-				System.out.println("\nquer mesmo sair?");
-				System.out.println("[1] SIM	[2]	NÃO");
-				System.out.println("\nResposta: ");
+				System.out.println("\nVocê deseja realmente sair?");
+				System.out.println("[1] SIM	[2] NÃO");
+				System.out.println("\n Sua Resposta: ");
 				sair = entrada.next();
 				if (sair.equalsIgnoreCase(sim)) {
-					sysout("\n\t\tQUE PENA :(\n" + "\nESTAMOS TE ESPERANDO QUANDO QUISER VOLTAR ;)",
+					sysout("\n\t\tQUE PENA :(\n" + "\nESTAMOS TE ESPERANDO, SEMPRE QUE QUISER VOLTAR!)",
 							TimeUnit.MILLISECONDS, timer);
 					sysout("\n\t F I M   D O   J O G O", TimeUnit.MILLISECONDS, timer);
 					saida = true;
@@ -135,11 +136,11 @@ public class Algoritimotrix {
 		Thread.sleep(200);
 		System.out.print("\n|													|");
 		Thread.sleep(200);
-		System.out.print("\n|					     *DISCIPLINA*						|");
+		System.out.print("\n|					      *DISCIPLINA*						|");
 		Thread.sleep(200);
 		System.out.print("\n|													|");
 		Thread.sleep(200);
-		System.out.print("\n|				   	 Projeto Integrador						|");
+		System.out.print("\n|				   	   Projeto Integrador        					|");
 		Thread.sleep(200);
 		System.out.print("\n|													|");
 		Thread.sleep(200);
@@ -149,7 +150,7 @@ public class Algoritimotrix {
 		Thread.sleep(200);
 		System.out.print("\n|													|");
 		Thread.sleep(200);
-		System.out.print("\n|				 	 Eduardo Takeo Ueda						|");
+		System.out.print("\n|				 	   Eduardo Takeo Ueda						|");
 		Thread.sleep(200);
 		System.out.print("\n|													|");
 		Thread.sleep(200);
@@ -776,7 +777,7 @@ public class Algoritimotrix {
 		System.out.print("\n");
 		tempo();
 		sysout("\n. . .", TimeUnit.MILLISECONDS, timer);
-		sysout("\n\nMusica final >>> Moby - Porcelain: https://youtu.be/13EifDb4GYs", TimeUnit.MILLISECONDS, timer);
+		sysout("\n\nMusica final >>> Moby - Porcelain: https://youtu.be/13EifDb4GYs\n", TimeUnit.MILLISECONDS, timer);
 	}
 
 	public static void pontos() throws InterruptedException {
@@ -866,8 +867,7 @@ public class Algoritimotrix {
 		int pontosq1 = 0;
 		ArrayList<String> alternativa = new ArrayList<String>();
 		alternativa.add(" Cada instrução termina com um ponto e vírgula");
-		alternativa.add(
-				" O método main é o ponto de partida de cada aplicativo java e deve iniciar com public static void main(String[] args)");
+		alternativa.add(" O método main é o ponto de partida de cada aplicativo java e deve iniciar com public static void main(String[] args)");
 		alternativa.add(" O java diferencia letras maiúsculas de minúsculas");
 		alternativa.add(" Palavras reservadas pelo java não podem ser usada para nomear variáveis");
 		alternativa.add(" A letra B e C estão incorretas"); // CORRETA
@@ -875,7 +875,6 @@ public class Algoritimotrix {
 		sysout("\n\nConsiderando linguagem em java, assinale a opção INCORRETA:\n", TimeUnit.MILLISECONDS, timer);
 
 		do {
-			Collections.shuffle(alternativa);
 
 			for (int i = 0; i < 5; i++) {
 				switch (i) {
@@ -1186,7 +1185,7 @@ public class Algoritimotrix {
 		System.out.println(" Você tem até agora " + somaDePontos + " pontos.");
 	}
 
-	public static void questao5() throws InterruptedException { // DAIRA V. *ATUALIZADA*
+	public static void questao5() throws InterruptedException { // DAIARA V. *ATUALIZADA*
 		sair = false;
 		int cont = 0;
 		int pontosq5 = 0;
@@ -1264,7 +1263,7 @@ public class Algoritimotrix {
 		System.out.println(" Você tem até agora " + somaDePontos + " pontos.");
 	}
 
-	public static void questao6() throws InterruptedException { // DAIARA V. PRECISA REFAZER!!!
+	public static void questao6() throws InterruptedException { // DAIARA V. *ATUALIZADA* !!!
 		sair = false;
 		int cont = 0;
 		int pontosq6 = 0;
@@ -1581,7 +1580,7 @@ public class Algoritimotrix {
 		System.out.println(" Você tem até agora " + somaDePontos + " pontos.");
 	}
 
-	public static void questao10() throws InterruptedException { // ELVIS W. *ATUALIZADA*
+	public static void questao10() throws InterruptedException {// ELVIS W. *ATUALIZADA*
 		sair = false;
 		int cont = 0;
 		int pontosq10 = 0;
@@ -1672,6 +1671,7 @@ public class Algoritimotrix {
 	}
 
 	public static void finalizaWinner() throws InterruptedException { // GANHOU
+		
 
 		tempo();
 		System.out.println();
