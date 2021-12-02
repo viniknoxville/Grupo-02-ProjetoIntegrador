@@ -9,7 +9,7 @@ public class Algoritimotrix {
 	static Scanner entrada = new Scanner(System.in); //MODO DE CAPTURA DE DADOS PELO USUÁRIO
 	static boolean sair = false; // SAÍDA LAÇOS
 	static int somaDePontos = 0; // SOMAR PONTUAÇÃO DOS JOGADORES
-	static int timer = 10; // TIMER DELAY NOS TEXTOS
+	static int timer = 0; // TIMER DELAY NOS TEXTOS
 	static String nome = ""; // NOME DO USUÁRIO
 	static int pontosMin = 55; // MÍNIMO DEPONTUAÇÃO
 	static String opcao = "";// RESPOSTA DE DADOS DO USUÁRIO
@@ -257,7 +257,7 @@ public class Algoritimotrix {
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\n\nganhar pontos de experiência, caso erre a questão perderá 3 pontos de experiência a cada vez que errar.",
 				TimeUnit.MILLISECONDS, timer);
-		sysout("\n\nSe no final o usuário conseguir uma pontuação boa, ele finaliza e ganha o jogo. Se não...",
+		sysout("\n\nSe no final o usuário conseguir uma pontuação acima de 55 pontos, ele finaliza e ganha o jogo. Se não...",
 				TimeUnit.MILLISECONDS, timer);
 		sysout("\n\nfinaliza e perde, ou seja, \"G A M E   O V E R\"\n", TimeUnit.MILLISECONDS, timer);
 
@@ -922,7 +922,7 @@ public class Algoritimotrix {
 				pontosq1 += 10;
 				sair = true;
 			} else {
-				System.out.print("Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n\n");
 				pontosq1 -= 3;
 				cont++;
 				if (cont == 3) {
@@ -1005,7 +1005,7 @@ public class Algoritimotrix {
 				pontosq2 += 10;
 				sair = true;
 			} else {
-				System.out.print("Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n\n");
 				pontosq2 -= 3;
 				cont++;
 				if (cont == 3) {
@@ -1086,7 +1086,7 @@ public class Algoritimotrix {
 				pontosq3 += 10;
 				sair = true;
 			} else {
-				System.out.print("Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n\n");
 				pontosq3 -= 3;
 				cont++;
 				if (cont == 3) {
@@ -1171,11 +1171,11 @@ public class Algoritimotrix {
 				pontosq4 += 10;
 				sair = true;
 			} else {
-				System.out.print("Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n\n");
 				pontosq4 -= 3;
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\\n");
+					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\n");
 					sair = true;
 				}
 			}
@@ -1249,11 +1249,11 @@ public class Algoritimotrix {
 				pontosq5 += 10;
 				sair = true;
 			} else {
-				System.out.print("Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n\n");
 				pontosq5 -= 3;
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\\n");
+					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\n");
 					sair = true;
 				}
 			}
@@ -1326,7 +1326,7 @@ public class Algoritimotrix {
 				pontosq6 += 10;
 				sair = true;
 			} else {
-				System.out.print("Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n\n");
 				pontosq6 -= 3;
 				cont++;
 				if (cont == 3) {
@@ -1405,7 +1405,7 @@ public class Algoritimotrix {
 				pontosq7 += 10;
 				sair = true;
 			} else {
-				System.out.print("Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n\n");
 				pontosq7 -= 3;
 				cont++;
 				if (cont == 3) {
@@ -1482,7 +1482,7 @@ public class Algoritimotrix {
 				pontosq8 += 10;
 				sair = true;
 			} else {
-				System.out.print("Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n\n");
 				pontosq8 -= 3;
 				cont++;
 				if (cont == 3) {
@@ -1566,11 +1566,11 @@ public class Algoritimotrix {
 				pontosq9 += 10;
 				sair = true;
 			} else {
-				System.out.print("Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n\n");
 				pontosq9 -= 3;
 				cont++;
 				if (cont == 3) {
-					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\\n");
+					System.out.println("você errou " + cont + " vezes, siga para a proxima questão.\n");
 					sair = true;
 				}
 			}
@@ -1656,7 +1656,7 @@ public class Algoritimotrix {
 
 				sair = true;
 			} else {
-				System.out.print("Resposta incorreta!\n");
+				System.out.print("Resposta incorreta!\n\n");
 				pontosq10 -= 3;
 				cont++;
 				if (cont == 3) {
@@ -1732,15 +1732,6 @@ public class Algoritimotrix {
 		bemVindos();
 
 		menu();
-		
-		/*System.out.println("\n\n");
-		System.out.println("TESTE SOMA DE PONTOS");
-		testePontos somaPontos = new testePontos();
-		somaPontos.soma(somaDePontos);
-		System.out.println();
-		System.out.println("TESTE RESPOSTA DO USUÁRIO");
-		testeQuestao respostaUsuario = new testeQuestao();
-		respostaUsuario.resposta(opcao);*/
 		
 	}
 
