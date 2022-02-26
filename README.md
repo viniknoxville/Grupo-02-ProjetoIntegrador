@@ -1,3 +1,3 @@
-# Grupo-02-ProjetoIntegrador
+# PROJETO INTEGRADOR: DESENVOLVIMENTO DE LÓGICA
 
-Jogo de RPG desenvolvido para o projeto integrado do primeiro semestre do curso de ADS
+
